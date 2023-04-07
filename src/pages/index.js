@@ -31,6 +31,35 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
                 <script src="echarts.js"></script>
             </Head>
+            {/* MUST SEE FOR LATER
+            
+                PROYECTO WEB
+                https://github.com/luukdv/gooey-react, https://gooey-react.netlify.app/examples/around-the-web/ <-- particulas en el raton en alguna sección
+                https://mkosir.github.io/react-parallax-tilt/?path=/story/react-parallax-tilt--parallax-effect-glare-scale <-- para las imgs
+                https://www.lightgalleryjs.com/demos/thumbnails/
+                https://github.com/rommguy/react-custom-scroll
+                https://merri.github.io/react-tabbordion <-- FAQ
+                https://www.npmjs.com/package/next-seo
+                https://www.npmjs.com/package/next-sitemap
+                https://www.npmjs.com/package/nextjs-google-analytics
+                https://github.com/rcaferati/react-awesome-slider <-- full page slider ¿(Casos de exito)?
+
+                MISCELANEA
+                https://github.com/malerba118/react-particle-image <-- Particulas en una img, tengo que probarlo
+                https://github.com/gilbarbara/react-joyride <-- plataforma servicios
+                https://react-icons.github.io/react-icons <-- iconos
+                https://sweetalert2.github.io/ <-- alertas muy bonitas
+                
+
+                TIENDA
+                https://github.com/amaroteam/react-credit-cards <-- proyecto tienda
+                https://react-rating.onrender.com/ <-- rating estrellas
+
+                
+                
+                BLOG INSPIRATION
+                sendcloud webpage
+            */}
 
             <main className={styles.main}>
                 <Section large={true}>
