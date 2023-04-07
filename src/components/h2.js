@@ -1,0 +1,11 @@
+import styles from '@/styles/h2.module.scss'
+
+export default function H2({children}) {
+
+
+    return (
+        <>
+            <h2 className={styles.root}>{children}</h2>
+        </>
+    )
+}
