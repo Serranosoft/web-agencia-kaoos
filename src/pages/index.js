@@ -9,6 +9,7 @@ import Text from '@/components/text'
 import Highlight from '@/components/highlight'
 import Section from '@/components/section'
 import Chart from '@/components/chart-views'
+import Header from '@/components/header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
                 <script src="echarts.js"></script>
             </Head>
+
             {/* MUST SEE FOR LATER
             
                 PROYECTO WEB
@@ -46,21 +48,18 @@ export default function Home() {
 
                 MISCELANEA
                 https://github.com/malerba118/react-particle-image <-- Particulas en una img, tengo que probarlo
-                https://github.com/gilbarbara/react-joyride <-- plataforma servicios
-                https://react-icons.github.io/react-icons <-- iconos
-                https://sweetalert2.github.io/ <-- alertas muy bonitas
-                
+                https://github.com/gilbarbara/react-joyride <-- Plataforma servicios
+                https://react-icons.github.io/react-icons <-- Iconos
+                https://sweetalert2.github.io/ <-- Alertas muy bonitas
 
                 TIENDA
-                https://github.com/amaroteam/react-credit-cards <-- proyecto tienda
-                https://react-rating.onrender.com/ <-- rating estrellas
-
-                
+                https://github.com/amaroteam/react-credit-cards <-- Proyecto tienda
+                https://react-rating.onrender.com/ <-- Rating estrellas
                 
                 BLOG INSPIRATION
                 sendcloud webpage
             */}
-
+            <Header />
             <main className={styles.main}>
                 <Section large={true}>
                     <Chart title={"DeBocado"} data={data} />
