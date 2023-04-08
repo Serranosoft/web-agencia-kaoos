@@ -51,7 +51,6 @@ export default function Home() {
                 PROYECTO WEB
                 https://mkosir.github.io/react-parallax-tilt/?path=/story/react-parallax-tilt--parallax-effect-glare-scale <-- para las imgs
                 https://www.lightgalleryjs.com/demos/thumbnails/
-                https://github.com/rommguy/react-custom-scroll
                 https://merri.github.io/react-tabbordion <-- FAQ
                 https://www.npmjs.com/package/next-seo
                 https://www.npmjs.com/package/next-sitemap
@@ -79,14 +78,15 @@ export default function Home() {
                 <section style={{ minHeight: "500px", width: "100%" }}></section>
                 <section style={{ minHeight: "500px", width: "100%" }}></section>
                 {/* <section ref={testRef} style={{ minHeight: "500px", width: "100%", border: "3px solid red" }}>
-                    {renderChart ?
-                        <Chart title={"DeBocado"} data={data} />
-                        :
-                        <></>
-                    }
-                </section> */}
+                        {renderChart ?
+                            <Chart title={"DeBocado"} data={data} />
+                            :
+                            <></>
+                        }
+                    </section> */}
 
             </main>
+
         </>
     )
 }
