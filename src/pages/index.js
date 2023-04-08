@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
+import { Nunito_Sans } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Header from '@/components/header'
 import Hero from '@/components/hero'
 import Aos from '@/components/aos'
 
-const inter = Inter({ subsets: ['latin'] })
+const arimo = Nunito_Sans({ subsets: ['latin'], weight: "400" })
 
 
 export default function Home() {
@@ -72,7 +72,7 @@ export default function Home() {
             */}
             <Header />
             <Aos />
-            <main className={styles.main}>
+            <main className={`${styles.main} ${arimo.className}`}>
                 <Hero />
 
                 <section style={{ minHeight: "500px", width: "100%" }}></section>

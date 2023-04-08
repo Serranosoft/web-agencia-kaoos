@@ -37,7 +37,7 @@ export default function Aos() {
                     entry.target.querySelectorAll(".aos-effect2-el").forEach((el) => el.classList.remove("aos-effect2"))
                 }   
             })
-        }, { threshold: 1 })
+        }, { threshold: 0.25 })
     
         let aosEffect2Elements = document.querySelectorAll(".aos-effect2-observer");
         aosEffect2Elements.forEach((el) => aosEffect2Observer.observe(el));
