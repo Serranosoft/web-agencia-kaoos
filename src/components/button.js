@@ -1,11 +1,11 @@
 import styles from '@/styles/components/button.module.scss'
 
-export default function button({ children, displaySvg }) {
+export default function Button({ children, displaySvg, style }) {
 
 
     return (
         <>
-            <button className={styles.button}>
+            <button className={`${styles.button} ${style && style}`}>
                 {displaySvg ?
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

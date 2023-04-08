@@ -32,12 +32,12 @@ export default function Aos() {
         const aosEffect2Observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.querySelector(".aos-effect2-el").classList.add("aos-effect2")
+                    entry.target.querySelectorAll(".aos-effect2-el").forEach((el) => el.classList.add("aos-effect2"))
                 } else {
-                    entry.target.querySelector(".aos-effect2-el").classList.remove("aos-effect2")
+                    entry.target.querySelectorAll(".aos-effect2-el").forEach((el) => el.classList.remove("aos-effect2"))
                 }   
             })
-        }, { threshold: 0.9 })
+        }, { threshold: 1 })
     
         let aosEffect2Elements = document.querySelectorAll(".aos-effect2-observer");
         aosEffect2Elements.forEach((el) => aosEffect2Observer.observe(el));

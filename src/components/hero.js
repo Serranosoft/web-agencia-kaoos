@@ -1,9 +1,10 @@
-import Section from './section'
 import H1 from './h1'
 import Text from './text'
 import styles from '@/styles/Hero.module.scss'
 import Muted from './muted'
 import { useEffect, useRef, useState } from 'react'
+import Container from './container'
+import Button from './button'
 
 export default function Hero() {
 
@@ -246,10 +247,10 @@ export default function Hero() {
                         />
                     </g>
                 </svg>
-                <Section large={true}>
+                <Container large={true}>
                     <H1>Supercharge your websites with the speed of Framer.</H1>
                     <div ref={cards} className={styles.columns}>
-                        <div className={`${styles.card} card aos-opacity-in`}>
+                        <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
                             <div className={styles.cardInactive}></div>
                             <div className={`${styles.cardActive} active`}></div>
                             <div className={styles.cardContent}>
@@ -258,7 +259,7 @@ export default function Hero() {
                                 <Muted>Designers typically make site mockups in:</Muted>
                             </div>
                         </div>
-                        <div className={`${styles.card} card aos-opacity-in`}>
+                        <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
                             <div className={styles.cardInactive}></div>
                             <div className={`${styles.cardActive} active`}></div>
                             <div className={styles.cardContent}>
@@ -267,7 +268,7 @@ export default function Hero() {
                                 <Muted>Designers typically make site mockups in:</Muted>
                             </div>
                         </div>
-                        <div className={`${styles.card} card aos-opacity-in`}>
+                        <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
                             <div className={styles.cardInactive}></div>
                             <div className={`${styles.cardActive} active`}></div>
                             <div className={styles.cardContent}>
@@ -276,7 +277,7 @@ export default function Hero() {
                                 <Muted>Designers typically make site mockups in:</Muted>
                             </div>
                         </div>
-                        <div className={`${styles.card} card aos-opacity-in`}>
+                        <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
                             <div className={styles.cardInactive}></div>
                             <div className={`${styles.cardActive} active`}></div>
                             <div className={styles.cardContent}>
@@ -286,12 +287,16 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
+                    <div className={`${styles.viewProjects} aos-effect2-observer`}>
+                        <Button style={`${styles.viewProjectsBtn} aos-effect2-el`} displaySvg={true}>Ver diseños web</Button>
+                        <Button style={`${styles.viewProjectsBtn} aos-effect2-el`} displaySvg={true}>Ver proyectos SEO</Button>
+                    </div>
                     {/* <Chart title={"DeBocado"} data={data} /> */}
                     {/* <Button displaySvg={true}>Ver proyectos</Button>
                         <Text>Texto de ejemplo</Text>
                         <Text>Texto de ejemplo <Highlight>con highlight</Highlight></Text> */}
 
-                </Section>
+                </Container>
             </section>
         </>
     )
