@@ -4,12 +4,12 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
 import H1 from '@/components/h1'
 import H2 from '@/components/h2'
-import Button from '@/components/button'
 import Text from '@/components/text'
 import Highlight from '@/components/highlight'
 import Section from '@/components/section'
 import Chart from '@/components/chart-views'
 import Header from '@/components/header'
+import Hero from '@/components/hero'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,7 +36,6 @@ export default function Home() {
             {/* MUST SEE FOR LATER
             
                 PROYECTO WEB
-                https://github.com/luukdv/gooey-react, https://gooey-react.netlify.app/examples/around-the-web/ <-- particulas en el raton en alguna sección
                 https://mkosir.github.io/react-parallax-tilt/?path=/story/react-parallax-tilt--parallax-effect-glare-scale <-- para las imgs
                 https://www.lightgalleryjs.com/demos/thumbnails/
                 https://github.com/rommguy/react-custom-scroll
@@ -61,14 +60,8 @@ export default function Home() {
             */}
             <Header />
             <main className={styles.main}>
-                <Section large={true}>
-                    <Chart title={"DeBocado"} data={data} />
-                    <H1>Prueba H1</H1>
-                    <H2>Prueba H1</H2>
-                    <Button displaySvg={true}>Ver proyectos</Button>
-                    <Text>Texto de ejemplo</Text>
-                    <Text>Texto de ejemplo <Highlight>con highlight</Highlight></Text>
-                </Section>
+                <Hero />
+                
             </main>
         </>
     )
