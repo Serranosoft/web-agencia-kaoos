@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Header from '@/components/header'
 import Hero from '@/components/hero'
+import Aos from '@/components/aos'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -71,6 +72,7 @@ export default function Home() {
                 sendcloud webpage
             */}
             <Header />
+            <Aos />
             <main className={styles.main}>
                 <Hero />
 

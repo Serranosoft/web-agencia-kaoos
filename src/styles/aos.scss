@@ -1,0 +1,9 @@
+.aos-opacity-in {
+    opacity: 0;
+    transform: translate(-100px, 50px);
+}
+
+.aos-opacity-off {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
