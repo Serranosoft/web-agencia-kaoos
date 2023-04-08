@@ -4,6 +4,7 @@ import styles from '@/styles/SeoCharts.module.scss'
 import Chart from "./chart-views";
 import Text from "./text";
 import Muted from "./muted";
+import { HiCursorClick, HiChartBar, HiFire } from "react-icons/hi";
 
 const data = [
     { name: '09/2022', visitas: 34653 },
@@ -42,9 +43,18 @@ export default function SeoCharts() {
                             <Muted>Datos actualizados desde Mayo de 2022 hasta Abril de 2024</Muted>
                             <Muted>Estos datos han sido extraidos de Google Analytics y Search Console</Muted>
                             <div className={styles.data}>
-                                <Text>Páginas vistas: </Text>
-                                <Text>Porcentaje de rebote: </Text>
-                                <Text>Impresiones totales: </Text>
+                                <div>
+                                    <HiChartBar/>
+                                    <Text>Páginas vistas: </Text>
+                                </div>
+                                <div>
+                                    <HiFire />
+                                    <Text>Impresiones totales: </Text>
+                                </div>
+                                <div>
+                                    <HiCursorClick />
+                                    <Text>Clics totales: </Text>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.chart}>
