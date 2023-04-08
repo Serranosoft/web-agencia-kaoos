@@ -3,18 +3,44 @@ import { useEffect } from "react";
 export default function Aos() {
 
     useEffect(() => {
-        const opacityObserver = new IntersectionObserver((entries) => {
+
+        const aosEffect1Observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("aos-opacity-off")
+                    if (entry.target.querySelector("aos-effect1-el") !== null) {
+                        entry.target.querySelector("aos-effect1-el").classList.add("aos-effect1")
+                    } else {
+                        entry.target.classList.add("aos-effect1");
+                    }
                 } else {
-                    entry.target.classList.remove("aos-opacity-off")
+                    if (entry.target.querySelector("aos-effect1-el") !== null) {
+                        entry.target.querySelector("aos-effect1-el").classList.remove("aos-effect1")
+                    } else {
+                        entry.target.classList.remove("aos-effect1");
+                    }
                 }
             })
         }, { threshold: 0.9 })
     
-        let aosOpacityElements = document.querySelectorAll(".aos-opacity-in");
-        aosOpacityElements.forEach((el) => opacityObserver.observe(el));
+        let aosEffect1Elements = document.querySelectorAll(".aos-effect1-observer");
+        aosEffect1Elements.forEach((el) => aosEffect1Observer.observe(el));
+
+
+        // -------------------------------------------------------------------- //
+
+
+        const aosEffect2Observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelector(".aos-effect2-el").classList.add("aos-effect2")
+                } else {
+                    entry.target.querySelector(".aos-effect2-el").classList.remove("aos-effect2")
+                }   
+            })
+        }, { threshold: 0.9 })
+    
+        let aosEffect2Elements = document.querySelectorAll(".aos-effect2-observer");
+        aosEffect2Elements.forEach((el) => aosEffect2Observer.observe(el));
     }, [])
 
     return (

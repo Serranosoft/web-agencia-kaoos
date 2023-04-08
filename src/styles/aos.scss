@@ -1,9 +1,18 @@
-.aos-opacity-in {
+.aos-effect1-el {
     opacity: 0;
     transform: translate(-100px, 50px);
 }
 
-.aos-opacity-off {
+.aos-effect1 {
     opacity: 1 !important;
     transform: translate(0, 0) !important;
+}
+
+
+.aos-effect2-el {
+    transform: translateX(-1500px);
+}
+
+.aos-effect2 {
+    transform: translateX(0);
 }
