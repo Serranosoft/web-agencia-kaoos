@@ -1,4 +1,4 @@
-import styles from '@/styles/section.module.scss'
+import styles from '@/styles/components/section.module.scss'
 
 export default function Section({children, large, style}) {
 

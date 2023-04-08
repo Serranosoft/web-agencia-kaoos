@@ -1,4 +1,4 @@
-import styles from '@/styles/h1.module.scss'
+import styles from '@/styles/components/h1.module.scss'
 
 export default function H1({children, style}) {
 

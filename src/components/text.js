@@ -1,4 +1,4 @@
-import styles from '@/styles/text.module.scss'
+import styles from '@/styles/components/text.module.scss'
 
 export default function Text({children, large}) {
 
