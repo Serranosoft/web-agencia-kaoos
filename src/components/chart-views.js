@@ -3,7 +3,7 @@ import Text from './text';
 import styles from '@/styles/components/chart.module.scss'
 import Highlight from './highlight';
 
-export default function Chart({ title, data }) {
+export default function Chart({ color, data }) {
 
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
@@ -25,12 +25,8 @@ export default function Chart({ title, data }) {
 
     return (
         <div className={styles.root}>
-            <Text>{title}</Text>
-            <Text>Cantidad de visitas por mes durante los años 2022 y 2023</Text>
-            <ResponsiveContainer width="100%" height={350}>
+            <ResponsiveContainer width="100%" height={400}>
                 <AreaChart
-                    width={500}
-                    height={400}
                     data={data}
                     margin={{
                         top: 10,
@@ -43,7 +39,7 @@ export default function Chart({ title, data }) {
                     <XAxis dataKey="name" />
                     <YAxis />
                     <Tooltip content={<CustomTooltip />} />
-                    <Area type="monotone" dataKey="visitas" stroke="#8884d8" fill="#8884d8" />
+                    <Area type="monotone" dataKey="visitas" stroke={`${color ? color : '#8884d8'}`} fill={`${color ? color : '#8884d8'}`} />
                 </AreaChart>
             </ResponsiveContainer>
         </div>
