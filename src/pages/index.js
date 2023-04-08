@@ -1,13 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
-import H1 from '@/components/h1'
-import H2 from '@/components/h2'
-import Text from '@/components/text'
-import Highlight from '@/components/highlight'
-import Section from '@/components/section'
-import Chart from '@/components/chart-views'
 import Header from '@/components/header'
 import Hero from '@/components/hero'
 
@@ -22,6 +15,25 @@ export default function Home() {
         { name: '03/2023', visitas: 128452 },
         { name: '04/2023', visitas: 174000 },
     ]
+
+    /*
+    const testRef = useRef(null);
+    const [renderChart, setRenderChart] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setRenderChart(true);
+                }
+            })
+        }, { threshold: 0.9 })
+
+        observer.observe(testRef.current)
+    }, [])
+
+    */
+
 
     return (
         <>
@@ -61,7 +73,17 @@ export default function Home() {
             <Header />
             <main className={styles.main}>
                 <Hero />
-                
+
+                <section style={{ minHeight: "500px", width: "100%" }}></section>
+                <section style={{ minHeight: "500px", width: "100%" }}></section>
+                {/* <section ref={testRef} style={{ minHeight: "500px", width: "100%", border: "3px solid red" }}>
+                    {renderChart ?
+                        <Chart title={"DeBocado"} data={data} />
+                        :
+                        <></>
+                    }
+                </section> */}
+
             </main>
         </>
     )
