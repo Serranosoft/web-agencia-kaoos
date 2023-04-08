@@ -5,6 +5,7 @@ import Muted from './muted'
 import { useEffect, useRef, useState } from 'react'
 import Container from './container'
 import Button from './button'
+import Tilt from 'react-parallax-tilt';
 
 export default function Hero() {
 
@@ -13,9 +14,9 @@ export default function Hero() {
     const [cardActive, setCardActive] = useState(2);
 
     useEffect(() => {
-        cards.current.querySelector(`.card:nth-child(1) .active`).style.opacity = "1";
+        cards.current.querySelector(`.parallax:nth-child(1) .card .active`).style.opacity = "1";
 
-        cards.current.querySelectorAll(`.card`).forEach((card) => card.addEventListener("mouseover", () => {
+        cards.current.querySelectorAll(`.parallax .card`).forEach((card) => card.addEventListener("mouseover", () => {
             window.clearTimeout(timeOut.current);
             clearAllActives();
             card.querySelector(".active").style.opacity = "1";
@@ -26,7 +27,7 @@ export default function Hero() {
         if (cardActive > 0) {
             timeOut.current = setTimeout(() => {
                 clearAllActives();
-                cards.current.querySelector(`.card:nth-child(${cardActive}) .active`).style.opacity = "1";
+                cards.current.querySelector(`.parallax:nth-child(${cardActive}) .card .active`).style.opacity = "1";
                 if (cardActive < 4) {
                     setCardActive(cardActive + 1);
                 } else {
@@ -43,10 +44,8 @@ export default function Hero() {
     }, [cardActive])
 
     function clearAllActives() {
-        cards.current.querySelectorAll(`.card`).forEach((card) => card.querySelector(".active").style.opacity = "0");
+        cards.current.querySelectorAll(`.parallax .card`).forEach((card) => card.querySelector(".active").style.opacity = "0");
     }
-
-
 
     return (
         <>
@@ -250,52 +249,80 @@ export default function Hero() {
                 <Container large={true}>
                     <H1>Supercharge your websites with the speed of Framer.</H1>
                     <div ref={cards} className={styles.columns}>
-                        <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
-                            <div className={styles.cardInactive}></div>
-                            <div className={`${styles.cardActive} active`}></div>
-                            <div className={styles.cardContent}>
-                                <Text large={true}><strong>Static to wow in minutes.</strong></Text>
-                                <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
-                                <Muted>Designers typically make site mockups in:</Muted>
+
+                        <Tilt
+                            className={`${styles.parallaxGlare} parallax`}
+                            perspective={500}
+                            glareEnable={true}
+                            glareMaxOpacity={0.45}
+                            scale={1.02}
+                        >
+                            <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
+                                <div className={styles.cardInactive}></div>
+                                <div className={`${styles.cardActive} active`}></div>
+                                <div className={styles.cardContent}>
+                                    <Text large={true}><strong>Static to wow in minutes.</strong></Text>
+                                    <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
+                                    <Muted>Designers typically make site mockups in:</Muted>
+                                </div>
                             </div>
-                        </div>
-                        <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
-                            <div className={styles.cardInactive}></div>
-                            <div className={`${styles.cardActive} active`}></div>
-                            <div className={styles.cardContent}>
-                                <Text large={true}><strong>Static to wow in minutes.</strong></Text>
-                                <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
-                                <Muted>Designers typically make site mockups in:</Muted>
+                        </Tilt>
+                        <Tilt
+                            className={`${styles.parallaxGlare} parallax`}
+                            perspective={500}
+                            glareEnable={true}
+                            glareMaxOpacity={0.45}
+                            scale={1.02}
+                        >
+                            <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
+                                <div className={styles.cardInactive}></div>
+                                <div className={`${styles.cardActive} active`}></div>
+                                <div className={styles.cardContent}>
+                                    <Text large={true}><strong>Static to wow in minutes.</strong></Text>
+                                    <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
+                                    <Muted>Designers typically make site mockups in:</Muted>
+                                </div>
                             </div>
-                        </div>
-                        <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
-                            <div className={styles.cardInactive}></div>
-                            <div className={`${styles.cardActive} active`}></div>
-                            <div className={styles.cardContent}>
-                                <Text large={true}><strong>Static to wow in minutes.</strong></Text>
-                                <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
-                                <Muted>Designers typically make site mockups in:</Muted>
+                        </Tilt>
+                        <Tilt
+                            className={`${styles.parallaxGlare} parallax`}
+                            perspective={500}
+                            glareEnable={true}
+                            glareMaxOpacity={0.45}
+                            scale={1.02}
+                        >
+                            <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
+                                <div className={styles.cardInactive}></div>
+                                <div className={`${styles.cardActive} active`}></div>
+                                <div className={styles.cardContent}>
+                                    <Text large={true}><strong>Static to wow in minutes.</strong></Text>
+                                    <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
+                                    <Muted>Designers typically make site mockups in:</Muted>
+                                </div>
                             </div>
-                        </div>
-                        <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
-                            <div className={styles.cardInactive}></div>
-                            <div className={`${styles.cardActive} active`}></div>
-                            <div className={styles.cardContent}>
-                                <Text large={true}><strong>Static to wow in minutes.</strong></Text>
-                                <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
-                                <Muted>Designers typically make site mockups in:</Muted>
+                        </Tilt>
+                        <Tilt
+                            className={`${styles.parallaxGlare} parallax`}
+                            perspective={500}
+                            glareEnable={true}
+                            glareMaxOpacity={0.45}
+                            scale={1.02}
+                        >
+                            <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
+                                <div className={styles.cardInactive}></div>
+                                <div className={`${styles.cardActive} active`}></div>
+                                <div className={styles.cardContent}>
+                                    <Text large={true}><strong>Static to wow in minutes.</strong></Text>
+                                    <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
+                                    <Muted>Designers typically make site mockups in:</Muted>
+                                </div>
                             </div>
-                        </div>
+                        </Tilt>
                     </div>
                     <div className={`${styles.viewProjects} aos-effect2-observer`}>
                         <Button style={`${styles.viewProjectsBtn} aos-effect2-el`} displaySvg={true}>Ver diseños web</Button>
                         <Button style={`${styles.viewProjectsBtn} aos-effect2-el`} displaySvg={true}>Ver proyectos SEO</Button>
                     </div>
-                    {/* <Chart title={"DeBocado"} data={data} /> */}
-                    {/* <Button displaySvg={true}>Ver proyectos</Button>
-                        <Text>Texto de ejemplo</Text>
-                        <Text>Texto de ejemplo <Highlight>con highlight</Highlight></Text> */}
-
                 </Container>
             </section>
         </>

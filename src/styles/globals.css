@@ -21,3 +21,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.glare-wrapper {
+    border-radius: 1.3rem !important;
+}
