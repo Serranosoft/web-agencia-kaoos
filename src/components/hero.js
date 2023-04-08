@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react'
 import Container from './container'
 import Button from './button'
 import Tilt from 'react-parallax-tilt';
+import { HiChartBar, HiLightningBolt, HiTrendingUp, HiUserAdd } from "react-icons/hi";
 
 export default function Hero() {
 
@@ -50,7 +51,7 @@ export default function Hero() {
     return (
         <>
             <section className={styles.root}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1422 800">
+                <svg className={styles.decoration} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1422 800">
                     <defs>
                         <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
                             <stop offset="0%" stopColor="hsl(206, 75%, 49%)" />
@@ -246,8 +247,10 @@ export default function Hero() {
                         />
                     </g>
                 </svg>
+
                 <Container large={true}>
-                    <H1>Supercharge your websites with the speed of Framer.</H1>
+                    {/* <H1>Supercharge your websites with the speed of Framer.</H1> */}
+                    <H1>Diseñamos y posicionamos la web de tus sueños</H1>
                     <div ref={cards} className={styles.columns}>
 
                         <Tilt
@@ -261,6 +264,7 @@ export default function Hero() {
                                 <div className={styles.cardInactive}></div>
                                 <div className={`${styles.cardActive} active`}></div>
                                 <div className={styles.cardContent}>
+                                    <HiLightningBolt size={50} />
                                     <Text xl={true}><strong>Static to wow in minutes.</strong></Text>
                                     <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
                                     <Muted>Designers typically make site mockups in:</Muted>
@@ -278,6 +282,7 @@ export default function Hero() {
                                 <div className={styles.cardInactive}></div>
                                 <div className={`${styles.cardActive} active`}></div>
                                 <div className={styles.cardContent}>
+                                    <HiChartBar size={50}/>
                                     <Text xl={true}><strong>Static to wow in minutes.</strong></Text>
                                     <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
                                     <Muted>Designers typically make site mockups in:</Muted>
@@ -295,6 +300,7 @@ export default function Hero() {
                                 <div className={styles.cardInactive}></div>
                                 <div className={`${styles.cardActive} active`}></div>
                                 <div className={styles.cardContent}>
+                                    <HiTrendingUp size={50}/>
                                     <Text xl={true}><strong>Static to wow in minutes.</strong></Text>
                                     <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
                                     <Muted>Designers typically make site mockups in:</Muted>
@@ -312,6 +318,7 @@ export default function Hero() {
                                 <div className={styles.cardInactive}></div>
                                 <div className={`${styles.cardActive} active`}></div>
                                 <div className={styles.cardContent}>
+                                    <HiUserAdd size={50} />
                                     <Text xl={true}><strong>Static to wow in minutes.</strong></Text>
                                     <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
                                     <Muted>Designers typically make site mockups in:</Muted>

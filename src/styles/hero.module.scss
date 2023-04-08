@@ -3,7 +3,8 @@
 .root {
     position: relative;
     padding: 0 1rem;
-    &>svg {
+
+    .decoration {
         width: 100%;
         position: absolute;
         top: 32%;
@@ -13,6 +14,32 @@
         z-index: 0;
         animation: dash 35s ease-in-out infinite;
         opacity: 0.2;
+    }
+
+    .floatingItem {
+        position: absolute;
+        opacity: 0.7;
+
+        &.floatingItem1 {
+            top: 25%;
+            left: 20%;
+        }
+
+        &.floatingItem2 {
+            top: 5%;
+            left: 90%;
+            transform: rotate(5deg);
+        }
+
+        &.floatingItem3 {
+            top: 35%;
+            left: 10%;
+        }
+
+        &.floatingItem4 {
+            top: 55%;
+            left: 90%;
+        }
     }
 
     &>div {
@@ -35,22 +62,58 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.2rem;
 
-            & > div {
+            &>div {
+                &:nth-child(1) {
+                    .card {
+                        &:hover {
+                            .cardContent {
+                                svg {
+                                    fill: yellow;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 &:nth-child(2) {
                     .card {
                         transition-delay: 100ms;
+
+                        &:hover {
+                            .cardContent {
+                                svg {
+                                    fill: orange;
+                                }
+                            }
+                        }
                     }
                 }
 
                 &:nth-child(3) {
                     .card {
                         transition-delay: 200ms;
+
+                        &:hover {
+                            .cardContent {
+                                svg {
+                                    fill: greenyellow;
+                                }
+                            }
+                        }
                     }
                 }
 
                 &:nth-child(4) {
                     .card {
                         transition-delay: 300ms;
+
+                        &:hover {
+                            .cardContent {
+                                svg {
+                                    fill: aquamarine;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -59,6 +122,7 @@
                 position: relative;
                 padding: 2.5rem;
                 transition: all 0.5s;
+
                 &:hover {
                     .cardActive {
                         opacity: 1;
@@ -66,7 +130,6 @@
 
                     .cardContent {
                         transform: translateZ(30px);
-
                     }
                 }
 
@@ -153,12 +216,14 @@
             }
 
         }
+
         .separator {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 1rem;
             margin-top: 2.5rem;
+
             svg {
                 transform: rotate(180deg);
             }

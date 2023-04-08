@@ -1,8 +1,8 @@
 import styles from '@/styles/components/h1.module.scss'
 
-import { Cormorant_Upright, Sansita_Swashed, Schoolbell } from 'next/font/google'
+import { Alegreya, Cormorant_Upright, DM_Serif_Text, Sansita_Swashed } from 'next/font/google'
 
-const pirataOne = Sansita_Swashed({ subsets: ['latin'], weight: "700" })
+const pirataOne = Alegreya({ subsets: ['latin'], weight: "600" })
 
 export default function H1({children, style}) {
 
