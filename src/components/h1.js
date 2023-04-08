@@ -9,7 +9,7 @@ export default function H1({children, style}) {
 
     return (
         <>
-            <h1 className={`${styles.root} ${style && style} ${pirataOne.className}`}>{children}</h1>
+            <h1 className={`${styles.root} ${style && style} ${pirataOne.className} aos-effect3-el`}>{children}</h1>
         </>
     )
 }

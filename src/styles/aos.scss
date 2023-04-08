@@ -16,3 +16,14 @@
 .aos-effect2 {
     transform: translateX(0);
 }
+
+.aos-effect3-el {
+    opacity: 0;
+    filter: blur(13px);
+}
+
+.aos-effect3 {
+    opacity: 1;
+    filter: blur(0px);
+
+}
