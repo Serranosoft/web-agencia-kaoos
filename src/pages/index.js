@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.scss'
 import Header from '@/components/header'
 import Hero from '@/components/hero'
 import Aos from '@/components/aos'
+import SeoCharts from '@/components/seo-charts'
 
 const arimo = Nunito_Sans({ subsets: ['latin'], weight: "400" })
 
@@ -74,7 +75,7 @@ export default function Home() {
             <Aos />
             <main className={`${styles.main} ${arimo.className}`}>
                 <Hero />
-
+                <SeoCharts />
                 <section style={{ minHeight: "500px", width: "100%" }}></section>
                 <section style={{ minHeight: "500px", width: "100%" }}></section>
                 {/* <section ref={testRef} style={{ minHeight: "500px", width: "100%", border: "3px solid red" }}>

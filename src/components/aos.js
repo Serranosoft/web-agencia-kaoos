@@ -20,7 +20,7 @@ export default function Aos() {
                     }
                 }
             })
-        }, { threshold: 0.9 })
+        }, { threshold: 0.25 })
     
         let aosEffect1Elements = document.querySelectorAll(".aos-effect1-observer");
         aosEffect1Elements.forEach((el) => aosEffect1Observer.observe(el));
