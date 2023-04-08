@@ -1,14 +1,51 @@
 import Section from './section'
-import Chart from './chart-views'
 import H1 from './h1'
-import H2 from './h2'
-import Button from '@/components/button'
 import Text from './text'
-import Highlight from './highlight'
 import styles from '@/styles/hero.module.scss'
 import Muted from './muted'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Hero() {
+
+    const cards = useRef(null);
+    const timeOut = useRef(null);
+    const [cardActive, setCardActive] = useState(2);
+
+    useEffect(() => {
+        cards.current.querySelector(`.card:nth-child(1) .active`).style.opacity = "1";
+
+        cards.current.querySelectorAll(`.card`).forEach((card) => card.addEventListener("mouseover", () => {
+            window.clearTimeout(timeOut.current);
+            clearAllActives();
+            card.querySelector(".active").style.opacity = "1";
+        }));
+    }, [])
+
+    useEffect(() => {
+        if (cardActive > 0) {
+            timeOut.current = setTimeout(() => {
+                clearAllActives();
+                cards.current.querySelector(`.card:nth-child(${cardActive}) .active`).style.opacity = "1";
+                if (cardActive < 4) {
+                    setCardActive(cardActive + 1);
+                } else {
+                    setCardActive(1);
+                }
+            }, 3000)
+        } else {
+            setCardActive(1);
+        }
+
+        return () => {
+            clearTimeout(timeOut.current);
+        }
+    }, [cardActive])
+
+    function clearAllActives() {
+        cards.current.querySelectorAll(`.card`).forEach((card) => card.querySelector(".active").style.opacity = "0");
+    }
+
+
 
     return (
         <section className={styles.root}>
@@ -211,44 +248,43 @@ export default function Hero() {
             <Section large={true}>
 
                 <H1>Supercharge your websites with the speed of Framer.</H1>
-                <div className={styles.columns}>
-                    <div className={styles.card}>
+                <div ref={cards} className={styles.columns}>
+                    <div className={`${styles.card} card`}>
                         <div className={styles.cardInactive}></div>
-                        <div className={styles.cardActive}></div>
+                        <div className={`${styles.cardActive} active`}></div>
                         <div className={styles.cardContent}>
                             <Text large={true}><strong>Static to wow in minutes.</strong></Text>
                             <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
                             <Muted>Designers typically make site mockups in:</Muted>
                         </div>
                     </div>
-                    <div className={styles.card}>
+                    <div className={`${styles.card} card`}>
                         <div className={styles.cardInactive}></div>
-                        <div className={styles.cardActive}></div>
+                        <div className={`${styles.cardActive} active`}></div>
                         <div className={styles.cardContent}>
                             <Text large={true}><strong>Static to wow in minutes.</strong></Text>
                             <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
                             <Muted>Designers typically make site mockups in:</Muted>
                         </div>
                     </div>
-                    <div className={styles.card}>
+                    <div className={`${styles.card} card`}>
                         <div className={styles.cardInactive}></div>
-                        <div className={styles.cardActive}></div>
+                        <div className={`${styles.cardActive} active`}></div>
                         <div className={styles.cardContent}>
                             <Text large={true}><strong>Static to wow in minutes.</strong></Text>
                             <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
                             <Muted>Designers typically make site mockups in:</Muted>
                         </div>
                     </div>
-                    <div className={styles.card}>
+                    <div className={`${styles.card} card`}>
                         <div className={styles.cardInactive}></div>
-                        <div className={styles.cardActive}></div>
+                        <div className={`${styles.cardActive} active`}></div>
                         <div className={styles.cardContent}>
                             <Text large={true}><strong>Static to wow in minutes.</strong></Text>
                             <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
                             <Muted>Designers typically make site mockups in:</Muted>
                         </div>
                     </div>
-
                 </div>
                 {/* <Chart title={"DeBocado"} data={data} /> */}
                 {/* <Button displaySvg={true}>Ver proyectos</Button>
