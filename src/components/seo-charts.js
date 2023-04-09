@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Container from "./container";
-import styles from '@/styles/SeoCharts.module.scss'
+import styles from '@/styles/seoCharts.module.scss'
 import Chart from "./chart-views";
 import Text from "./text";
 import Muted from "./muted";
@@ -28,7 +28,7 @@ export default function SeoCharts() {
                     setRenderChart(true);
                 }
             })
-        }, { threshold: 0.9 })
+        }, { threshold: 1 })
 
         observer.observe(testRef.current)
     }, [])
@@ -36,8 +36,8 @@ export default function SeoCharts() {
     return (
         <Container>
             <div className={styles.root}>
-                <div ref={testRef} className={styles.columns}>
-                    <div className={styles.chartWrapper}>
+                <div ref={testRef} className={`${styles.columns} aos-effect4-observer`}>
+                    <div className={`${styles.chartWrapper} aos-effect4-el`}>
                         <div className={styles.dataWrapper}>
                             <Text xl={true}><strong>Página web de recetas</strong></Text>
                             <Muted>Datos actualizados desde Mayo de 2022 hasta Abril de 2024</Muted>

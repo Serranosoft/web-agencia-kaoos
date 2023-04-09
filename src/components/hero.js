@@ -1,6 +1,6 @@
 import H1 from './h1'
 import Text from './text'
-import styles from '@/styles/Hero.module.scss'
+import styles from '@/styles/hero.module.scss'
 import Muted from './muted'
 import { useEffect, useRef, useState } from 'react'
 import Container from './container'

@@ -7,14 +7,14 @@ export default function Aos() {
         const aosEffect1Observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    if (entry.target.querySelector("aos-effect1-el") !== null) {
-                        entry.target.querySelector("aos-effect1-el").classList.add("aos-effect1")
+                    if (entry.target.querySelector(".aos-effect1-el") !== null) {
+                        entry.target.querySelector(".aos-effect1-el").classList.add("aos-effect1")
                     } else {
                         entry.target.classList.add("aos-effect1");
                     }
                 } else {
-                    if (entry.target.querySelector("aos-effect1-el") !== null) {
-                        entry.target.querySelector("aos-effect1-el").classList.remove("aos-effect1")
+                    if (entry.target.querySelector(".aos-effect1-el") !== null) {
+                        entry.target.querySelector(".aos-effect1-el").classList.remove("aos-effect1")
                     } else {
                         entry.target.classList.remove("aos-effect1");
                     }
@@ -49,14 +49,13 @@ export default function Aos() {
         const aosEffect3Observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    if (entry.target.querySelector("aos-effect3-el") !== null) {
+                    if (entry.target.querySelector(".aos-effect3-el") !== null) {
                         entry.target.querySelectorAll(".aos-effect3-el").forEach((el) => el.classList.add("aos-effect3"))
                     } else {
                         entry.target.classList.add("aos-effect3")
                     }
                 } else {
-                    if (entry.target.querySelector("aos-effect3-el") !== null) {
-                        console.log("b");
+                    if (entry.target.querySelector(".aos-effect3-el") !== null) {
                         entry.target.querySelectorAll(".aos-effect3-el").forEach((el) => el.classList.remove("aos-effect3"))
                     } else {
                         entry.target.classList.remove("aos-effect3")
@@ -65,8 +64,32 @@ export default function Aos() {
             })
         }, { threshold: 0.25 })
     
-        let aosEffect3Elements = document.querySelectorAll(".aos-effect3-el");
+        let aosEffect3Elements = document.querySelectorAll(".aos-effect3-observer");
         aosEffect3Elements.forEach((el) => aosEffect3Observer.observe(el));
+
+        // -------------------------------------------------------------------- //
+    
+        const aosEffect4Observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    if (entry.target.querySelector(".aos-effect4-el") !== null) {
+                        console.log("a");
+                        entry.target.querySelectorAll(".aos-effect4-el").forEach((el) => el.classList.add("aos-effect4"))
+                    } else {
+                        entry.target.classList.add("aos-effect4")
+                    }
+                } else {
+                    if (entry.target.querySelector(".aos-effect4-el") !== null) {
+                        entry.target.querySelectorAll(".aos-effect4-el").forEach((el) => el.classList.remove("aos-effect4"))
+                    } else {
+                        entry.target.classList.remove("aos-effect4")
+                    }
+                }
+            })
+        }, { threshold: 1 })
+    
+        let aosEffect4Elements = document.querySelectorAll(".aos-effect4-observer");
+        aosEffect4Elements.forEach((el) => aosEffect4Observer.observe(el));
 
     }, [])
 
