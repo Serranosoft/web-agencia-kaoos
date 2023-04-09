@@ -1,10 +1,12 @@
 import styles from '../styles/components/button.module.scss'
+import Tilt from 'react-parallax-tilt';
 
 export default function Button({ children, displaySvg, style }) {
 
 
     return (
         <>
+
             <button className={`${styles.button} ${style && style}`}>
                 {displaySvg ?
                     <svg

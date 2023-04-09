@@ -7,13 +7,13 @@
     .decoration {
         width: 100%;
         position: absolute;
-        top: 32%;
+        top: 28%;
         left: 50%;
         transform: translate(-50%, -50%);
         pointer-events: none;
         z-index: 0;
         animation: dash 35s ease-in-out infinite;
-        opacity: 0.2;
+        opacity: 0.35;
     }
 
     .floatingItem {
@@ -207,14 +207,9 @@
             }
 
             .viewProjectsBtn {
-                transition: transform 0.5s;
+                transition: all 0.75s;
                 z-index: 1;
-
-                &:nth-child(1) {
-                    transition-delay: 250ms;
-                }
             }
-
         }
 
         .separator {

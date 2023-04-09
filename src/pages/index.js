@@ -70,6 +70,8 @@ export default function Home() {
                 
                 BLOG INSPIRATION
                 sendcloud webpage
+
+                gradient mush de fffuel para el fondo de las tarjetas con tarjetas glassmorphism
             */}
             <Header />
             <Aos />
@@ -78,14 +80,6 @@ export default function Home() {
                 <SeoCharts />
                 <section style={{ minHeight: "500px", width: "100%" }}></section>
                 <section style={{ minHeight: "500px", width: "100%" }}></section>
-                {/* <section ref={testRef} style={{ minHeight: "500px", width: "100%", border: "3px solid red" }}>
-                        {renderChart ?
-                            <Chart title={"DeBocado"} data={data} />
-                            :
-                            <></>
-                        }
-                    </section> */}
-
             </main>
 
         </>

@@ -249,7 +249,6 @@ export default function Hero() {
                 </svg>
 
                 <Container large={true}>
-                    {/* <H1>Supercharge your websites with the speed of Framer.</H1> */}
                     <H1>Diseñamos y posicionamos la web de tus sueños</H1>
                     <div ref={cards} className={styles.columns}>
 
@@ -265,8 +264,8 @@ export default function Hero() {
                                 <div className={`${styles.cardActive} active`}></div>
                                 <div className={styles.cardContent}>
                                     <HiLightningBolt size={50} />
-                                    <Text xl={true}><strong>Static to wow in minutes.</strong></Text>
-                                    <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
+                                    <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
+                                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>                                    
                                     <Muted>Designers typically make site mockups in:</Muted>
                                 </div>
                             </div>
@@ -283,8 +282,8 @@ export default function Hero() {
                                 <div className={`${styles.cardActive} active`}></div>
                                 <div className={styles.cardContent}>
                                     <HiChartBar size={50}/>
-                                    <Text xl={true}><strong>Static to wow in minutes.</strong></Text>
-                                    <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
+                                    <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
+                                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
                                     <Muted>Designers typically make site mockups in:</Muted>
                                 </div>
                             </div>
@@ -301,8 +300,8 @@ export default function Hero() {
                                 <div className={`${styles.cardActive} active`}></div>
                                 <div className={styles.cardContent}>
                                     <HiTrendingUp size={50}/>
-                                    <Text xl={true}><strong>Static to wow in minutes.</strong></Text>
-                                    <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
+                                    <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
+                                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
                                     <Muted>Designers typically make site mockups in:</Muted>
                                 </div>
                             </div>
@@ -319,8 +318,8 @@ export default function Hero() {
                                 <div className={`${styles.cardActive} active`}></div>
                                 <div className={styles.cardContent}>
                                     <HiUserAdd size={50} />
-                                    <Text xl={true}><strong>Static to wow in minutes.</strong></Text>
-                                    <Text>Get a fully featured interactive design canvas that’s optimized for designing sites. Or start in Figma and copy to Framer later.</Text>
+                                    <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
+                                    <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
                                     <Muted>Designers typically make site mockups in:</Muted>
                                 </div>
                             </div>
