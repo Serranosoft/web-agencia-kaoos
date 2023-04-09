@@ -38,13 +38,19 @@ export default function SeoCharts() {
             <div className={styles.root}>
                 <div ref={testRef} className={`${styles.columns} aos-effect4-observer`}>
                     <div className={`${styles.chartWrapper} aos-effect4-el`}>
+                        <div className={styles.blurDecoration1}></div>
+                        <div className={styles.blurDecoration2}></div>
+                        <div className={styles.blurDecoration3}></div>
                         <div className={styles.dataWrapper}>
-                            <Text xl={true}><strong>Página web de recetas</strong></Text>
+                            <div className={styles.test}>
+                                <Text xxl={true}><strong>Página web de recetas</strong></Text>
+                                {/* <HiFire size={45} color="#ff0066" /> */}
+                            </div>
                             <Muted>Datos actualizados desde Mayo de 2022 hasta Abril de 2024</Muted>
                             <Muted>Estos datos han sido extraidos de Google Analytics y Search Console</Muted>
                             <div className={styles.data}>
                                 <div>
-                                    <HiChartBar/>
+                                    <HiChartBar />
                                     <Text>Páginas vistas: </Text>
                                 </div>
                                 <div>
