@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Container from "./container";
-import styles from '@/styles/seoCharts.module.scss'
+import styles from '../styles/seoCharts.module.scss'
 import Chart from "./chart-views";
 import Text from "./text";
 import Muted from "./muted";
