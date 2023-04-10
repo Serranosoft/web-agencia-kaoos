@@ -73,7 +73,6 @@ export default function Aos() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     if (entry.target.querySelector(".aos-effect4-el") !== null) {
-                        console.log("a");
                         entry.target.querySelectorAll(".aos-effect4-el").forEach((el) => el.classList.add("aos-effect4"))
                     } else {
                         entry.target.classList.add("aos-effect4")
