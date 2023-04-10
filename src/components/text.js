@@ -1,6 +1,6 @@
 import styles from '../styles/components/text.module.scss'
 
-export default function Text({children, xl, xxl}) {
+export default function Text({children, xl, xxl, style}) {
 
 
     return (
@@ -11,8 +11,8 @@ export default function Text({children, xl, xxl}) {
                     ${styles.root} 
                     ${xl === true ? styles.xl : ''}
                     ${xxl === true ? styles.xxl : ''}
-
-                
+                    ${style ? style : ''}
+                    
                 `}>{children}</p>
         </>
     )

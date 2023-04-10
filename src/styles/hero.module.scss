@@ -218,9 +218,12 @@
             align-items: center;
             gap: 1rem;
             margin-top: 2.5rem;
-
+            * {
+                transition: all 0.5s;
+            }
             svg {
                 transform: rotate(180deg);
+                transition-delay: 200ms;
             }
         }
     }

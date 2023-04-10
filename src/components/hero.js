@@ -330,9 +330,9 @@ export default function Hero() {
                         <Button style={`${styles.viewProjectsBtn} aos-effect2-el`} displaySvg={true}>Ver proyectos SEO</Button>
                     </div>
 
-                    <div className={styles.separator}>
-                        <Text xxl={true}>Observa como hacemos crecer nuestros proyectos</Text>
-                        <svg xmlns="http://www.w3.org/2000/svg" width={141} height={96}>
+                    <div className={`${styles.separator} aos-effect3-observer`}>
+                        <Text style={"aos-effect3-el"} xxl={true}>Observa como hacemos crecer nuestros proyectos</Text>
+                        <svg className={"aos-effect3-el"} xmlns="http://www.w3.org/2000/svg" width={141} height={96}>
                             <g fill="none" fillRule="evenodd">
                                 <path
                                     fill="#D4D4D4"
