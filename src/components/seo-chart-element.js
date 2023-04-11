@@ -31,20 +31,23 @@ export default function SeoChartElement({project}) {
                 <div className={styles.blurDecoration3}></div>
                 <div className={styles.dataWrapper}>
                     <Text xxl={true}><strong>{project.title}</strong></Text>
-                    <Muted>{project.subtitle}</Muted>
-                    <Muted>Estos datos han sido extraidos de Google Analytics y Search Console</Muted>
+                    <Text>{project.subtitle}</Text>
+                    <Text>{project.description}</Text>
                     <div className={styles.data}>
                         <div>
-                            <HiChartBar />
-                            <Text>Páginas vistas: {project.total_views}</Text>
+                            <HiChartBar size={25} />
+                            <Text>Visitas</Text>
+                            <Text>{project.total_views}</Text>
                         </div>
                         <div>
-                            <HiFire />
-                            <Text>Impresiones totales: {project.total_impressions}</Text>
+                            <HiFire size={25} />
+                            <Text>Impresiones</Text>
+                            <Text>{project.total_impressions}</Text>
                         </div>
                         <div>
-                            <HiCursorClick />
-                            <Text>Clics totales: {project.total_clicks}</Text>
+                            <HiCursorClick size={25} />
+                            <Text>Clics</Text>
+                            <Text>{project.total_clicks}</Text>
                         </div>
                     </div>
                 </div>

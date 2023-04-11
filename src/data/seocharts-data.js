@@ -5,6 +5,7 @@ export const chartInfo1 = {
     total_clicks: 99999,
     total_impressions: 99999,
     color: "#F5CD79",
+    description: "2 años en desarrollo con más de 500 recetas originales. Diseño elegante, limpio y con gran personalidad para elevar marca.",
     data: [
         { name: '09/2022', visitas: 34653 },
         { name: '10/2022', visitas: 49962 },
