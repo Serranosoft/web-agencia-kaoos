@@ -2,71 +2,16 @@ import H1 from './h1'
 import Text from './text'
 import styles from '../styles/hero.module.scss'
 import Muted from './muted'
-import { useEffect, useRef, useState } from 'react'
 import Container from './container'
 import Button from './button'
-import Tilt from 'react-parallax-tilt';
-import { HiChartBar, HiLightningBolt, HiTrendingUp, HiUserAdd } from "react-icons/hi";
-import Test from './windupElement'
 import { Pause } from 'windups'
+import Separator from './hero/separator'
+import Cards from './hero/cards'
+import ViewProjects from './hero/viewProjects'
 
 export default function Hero() {
 
-    const cards = useRef(null);
-    const timeOut = useRef(null);
-    const [cardActive, setCardActive] = useState(2);
 
-    const [showMsg1, setShowMsg1] = useState(false);
-    const [showMsg2, setShowMsg2] = useState(false);
-
-    useEffect(() => {
-        cards.current.querySelector(`.parallax:nth-child(1) .card .active`).style.opacity = "1";
-
-        cards.current.querySelectorAll(`.parallax .card`).forEach((card) => card.addEventListener("mouseover", () => {
-            window.clearTimeout(timeOut.current);
-            clearAllActives();
-            card.querySelector(".active").style.opacity = "1";
-        }));
-
-        showUpWindupMessage();
-    }, [])
-
-    useEffect(() => {
-        if (cardActive > 0) {
-            timeOut.current = setTimeout(() => {
-                clearAllActives();
-                cards.current.querySelector(`.parallax:nth-child(${cardActive}) .card .active`).style.opacity = "1";
-                if (cardActive < 4) {
-                    setCardActive(cardActive + 1);
-                } else {
-                    setCardActive(1);
-                }
-            }, 3000)
-        } else {
-            setCardActive(1);
-        }
-
-        return () => {
-            clearTimeout(timeOut.current);
-        }
-    }, [cardActive])
-
-    function clearAllActives() {
-        cards.current.querySelectorAll(`.parallax .card`).forEach((card) => card.querySelector(".active").style.opacity = "0");
-    }
-
-    function showUpWindupMessage() {
-        const windupObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                   setShowMsg1(true);
-                }
-            })
-        }, { threshold: 1 })
-    
-        let windupObserverElement = document.querySelectorAll(".separator");
-        windupObserverElement.forEach((el) => windupObserver.observe(el));
-    }
 
     return (
         <>
@@ -272,117 +217,9 @@ export default function Hero() {
                 <div className={styles.root}>
                     <div>
                         <H1>Diseñamos y posicionamos la web de tus sueños</H1>
-                        <div ref={cards} className={styles.columns}>
-
-                            <Tilt
-                                className={`${styles.parallaxGlare} parallax`}
-                                perspective={500}
-                                glareEnable={true}
-                                glareMaxOpacity={0.45}
-                                scale={1.02}
-                            >
-                                <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
-                                    <div className={styles.cardInactive}></div>
-                                    <div className={`${styles.cardActive} active`}></div>
-                                    <div className={styles.cardContent}>
-                                        <HiLightningBolt size={50} />
-                                        <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
-                                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
-                                        <Muted>Designers typically make site mockups in:</Muted>
-                                    </div>
-                                </div>
-                            </Tilt>
-                            <Tilt
-                                className={`${styles.parallaxGlare} parallax`}
-                                perspective={500}
-                                glareEnable={true}
-                                glareMaxOpacity={0.45}
-                                scale={1.02}
-                            >
-                                <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
-                                    <div className={styles.cardInactive}></div>
-                                    <div className={`${styles.cardActive} active`}></div>
-                                    <div className={styles.cardContent}>
-                                        <HiChartBar size={50} />
-                                        <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
-                                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
-                                        <Muted>Designers typically make site mockups in:</Muted>
-                                    </div>
-                                </div>
-                            </Tilt>
-                            <Tilt
-                                className={`${styles.parallaxGlare} parallax`}
-                                perspective={500}
-                                glareEnable={true}
-                                glareMaxOpacity={0.45}
-                                scale={1.02}
-                            >
-                                <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
-                                    <div className={styles.cardInactive}></div>
-                                    <div className={`${styles.cardActive} active`}></div>
-                                    <div className={styles.cardContent}>
-                                        <HiTrendingUp size={50} />
-                                        <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
-                                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
-                                        <Muted>Designers typically make site mockups in:</Muted>
-                                    </div>
-                                </div>
-                            </Tilt>
-                            <Tilt
-                                className={`${styles.parallaxGlare} parallax`}
-                                perspective={500}
-                                glareEnable={true}
-                                glareMaxOpacity={0.45}
-                                scale={1.02}
-                            >
-                                <div className={`${styles.card} card aos-effect1-observer aos-effect1-el`}>
-                                    <div className={styles.cardInactive}></div>
-                                    <div className={`${styles.cardActive} active`}></div>
-                                    <div className={styles.cardContent}>
-                                        <HiUserAdd size={50} />
-                                        <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
-                                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
-                                        <Muted>Designers typically make site mockups in:</Muted>
-                                    </div>
-                                </div>
-                            </Tilt>
-                        </div>
-                        <div className={`${styles.viewProjects} aos-effect2-observer`}>
-                            <Button style={`${styles.viewProjectsBtn} aos-effect2-el`} displaySvg={true}>Ver diseños web</Button>
-                            <Button style={`${styles.viewProjectsBtn} aos-effect2-el`} displaySvg={true}>Ver proyectos SEO</Button>
-                        </div>
-
-                        <div className={`${styles.separator} aos-effect3-observer separator`}>
-                            <div style={{
-                                display: "flex",
-                                flexDirection: "column"
-                            }}>
-                                {showMsg1 &&
-                                    <Test mode={"rotate"} onFinished={() => setShowMsg2(true)}>
-                                        <Pause ms={500} />
-                                        <Text xxl={true}>Así es como hacemos crecer nuestros proyectos</Text>
-                                        <Pause ms={200} />
-                                    </Test>
-                                }
-                                {
-                                    showMsg2 &&
-                                    <Test isAnswer={true} mode={"rotate"}>
-                                        <Text>Todos los datos son extraidos de Search Console y Google Analytics <HiChartBar color={"orange"} /></Text>
-                                        <Pause ms={500} />
-                                    </Test>
-
-                                }
-                            </div>
-                            {/* <Text style={"aos-effect3-el"} xxl={true}>Observa como hacemos crecer nuestros proyectos</Text> */}
-                            <svg className={"aos-effect3-el"} xmlns="http://www.w3.org/2000/svg" width={141} height={96}>
-                                <g fill="none" fillRule="evenodd">
-                                    <path
-                                        fill="#D4D4D4"
-                                        d="M75.347 4.514c1.79 3.677 2.887 7.532 3.684 11.375.417 1.922.66 3.858.987 5.788.301 1.932.441 3.88.667 5.821.627 7.784.309 15.624-.871 23.358-1.196 7.73-3.217 15.37-6.165 22.73a110.886 110.886 0 0 1-11.241 21.15c-1.281 1.917-1.998 1.544-.783-.379a106.48 106.48 0 0 0 10.498-21.212c2.672-7.34 4.41-14.912 5.363-22.53a104.68 104.68 0 0 0 .316-22.917c-.255-1.897-.42-3.801-.736-5.69-.345-1.884-.6-3.782-1.021-5.65-.801-3.734-1.865-7.408-3.523-10.846C70.907 2.222 70.275.44 70.945.057c.584-.35 2.624.877 4.402 4.457"
-                                    />
-                                </g>
-                            </svg>
-                        </div>
+                        <Cards />                       
+                        <ViewProjects />
+                        <Separator />
                     </div>
                 </div>
             </Container>
