@@ -15,6 +15,7 @@
     "react-icons": "^4.8.0",
     "react-parallax-tilt": "^1.7.126",
     "recharts": "^2.5.0",
-    "sass": "^1.60.0"
+    "sass": "^1.60.0",
+    "windups": "^1.2.1"
   }
 }

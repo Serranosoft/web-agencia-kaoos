@@ -63,7 +63,9 @@ export default function Home() {
                 https://github.com/gilbarbara/react-joyride <-- Plataforma servicios
                 https://react-icons.github.io/react-icons <-- Iconos
                 https://sweetalert2.github.io/ <-- Alertas muy bonitas
-
+                https://github.com/sgwilym/windups <-- para orientar al usuario, mola.
+                https://github.com/drgx/react-thanos-snap <-- efectos snap thanos mola
+                
                 TIENDA
                 https://github.com/amaroteam/react-credit-cards <-- Proyecto tienda
                 https://react-rating.onrender.com/ <-- Rating estrellas

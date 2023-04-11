@@ -1,7 +1,3 @@
-// export default function SeoChartsData() {
-
-
-// }
 export const chartInfo1 = {
     title: "Página web de recetas",
     subtitle: "Datos actualizados desde Mayo de 2022 hasta Abril de 2024",
