@@ -30,10 +30,7 @@ export default function Separator() {
 
     return (
         <div className={`${styles.root} aos-effect3-observer separator`}>
-            <div style={{
-                display: "flex",
-                flexDirection: "column"
-            }}>
+            <div>
                 {showMsg1 &&
                     <WindupElement mode={"rotate"} onFinished={() => setShowMsg2(true)}>
                         <Pause ms={500} />

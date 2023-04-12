@@ -6,7 +6,7 @@ import Text from './text'
 import { useEffect, useRef, useState } from 'react'
 
 
-export default function SeoChartElement({project}) {
+export default function SeoChartElement({ project }) {
 
     const [renderChart, setRenderChart] = useState(false);
     const testRef = useRef(null);
@@ -51,13 +51,11 @@ export default function SeoChartElement({project}) {
                         </div>
                     </div>
                 </div>
-                <div className={styles.chart}>
-                    {renderChart ?
-                        <Chart color={project.color} data={project.data} />
-                        :
-                        <></>
-                    }
-                </div>
+                {renderChart ?
+                    <Chart color={project.color} data={project.data} />
+                    :
+                    <></>
+                }
             </div>
         </div>
     )
