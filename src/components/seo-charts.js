@@ -1,7 +1,7 @@
 import Container from "./container";
 import styles from '../styles/seoCharts.module.scss'
 import SeoChartElement from "./seo-chart-element";
-import { chartInfo1 } from "@/data/seocharts-data";
+import { chartInfo1, chartInfo2, chartInfo3 } from "@/data/seocharts-data";
 
 export default function SeoCharts() {
 
@@ -10,8 +10,8 @@ export default function SeoCharts() {
             <div className={styles.root}>
                 <div className={styles.columns}>
                     <SeoChartElement project={chartInfo1} />
-                    <SeoChartElement project={chartInfo1} />
-                    <SeoChartElement project={chartInfo1} />
+                    <SeoChartElement project={chartInfo2} />
+                    <SeoChartElement project={chartInfo3} />
                 </div>
             </div>
         </Container>

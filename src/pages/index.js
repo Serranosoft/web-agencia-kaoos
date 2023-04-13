@@ -69,11 +69,11 @@ export default function Home() {
                 TIENDA
                 https://github.com/amaroteam/react-credit-cards <-- Proyecto tienda
                 https://react-rating.onrender.com/ <-- Rating estrellas
+                https://sonner.emilkowal.ski/ <-- notificaciones fácil.
                 
                 BLOG INSPIRATION
                 sendcloud webpage
 
-                gradient mush de fffuel para el fondo de las tarjetas con tarjetas glassmorphism
             */}
             <Header />
             <Aos />
