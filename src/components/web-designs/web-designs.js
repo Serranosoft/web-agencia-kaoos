@@ -22,61 +22,57 @@ export default function WebDesigns() {
     };
 
     return (
-        <>
-            <Separator showMsg1={showMsg1} />
-            <Container style={styles.root}>
-                <LightGallery
-                    onInit={onInit}
-                    speed={1000}
-                    plugins={[lgThumbnail, lgZoom]}
-                    elementClassNames={styles.gallery}
-                >
-                    <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design4.png">
-                        <div className={styles.overlay}>
-                            <Text xxl={true}>Diseño #1</Text>
-                        </div>
-                        <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design4.png"} />
-                    </a>
-                    <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design1.png">
-                        <div className={styles.overlay}>
-                            <Text xxl={true}>Diseño #2</Text>
-                        </div>
-                        <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design1.png"} />
-                    </a>
-                    <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design2-1.png">
-                        <div className={styles.overlay}>
-                            <Text xxl={true}>Diseño #3</Text>
-                        </div>
-                        <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design2-1.png"} />
-                    </a>
-                    <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design3.png">
-                        <div className={styles.overlay}>
-                            <Text xxl={true}>Diseño #4</Text>
-                        </div>
-                        <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design3.png"} />
-                    </a>
+        <Container style={styles.root}>
+            <div>
+                <Separator showMsg1={showMsg1} />
+                <div /* style={styles.root} */>
+                    <LightGallery
+                        onInit={onInit}
+                        speed={1000}
+                        plugins={[lgThumbnail, lgZoom]}
+                        elementClassNames={styles.gallery}
+                    >
+                        <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design4.png">
+                            <div className={styles.overlay}>
+                                <Text xxl={true}>Diseño #1</Text>
+                            </div>
+                            <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design4.png"} />
+                        </a>
+                        <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design1.png">
+                            <div className={styles.overlay}>
+                                <Text xxl={true}>Diseño #2</Text>
+                            </div>
+                            <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design1.png"} />
+                        </a>
+                        <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design2-1.png">
+                            <div className={styles.overlay}>
+                                <Text xxl={true}>Diseño #3</Text>
+                            </div>
+                            <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design2-1.png"} />
+                        </a>
+                        <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design3.png">
+                            <div className={styles.overlay}>
+                                <Text xxl={true}>Diseño #4</Text>
+                            </div>
+                            <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design3.png"} />
+                        </a>
 
-                    <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design5.png">
-                        <div className={styles.overlay}>
-                            <Text xxl={true}>Diseño #5</Text>
-                        </div>
-                        <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design5.png"} />
-                    </a>
-                    <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design6.png">
-                        <div className={styles.overlay}>
-                            <Text xxl={true}>Diseño #6</Text>
-                        </div>
-                        <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design6.png"} />
-                    </a>
-                </LightGallery>
-
-
-
-
-
-                
-            </Container>
-        </>
+                        <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design5.png">
+                            <div className={styles.overlay}>
+                                <Text xxl={true}>Diseño #5</Text>
+                            </div>
+                            <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design5.png"} />
+                        </a>
+                        <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design6.png">
+                            <div className={styles.overlay}>
+                                <Text xxl={true}>Diseño #6</Text>
+                            </div>
+                            <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design6.png"} />
+                        </a>
+                    </LightGallery>                
+                </div>
+            </div>
+        </Container>
     )
 }
 

@@ -1,3 +1,7 @@
+.root > div {
+    margin: 12rem 0;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));

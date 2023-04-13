@@ -5,39 +5,12 @@ import Header from '../components/header'
 import Hero from '../components/hero'
 import Aos from '../components/aos'
 import SeoCharts from '../components/seo-charts'
-import Test from '@/components/web-designs/web-designs'
+import WebDesigns from '@/components/web-designs/web-designs'
 
 const arimo = Nunito_Sans({ subsets: ['latin'], weight: "400" })
 
 
 export default function Home() {
-
-    const data = [
-        { name: '01/2023', visitas: 250000 },
-        { name: '02/2023', visitas: 275000 },
-        { name: '03/2023', visitas: 128452 },
-        { name: '04/2023', visitas: 174000 },
-    ]
-
-    /*
-    const testRef = useRef(null);
-    const [renderChart, setRenderChart] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    setRenderChart(true);
-                }
-            })
-        }, { threshold: 0.9 })
-
-        observer.observe(testRef.current)
-    }, [])
-
-    */
-
-
     return (
         <>
             <Head>
@@ -82,9 +55,7 @@ export default function Home() {
             <main className={`${styles.main} ${arimo.className}`}>
                 <Hero />
                 <SeoCharts />
-                <section style={{ minHeight: "500px", width: "100%" }}></section>
-                <Test />
-                <section style={{ minHeight: "500px", width: "100%" }}></section>
+                <WebDesigns />
             </main>
 
         </>
