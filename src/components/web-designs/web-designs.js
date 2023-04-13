@@ -25,7 +25,7 @@ export default function WebDesigns() {
         <Container style={styles.root}>
             <div>
                 <Separator showMsg1={showMsg1} />
-                <div /* style={styles.root} */>
+                <div>
                     <LightGallery
                         onInit={onInit}
                         speed={1000}
