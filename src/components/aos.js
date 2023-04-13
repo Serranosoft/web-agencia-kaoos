@@ -54,13 +54,13 @@ export default function Aos() {
                     } else {
                         entry.target.classList.add("aos-effect3")
                     }
-                } else {
+                }/*  else {
                     if (entry.target.querySelector(".aos-effect3-el") !== null) {
                         entry.target.querySelectorAll(".aos-effect3-el").forEach((el) => el.classList.remove("aos-effect3"))
                     } else {
                         entry.target.classList.remove("aos-effect3")
                     }
-                }
+                } */
             })
         }, { threshold: 0.25 })
     
