@@ -24,14 +24,14 @@ export default function Separator({showMsg1}) {
                 {
                     showMsg2 &&
                     <WindupElement isAnswer={true} mode={"rotate"}  onFinished={() => setShowMsg3(true)}>
-                        <Text>Cada diseño es adaptado para cualquier dispositivo</Text>
+                        <Text>Cada diseño está adaptado para cualquier dispositivo</Text>
                         <Pause ms={500} />
                     </WindupElement>
                 }
                 {
                     showMsg3 &&
                     <WindupElement isAnswer={true} mode={"rotate"}>
-                        <Text>Clica en cada elemento para ver el diseño completo</Text>
+                        <Text>Haz clic en cada elemento para ver el diseño completo</Text>
                         <Pause ms={500} />
                     </WindupElement>
                 }

@@ -4,28 +4,55 @@ import styles from '../../styles/web-design/web-design.module.scss'
 import Text from '../text';
 import Container from '../container';
 import Separator from './separator';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import LightGallery from 'lightgallery/react';
+import { HiChartBar, HiCurrencyDollar, HiOutlineCake, HiOutlinePencilAlt, HiOutlineSearchCircle, HiOutlineTemplate, HiShoppingCart } from 'react-icons/hi';
 
 export default function WebDesigns() {
 
     const [showMsg1, setShowMsg1] = useState(false);
-
+    const gallery = useRef(null);
+    const timeout = useRef(null);
+    const [elIndex, setElIndex] = useState(1);
 
     const onInit = () => {
-        setShowMsg1(true)
+        setShowMsg1(true)  
     };
+
+    useEffect(() => {
+        gallery.current.querySelectorAll("a").forEach(el => el.addEventListener("click", () => {
+            el.classList.remove(styles.animate);
+            clearTimeout(timeout.current);
+        }))
+    }, [])
+
+    useEffect(() => {
+        timeout.current = setTimeout(() => {
+            console.log(elIndex);
+            gallery.current.querySelectorAll(`a`).forEach(el => el.classList.remove(styles.animate));
+            gallery.current.querySelector(`a:nth-child(${elIndex})`).classList.add(styles.animate);
+            if (elIndex === 6) {
+                setElIndex(1);
+            } else {
+                setElIndex((elIndex) => elIndex + 1);
+            }
+        }, 3000);
+
+        return () => {
+            clearTimeout(timeout.current);
+        }
+    }, [elIndex])
 
     return (
         <Container style={styles.root}>
             <div>
                 <Separator showMsg1={showMsg1} />
-                <div>
+                <div ref={gallery}>
                     <LightGallery
                         onInit={onInit}
                         speed={1000}
@@ -34,38 +61,38 @@ export default function WebDesigns() {
                     >
                         <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design4.png">
                             <div className={styles.overlay}>
-                                <Text xxl={true}>Diseño #1</Text>
+                                <HiShoppingCart size={60} />
                             </div>
                             <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design4.png"} />
                         </a>
                         <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design1.png">
                             <div className={styles.overlay}>
-                                <Text xxl={true}>Diseño #2</Text>
+                                <HiOutlinePencilAlt size={60} />
                             </div>
                             <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design1.png"} />
                         </a>
                         <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design2-1.png">
                             <div className={styles.overlay}>
-                                <Text xxl={true}>Diseño #3</Text>
+                                <HiOutlineCake size={60} />
                             </div>
                             <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design2-1.png"} />
                         </a>
                         <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design3.png">
                             <div className={styles.overlay}>
-                                <Text xxl={true}>Diseño #4</Text>
+                                <HiOutlineTemplate size={60} />
                             </div>
                             <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design3.png"} />
                         </a>
 
                         <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design5.png">
                             <div className={styles.overlay}>
-                                <Text xxl={true}>Diseño #5</Text>
+                                <HiCurrencyDollar size={60} />
                             </div>
                             <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design5.png"} />
                         </a>
                         <a className={styles.image} data-src="https://api.kaoos.es/wp-content/uploads/2023/04/design6.png">
                             <div className={styles.overlay}>
-                                <Text xxl={true}>Diseño #6</Text>
+                                <HiOutlineSearchCircle size={60} />
                             </div>
                             <img src={"https://api.kaoos.es/wp-content/uploads/2023/04/design6.png"} />
                         </a>
