@@ -1,6 +1,6 @@
 import styles from '../styles/components/h1.module.scss'
 
-import { Alegreya, DM_Serif_Text, Poppins, Sansita_Swashed } from 'next/font/google'
+import { DM_Serif_Text } from 'next/font/google'
 
 const pirataOne = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 
