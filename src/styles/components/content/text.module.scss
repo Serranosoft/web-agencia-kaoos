@@ -13,3 +13,9 @@
     font-size: clamp(1.76rem, 0.64vw + 1.6rem, 2.11rem);
     line-height: 1.05;
 }
+
+.xxxl {
+    font-size: clamp(3.5rem, 2vw + 3rem, 4rem);
+    font-weight: bold;
+    margin: 0;
+}
