@@ -1,4 +1,4 @@
-import styles from "@/styles/components/highlight.module.scss"
+import styles from "@/styles/components/content/highlight.module.scss"
 
 export default function Highlight({children, large}) {
 

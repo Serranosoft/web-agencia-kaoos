@@ -1,5 +1,5 @@
 import H1 from '@/components/content/h1'
-import styles from '@/styles/hero.module.scss'
+import styles from '@/styles/hero/hero.module.scss'
 import Muted from '@/components/content/muted'
 import Container from '@/components/content/container'
 import Button from '@/components/content/button'

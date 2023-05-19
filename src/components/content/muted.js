@@ -1,4 +1,4 @@
-import styles from '@/styles/components/muted.module.scss'
+import styles from '@/styles/components/content/muted.module.scss'
 
 export default function Muted({children}) {
 

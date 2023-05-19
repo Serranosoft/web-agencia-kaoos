@@ -1,5 +1,5 @@
 import { CharWrapper, WindupChildren } from "windups";
-import styles from "@/styles/components/windup.module.scss"
+import styles from "@/styles/components/misc/windup.module.scss"
 
 
 export default function WindupElement({ children, isAnswer, onFinished, mode }) {

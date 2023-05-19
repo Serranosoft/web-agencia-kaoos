@@ -1,4 +1,4 @@
-import styles from '@/styles/components/button.module.scss'
+import styles from '@/styles/components/content/button.module.scss'
 
 export default function Button({ children, displaySvg, style }) {
 

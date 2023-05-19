@@ -1,4 +1,4 @@
-import styles from "@/styles/components/container.module.scss"
+import styles from "@/styles/components/content/container.module.scss"
 
 export default function Container({children, large, style}) {
 
