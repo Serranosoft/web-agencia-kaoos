@@ -23,7 +23,6 @@ export default function Blog({ data }) {
                 <link rel="icon" href="/favicon.svg" />
                 <script src="echarts.js"></script>
             </Head>
-            <Header />
             <Container className={`${styles.root} ${text.className}`} fullscreen>
                 <div>
                     <Text xxxl className={`${title.className} ${styles.title} `}>TRÁFICO CONSTANTE Y CUALIFICADO</Text>

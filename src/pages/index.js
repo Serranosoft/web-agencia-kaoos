@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Nunito_Sans } from 'next/font/google'
 import styles from '@/styles/home.module.scss'
 import Header from '@/components/header/header'
 import Hero from '@/components/hero/hero'
@@ -7,7 +6,6 @@ import Aos from '@/components/aos/aos'
 import SeoCharts from '@/components/charts/seo-charts'
 import WebDesigns from '@/components/web-designs/web-designs'
 
-const arimo = Nunito_Sans({ subsets: ['latin'], weight: "400" })
 
 
 export default function Home() {
@@ -50,13 +48,11 @@ export default function Home() {
                 sendcloud webpage
 
             */}
-            <Header />
-            <Aos />
-            <main className={`${styles.main} ${arimo.className}`}>
+            <section className={styles.main}>
                 <Hero />
                 <SeoCharts />
                 <WebDesigns />
-            </main>
+            </section>
 
         </>
     )
