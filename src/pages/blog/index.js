@@ -27,7 +27,7 @@ export default function Blog({ data }) {
             <Container className={`${styles.root} ${text.className}`} fullscreen>
                 <div>
                     <Text xxxl className={`${title.className} ${styles.title} `}>TRÁFICO CONSTANTE Y CUALIFICADO</Text>
-                    <Text xxxl className={`${title.className} ${styles.title} `}>DESCUBRE DE QUE TRATA EL SEO</Text>
+                    <Text xxl className={`${title.className} ${styles.title} `}>DESCUBRE DE QUE TRATA EL SEO</Text>
 
                     <div className={styles.content}>
                         <div className={styles.list}>
