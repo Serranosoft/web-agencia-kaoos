@@ -1,6 +1,6 @@
-import Container from "./container";
-import styles from '../styles/seoCharts.module.scss'
-import SeoChartElement from "./seo-chart-element";
+import Container from "@/components/content/container";
+import styles from '@/styles/seoCharts.module.scss'
+import SeoChartElement from "@/components/charts/seo-chart-element";
 import { chartInfo1, chartInfo2, chartInfo3 } from "@/data/seocharts-data";
 
 export default function SeoCharts() {

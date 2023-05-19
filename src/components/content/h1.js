@@ -1,4 +1,4 @@
-import styles from '../styles/components/h1.module.scss'
+import styles from '@/styles/components/h1.module.scss'
 
 import { DM_Serif_Text } from 'next/font/google'
 

@@ -2,8 +2,6 @@ import * as React from "react"
 const Logo = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        // width={500}
-        // height={130}
         viewBox="0 0 375 97.5"
     >
         <defs>

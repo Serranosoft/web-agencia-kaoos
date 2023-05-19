@@ -1,7 +1,7 @@
 import styles from '@/styles/web-design/separator.module.scss'
-import WindupElement from '../windupElement'
+import WindupElement from '@/components/misc/windupElement'
 import { useEffect, useState } from 'react';
-import Text from '../text';
+import Text from '@/components/content/text';
 import { Pause } from 'windups';
 import { HiChartBar } from 'react-icons/hi';
 

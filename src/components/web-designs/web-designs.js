@@ -1,17 +1,15 @@
-import styles from '../../styles/web-design/web-design.module.scss'
-
-// import 'pure-react-carousel/dist/react-carousel.es.css';
-import Text from '../text';
-import Container from '../container';
-import Separator from './separator';
-import { useEffect, useRef, useState } from 'react';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
+
+import styles from '@/styles/web-design/web-design.module.scss'
+import Container from '@/components/content/container';
+import Separator from './separator';
+import { useEffect, useRef, useState } from 'react';
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
 import lgZoom from 'lightgallery/plugins/zoom';
 import LightGallery from 'lightgallery/react';
-import { HiChartBar, HiCurrencyDollar, HiOutlineCake, HiOutlinePencilAlt, HiOutlineSearchCircle, HiOutlineTemplate, HiShoppingCart } from 'react-icons/hi';
+import { HiCurrencyDollar, HiOutlineCake, HiOutlinePencilAlt, HiOutlineSearchCircle, HiOutlineTemplate, HiShoppingCart } from 'react-icons/hi';
 
 export default function WebDesigns() {
 

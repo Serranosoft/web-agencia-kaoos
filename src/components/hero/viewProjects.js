@@ -1,4 +1,4 @@
-import Button from "../button";
+import Button from "@/components/content/button";
 import styles from '@/styles/hero/viewProjects.module.scss'
 
 export default function ViewProjects() {

@@ -1,13 +1,12 @@
-import H1 from './h1'
-import Text from './text'
-import styles from '../styles/hero.module.scss'
-import Muted from './muted'
-import Container from './container'
-import Button from './button'
+import H1 from '@/components/content/h1'
+import styles from '@/styles/hero.module.scss'
+import Muted from '@/components/content/muted'
+import Container from '@/components/content/container'
+import Button from '@/components/content/button'
 import { Pause } from 'windups'
-import Separator from './hero/separator'
-import Cards from './hero/cards'
-import ViewProjects from './hero/viewProjects'
+import Separator from '@/components/hero/separator'
+import Cards from '@/components/hero/cards'
+import ViewProjects from '@/components/hero/viewProjects'
 
 export default function Hero() {
 

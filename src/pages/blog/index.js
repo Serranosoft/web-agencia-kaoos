@@ -1,5 +1,5 @@
-import { getAllPosts } from "./api/wordpress";
-import Anchor from "@/components/link";
+import { getAllPosts } from "@/pages/api/wordpress";
+import Anchor from "@/components/content/link";
 // import styles from "@/blog/blog.module.scss";
 
 export default function Blog({ data }) {

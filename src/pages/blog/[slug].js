@@ -1,5 +1,5 @@
-import { getAllSlugs, getPostBySlug } from "../api/wordpress";
-import styles from '../../styles/blog/[slug].module.scss';
+import { getAllSlugs, getPostBySlug } from "@/pages/api/wordpress";
+import styles from '@/styles/blog/[slug].module.scss';
 import Head from "next/head";
 
 export default function slug({ data }) {

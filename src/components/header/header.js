@@ -1,5 +1,5 @@
-import styles from '../styles/header.module.scss'
-import Logo from './logo'
+import styles from '@/styles/header.module.scss'
+import Logo from '@/components/logo/logo'
 
 
 export default function Header() {

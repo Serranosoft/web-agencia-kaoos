@@ -1,7 +1,7 @@
 import { CartesianGrid, XAxis, YAxis, ResponsiveContainer, AreaChart, Tooltip, Area, Legend } from 'recharts';
-import Text from './text';
-import styles from '../styles/components/chart.module.scss'
-import Highlight from './highlight';
+import Text from '@/components/content/text';
+import styles from '@/styles/components/chart.module.scss'
+import Highlight from '@/components/content/highlight';
 
 export default function Chart({ color, data }) {
 
