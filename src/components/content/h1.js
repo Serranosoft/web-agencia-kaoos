@@ -4,12 +4,12 @@ import { DM_Serif_Text } from 'next/font/google'
 
 const pirataOne = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 
-export default function H1({children, style}) {
+export default function H1({children, className}) {
 
 
     return (
         <>
-            <h1 className={`${styles.root} ${style && style} ${pirataOne.className} aos-effect3-observer aos-effect3-el`}>{children}</h1>
+            <h1 className={`${styles.root} ${className && className} ${pirataOne.className} aos-effect3-observer aos-effect3-el`}>{children}</h1>
         </>
     )
 }

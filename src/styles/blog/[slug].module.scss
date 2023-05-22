@@ -1,3 +1,113 @@
+@use "../components/content/text.module" as text;
+@use "../components/content/h2.module" as h2;
+@use "../components/content/button.module" as btn;
+
 .root {
-    border: 2px solid red;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem;
+    
+    .header {
+        display: flex;
+        justify-content: center;
+        max-width: 1150px;
+        gap: 2.5rem;
+        margin-bottom: 3rem;
+
+        .title {
+
+            span,
+            h1 {
+                display: inline;
+                line-height: 1.05;
+                @include text.xxxl-text-styles;
+            }
+
+            &>div {
+                font-size: 1.3rem;
+                display: flex;
+                align-items: center;
+                margin-top: 0.75rem;
+            }
+        }
+
+        img {
+            width: 100%;
+            max-width: 20rem;
+            height: auto;
+            border-radius: 1.75rem;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 850px;
+
+        p,
+        ul li,
+        ol li,
+        p a {
+            font-size: 1.3rem;
+            color: inherit;
+            margin: 1.5rem 0;
+        }
+
+        ul,
+        ol {
+            padding-left: 3rem;
+            li {
+                margin: 2.5rem 0;
+            }
+        }
+
+        h2 {
+            @include h2.styles;
+            margin: 2.5rem 0;
+        }
+
+        h3 {
+            @include text.xl-text-styles;
+            margin: 2.5rem 0;
+        }
+
+        p a {
+            background-image: linear-gradient(to right, #3c00ff 100%, #ffffff 0);
+            background-position: 0 110%;
+            background-repeat: repeat-x;
+            background-size: 100% 25%;
+            color: #000;
+            text-decoration: none;
+            transition: 0.2s background-size, 0.1s color;
+            border-radius: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+
+            &:hover {
+                background-size: 100% 100%;
+                color: #ffffff;
+            }
+        }
+
+    }
+}
+
+.root :global {
+    .wp-block-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0;
+        .wp-block-button {
+            @include btn.styles;
+            a {
+                color: #ffffff;
+            }
+        }
+    }
 }
