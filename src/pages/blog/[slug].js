@@ -5,12 +5,17 @@ import Head from "next/head";
 import Link from "next/link";
 import { AiOutlineUser } from "react-icons/ai";
 import { Kanit } from 'next/font/google'
+import Breadcrumbs from "@/components/breadcrumbs/breadcrumbs";
 
 const title = Kanit({ subsets: ['latin'], weight: "700" })
 
 export default function slug({ data }) {
 
-    console.log();
+
+
+
+
+
     return (
         <>
             <Head>
@@ -24,8 +29,9 @@ export default function slug({ data }) {
 
             <section className={styles.root}>
                 <div className={styles.header}>
-                    <div className={styles.title}>
-                        <span>Kaoos — </span><H1 className={title.className}>{data.title}</H1>
+                    <div className={styles.titleWrapper}>
+                        <Breadcrumbs />
+                        <span className={styles.title}>Kaoos — </span><H1 className={`${title.className} ${styles.title}`}>{data.title}</H1>
                         <div>
                             <AiOutlineUser />
                             <Link target="_blank" href="https://twitter.com/hugmelevi">{data.author.node.name}</Link>
