@@ -1,0 +1,50 @@
+.root {
+    position: sticky;
+    bottom: 50px;
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 0.602187px 0.602187px -1.25px, rgba(0, 0, 0, 0.16) 0px 2.28853px 2.28853px -2.5px, rgba(0, 0, 0, 0.063) 0px 10px 10px -3.75px, rgba(0, 0, 0, 0.05) 0px 2px 20px 0px;
+    border-radius: 2rem;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, -0.02vw + 0.9rem, 0.89rem);
+
+
+
+    .brand {
+        display: flex;
+        gap: 1rem;
+        img {
+            width: 100%;
+            max-width: 2rem;
+            height: auto;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            color: #000000;
+
+            p, span {
+                color: inherit;
+                font-size: inherit;
+            }
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        button {
+            font-size: inherit;
+            letter-spacing: inherit;
+        }
+    }
+}

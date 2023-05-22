@@ -6,6 +6,7 @@ import Link from "next/link";
 import { AiOutlineUser } from "react-icons/ai";
 import { Kanit } from 'next/font/google'
 import Breadcrumbs from "@/components/breadcrumbs/breadcrumbs";
+import Bar from "./bar";
 
 const title = Kanit({ subsets: ['latin'], weight: "700" })
 
@@ -31,9 +32,9 @@ export default function slug({ data }) {
                 <div className={styles.header}>
                     <div className={styles.titleWrapper}>
                         <Breadcrumbs />
-                        <span className={styles.title}>Kaoos — </span><H1 className={`${title.className} ${styles.title}`}>{data.title}</H1>
+                        <H1 className={`${title.className} ${styles.title}`}>{data.title}</H1><span className={styles.title}> — Kaoos</span>
                         <div>
-                            <AiOutlineUser />
+                            <img src="/favicon.svg" />
                             <Link target="_blank" href="https://twitter.com/hugmelevi">{data.author.node.name}</Link>
                         </div>
                     </div>
@@ -43,6 +44,8 @@ export default function slug({ data }) {
                     <div dangerouslySetInnerHTML={{ __html: data.content }} />
                 </div>
             </section>
+
+            <Bar />
         </>
     )
 }
