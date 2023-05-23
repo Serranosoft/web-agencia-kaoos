@@ -6,7 +6,7 @@ import Button from '../content/button';
 import Link from 'next/link';
 
 export default function Header() {
-
+    
     const route = useRouter();
 
     return (

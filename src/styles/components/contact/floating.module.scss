@@ -1,0 +1,35 @@
+.root {
+    width: fit-content;
+    display: flex;
+    position: sticky;
+    bottom: clamp(2rem, 2.5vw + 1rem, 3rem);
+    left: 95%;
+    margin-right: 1rem;
+    z-index: 2000;
+    .email, .whatsapp {
+        display: flex;
+        padding: 0.75rem;
+        border-radius: 200%;
+        cursor: pointer;
+        svg {
+            width: clamp(1.85rem, 1vw + 1rem, 2.5rem);
+            height: clamp(1.85rem, 1vw + 1rem, 2.5rem);
+        }
+    }
+    
+    .whatsapp {
+        background-color: #25D366;
+        margin-right: -1.25rem;
+        z-index: 2001;
+        svg {
+            margin-bottom: 0.05rem;
+            margin-left: 0.1rem;
+        }
+    }
+    .email {
+        background-color: #fff;
+        &:hover {
+            z-index: 2002;
+        }
+    }
+}
