@@ -2,6 +2,7 @@ import Button from "@/components/content/button";
 import Muted from "@/components/content/muted";
 import Text from "@/components/content/text";
 import styles from "@/styles/blog/bar.module.scss";
+import Link from "next/link";
 
 export default function Bar() {
 
@@ -16,8 +17,8 @@ export default function Bar() {
                 </div>
             </div>
             <div className={styles.actions}>
-                <Button>Ver Diseños</Button>
-                <Button highlight={true}>Ver Proyectos</Button>
+                <Button to="/">Ver Diseños</Button>
+                <Button highlight to="/">Ver Proyectos</Button>
             </div>
         </div>
     )
