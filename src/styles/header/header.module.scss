@@ -4,30 +4,53 @@
     position: relative;
     width: 100%;
     display: flex;
+    justify-content: space-between;
     padding: 1rem 5rem;
     box-shadow: 1px 0 3px lightgray;
     z-index: 10;
     position: sticky;
     top: 0;
     background-color: #000;
-    background: rgba(0,0,0,0.61);
+    background: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(3px);
-    svg {
-        height: 3rem;
-        path {
-            fill: white;
+
+    &>div {
+        display: flex;
+        a {
+            line-height: 0;
+            svg {
+                width: 12rem;
+                height: auto;
+                path {
+                    fill: #ffffff;
+                }
+            }
         }
     }
+
     &.light {
         background-color: #fff;
         background-color: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(1px);
-        align-items: flex-end;
+
+        &>div {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+
+            a svg path {
+                fill: black;
+
+            }
+        }
+
         p {
             color: #000;
         }
-        svg path {
-            fill: black;
-        }
+    }
+
+    a {
+        font-size: inherit;
+        letter-spacing: inherit;
     }
 }
