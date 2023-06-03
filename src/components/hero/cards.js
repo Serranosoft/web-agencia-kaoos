@@ -60,9 +60,9 @@ export default function Cards() {
                     <div className={`${styles.cardActive} active`}></div>
                     <div className={styles.cardContent}>
                         <HiLightningBolt size={50} />
-                        <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
-                        <Muted>Designers typically make site mockups in:</Muted>
+                        <Text xl={true}><strong>Diseño web</strong></Text>
+                        <Text>Deja atrás los diseños aburridos o estáticos y <strong>atrapa a tus clientes visualmente</strong>. Atrévete con una experiencia digital más moderna.</Text>
+                        <Muted>Diseño web adaptable a cualquier dispositivo</Muted>
                     </div>
                 </div>
             </Tilt>
@@ -78,9 +78,9 @@ export default function Cards() {
                     <div className={`${styles.cardActive} active`}></div>
                     <div className={styles.cardContent}>
                         <HiChartBar size={50} />
-                        <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
-                        <Muted>Designers typically make site mockups in:</Muted>
+                        <Text xl={true}><strong>SEM</strong></Text>
+                        <Text>No pierdas tiempo en buscar la mejor inversión, plataforma o el mejor anuncio. Nosotros nos encargamos de tu publicidad. <strong>Invierte y gana</strong>.</Text>
+                        <Muted>Campañas de anuncios para Google o Meta</Muted>
                     </div>
                 </div>
             </Tilt>
@@ -96,9 +96,9 @@ export default function Cards() {
                     <div className={`${styles.cardActive} active`}></div>
                     <div className={styles.cardContent}>
                         <HiTrendingUp size={50} />
-                        <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
-                        <Muted>Designers typically make site mockups in:</Muted>
+                        <Text xl={true}><strong>SEO</strong></Text>
+                        <Text>Impulsa tu negocio para escalar en el ranking y <strong>supera a tu competencia</strong> con las técnicas más actualizadas. Estrategias únicas para cada proyecto.</Text>
+                        <Muted>Aumentamos tu audiencia para conseguir clientes</Muted>
                     </div>
                 </div>
             </Tilt>
@@ -114,9 +114,9 @@ export default function Cards() {
                     <div className={`${styles.cardActive} active`}></div>
                     <div className={styles.cardContent}>
                         <HiUserAdd size={50} />
-                        <Text xl={true}><strong>Lorem ipsum dolor sit amet.</strong></Text>
-                        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sem posuere, tincidunt dolor vel, tempus sapien.</Text>
-                        <Muted>Designers typically make site mockups in:</Muted>
+                        <Text xl={true}><strong>APP's y ASO</strong></Text>
+                        <Text>Da el paso para tener tu aplicación móvil y deja que la posicionemos en el top de su categoría. <strong>Facilidad, accesibilidad y comodidad</strong>.</Text>
+                        <Muted>Creación, optimización y reputación para tu app</Muted>
                     </div>
                 </div>
             </Tilt>
