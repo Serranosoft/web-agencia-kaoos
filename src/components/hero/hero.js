@@ -7,6 +7,7 @@ import { Pause } from 'windups'
 import Separator from '@/components/hero/separator'
 import Cards from '@/components/hero/cards'
 import ViewProjects from '@/components/hero/viewProjects'
+import SubHeading from '../content/subheading'
 
 export default function Hero() {
 
@@ -215,7 +216,10 @@ export default function Hero() {
             <Container large={true}>
                 <div className={styles.root}>
                     <div>
-                        <H1>Diseñamos y posicionamos la web de tus sueños</H1>
+                        <div className={styles.heading}>
+                            <H1>Diseñamos y posicionamos tu web</H1>
+                            <SubHeading>(sin magia ni milagros)</SubHeading>
+                        </div>
                         <Cards />                       
                         <ViewProjects />
                         <Separator />

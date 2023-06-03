@@ -1,0 +1,8 @@
+@import "../../colors.scss";
+
+.root {
+    text-decoration-line: line-through;
+    color: $subheading;
+    font-size: clamp(1.76rem, 0.64vw + 1.6rem, 2.11rem);
+    font-weight: bold;
+}
