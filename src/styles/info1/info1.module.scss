@@ -23,6 +23,7 @@
             transform-style: preserve-3d;
             border-radius: 2rem;
             padding: 0 10rem;
+            // border: 10px solid red;
 
             .columns {
                 width: 100%;
@@ -58,21 +59,21 @@
         align-items: center;
         background-color: #ffffff;
         color: #000000;
-        min-height: 10000px;
-        padding: 0 1rem;
-
+        padding: 10rem 1rem;
+        padding-bottom: 30rem;
+        gap: 5rem;
         h2 {
-            margin: 5rem 0;
             font-size: clamp(3.43rem, 2.84vw + 2.72rem, 5rem);
             font-weight: bold;
         }
-
+        
         .list {
+            // border: 10px solid red;
             max-width: 1250px;
             width: 100%;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2.5rem 1.5rem;
+            gap: 3rem 1.75rem;
         }
     }
 

@@ -12,16 +12,25 @@ const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 
 export default function Info1() {
 
-    const ref = useRef();
+    const contentRef = useRef();
+    const blogRef = useRef();
 
     useEffect(() => {
 
         const instance = basicScroll.create({
-            elem: ref.current,
+            elem: contentRef.current,
             from: "bottom-middle",
             to: "bottom-top",
+            inside: () => {
+                document.querySelector("header").style.transform = "translateY(-100%)";
+            },
+            outside: () => {
+                if (percentage > 380 || percentage < -100) {
+                    document.querySelector("header").style.transform = "translateY(0)";
+                }
+            },
             props: {
-                '--test': {
+                '--divScale': {
                     from: 1.0,
                     to: 0.85
                 },
@@ -33,38 +42,6 @@ export default function Info1() {
                     from: 1,
                     to: 0.5
                 },
-                "--ty1": {
-                    from: "-50px",
-                    to: 0
-                },
-                "--ty2": {
-                    from: "-50px",
-                    to: 0
-                },
-                "--ty3": {
-                    from: "-50px",
-                    to: 0
-                },
-                "--ty4": {
-                    from: "-50px",
-                    to: 0
-                },
-            }
-        })
-
-        const colorInstance = basicScroll.create({
-            elem: ref.current,
-            from: "top-top",
-            to: "bottom-top",
-            inside: (instance, percentage, props) => {
-                document.querySelector("header").style.transform = "translateY(-100%)";
-            },
-            outside: (instance, percentage, props) => {
-                if (percentage > 190 || percentage < -25) {
-                    document.querySelector("header").style.transform = "translateY(0)";
-                }
-            },
-            props: {
                 "--bgColor1": {
                     from: 19,
                     to: 255
@@ -80,15 +57,39 @@ export default function Info1() {
             }
         })
 
+        const blogLinkInstance = basicScroll.create({
+            elem: blogRef.current,
+            from: "top-bottom", // por encima del elemento sobrepasando la mitad del viewport
+            to: "bottom-middle", // por debajo del elemento sobrepasando la parte superior del viewport
+            props: {
+                "--ty1": {
+                    from: "50px",
+                    to: "0px",
+                },
+                "--ty2": {
+                    from: "-80px",
+                    to: "0px",
+                },
+                "--ty3": {
+                    from: "70px",
+                    to: "0px",
+                },
+                "--ty4": {
+                    from: "-30px",
+                    to: "0px",
+                }
+            }
+        })
+
         instance.start()
-        colorInstance.start()
+        blogLinkInstance.start();
     }, [])
 
     return (
         <Container fullscreen className={styles.root}>
 
             <div className={styles.effectWrapper} style={{ backgroundColor: `rgb(var(--bgColor1), var(--bgColor2), var(--bgColor3))` }}>
-                <div ref={ref} style={{ transform: `scale3d(var(--test), var(--test), 1)` }} className={styles.content}>
+                <div ref={contentRef} style={{ transform: `scale3d(var(--divScale), var(--divScale), 1)` }} className={styles.content}>
 
                     <div className={styles.columns}>
                         <div>
@@ -110,11 +111,11 @@ export default function Info1() {
 
             <div className={styles.blogWrapper}>
                 <H2>¿Encabezado H2?</H2>
-                <div className={styles.list}>
-                    <BlogLink href={`/blog/seo-para-pymes`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/seo-para-pymes-kaoos.jpg"} />
-                    <BlogLink href={`/blog/apuntes-de-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/apuntes-de-seo-kaoos.jpg"} />
-                    <BlogLink href={`/blog/consultor-seo-freelance`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/contratar-freelance-seo-consultor.jpg"} />
-                    <BlogLink href={`/blog/como-elaborar-un-presupuesto-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/presupuesto-seo-ejemplos.jpg"} />
+                <div ref={blogRef} className={styles.list}>
+                    <BlogLink href={`/blog/seo-para-pymes`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/seo-para-pymes-kaoos.jpg"} style={{transform: `translateY(var(--ty1)) translateX(var(--ty4))`}} />
+                    <BlogLink href={`/blog/apuntes-de-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/apuntes-de-seo-kaoos.jpg"} style={{transform: `translateY(var(--ty2)) translateX(var(--ty3))`}} />
+                    <BlogLink href={`/blog/consultor-seo-freelance`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/contratar-freelance-seo-consultor.jpg"} style={{transform: `translateY(var(--ty3)) translateX(var(--ty1))`}} />
+                    <BlogLink href={`/blog/como-elaborar-un-presupuesto-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/presupuesto-seo-ejemplos.jpg"} style={{transform: `translateY(var(--ty4)) translateX(var(--ty2))`}} />
                 </div>
             </div>
 
