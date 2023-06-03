@@ -24,7 +24,7 @@ export default function Info1() {
             inside: () => {
                 document.querySelector("header").style.transform = "translateY(-100%)";
             },
-            outside: () => {
+            outside: (percentage) => {
                 if (percentage > 380 || percentage < -100) {
                     document.querySelector("header").style.transform = "translateY(0)";
                 }
