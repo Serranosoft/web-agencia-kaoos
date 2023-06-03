@@ -54,7 +54,12 @@ export default function Home() {
                 <Hero />
                 <SeoCharts />
                 <WebDesigns />
-                {/* <section style={{minHeight: 50000}}></section> */}
+                <div style={{
+                    background: "rgb(19,0,255)",
+                    background: "linear-gradient(0deg, rgba(19,0,255,1) 0%, rgba(0,0,0,1) 100%)",
+                    height: "200px"
+                }}>
+                </div>
                 <Info1 />
                 <Floating />
 

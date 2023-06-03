@@ -37,7 +37,7 @@ export default function Info1() {
         const colorInstance = basicScroll.create({
             elem: ref.current,
             from: "top-top",
-            to: "middle-top",
+            to: "bottom-top",
             props: {
                 "--bgColor1": {
                     from: 19,
