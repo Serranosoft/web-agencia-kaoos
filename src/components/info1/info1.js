@@ -5,6 +5,8 @@ import { useEffect, useRef } from "react";
 import * as basicScroll from 'basicscroll'
 import { DM_Serif_Text } from "next/font/google";
 import Text from "../content/text";
+import Link from "next/link";
+import BlogLink from "../blog/blogLink";
 
 const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 
@@ -30,7 +32,23 @@ export default function Info1() {
                 "--rocketScale": {
                     from: 1,
                     to: 0.5
-                }
+                },
+                "--ty1": {
+                    from: "-50px",
+                    to: 0
+                },
+                "--ty2": {
+                    from: "-50px",
+                    to: 0
+                },
+                "--ty3": {
+                    from: "-50px",
+                    to: 0
+                },
+                "--ty4": {
+                    from: "-50px",
+                    to: 0
+                },
             }
         })
 
@@ -42,7 +60,6 @@ export default function Info1() {
                 document.querySelector("header").style.transform = "translateY(-100%)";
             },
             outside: (instance, percentage, props) => {
-                console.log(percentage);
                 if (percentage > 190 || percentage < -25) {
                     document.querySelector("header").style.transform = "translateY(0)";
                 }
@@ -93,6 +110,12 @@ export default function Info1() {
 
             <div className={styles.blogWrapper}>
                 <H2>¿Encabezado H2?</H2>
+                <div className={styles.list}>
+                    <BlogLink href={`/blog/seo-para-pymes`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/seo-para-pymes-kaoos.jpg"} />
+                    <BlogLink href={`/blog/apuntes-de-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/apuntes-de-seo-kaoos.jpg"} />
+                    <BlogLink href={`/blog/consultor-seo-freelance`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/contratar-freelance-seo-consultor.jpg"} />
+                    <BlogLink href={`/blog/como-elaborar-un-presupuesto-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/presupuesto-seo-ejemplos.jpg"} />
+                </div>
             </div>
 
         </Container>
