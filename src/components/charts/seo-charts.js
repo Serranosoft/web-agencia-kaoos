@@ -11,7 +11,7 @@ export default function SeoCharts() {
                 <div className={styles.columns}>
                     <SeoChartElement project={chartInfo1} />
                     <SeoChartElement project={chartInfo2} />
-                    <SeoChartElement project={chartInfo3} />
+                    {/* <SeoChartElement project={chartInfo3} /> */}
                 </div>
             </div>
         </Container>
