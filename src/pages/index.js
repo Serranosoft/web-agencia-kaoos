@@ -6,6 +6,7 @@ import Aos from '@/components/aos/aos'
 import SeoCharts from '@/components/charts/seo-charts'
 import WebDesigns from '@/components/web-designs/web-designs'
 import Floating from '@/components/contact/floating'
+import Info1 from '@/components/info1/info1'
 
 
 
@@ -53,6 +54,8 @@ export default function Home() {
                 <Hero />
                 <SeoCharts />
                 <WebDesigns />
+                {/* <section style={{minHeight: 50000}}></section> */}
+                <Info1 />
                 <Floating />
 
             </section>

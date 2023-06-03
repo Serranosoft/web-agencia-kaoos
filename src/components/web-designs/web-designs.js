@@ -31,7 +31,6 @@ export default function WebDesigns() {
 
     useEffect(() => {
         timeout.current = setTimeout(() => {
-            console.log(elIndex);
             gallery.current.querySelectorAll(`a`).forEach(el => el.classList.remove(styles.animate));
             gallery.current.querySelector(`a:nth-child(${elIndex})`).classList.add(styles.animate);
             if (elIndex === 6) {
