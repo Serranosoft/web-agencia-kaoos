@@ -17,21 +17,21 @@ export default function Separator({showMsg1}) {
                 {showMsg1 &&
                     <WindupElement mode={"rotate"} onFinished={() => setShowMsg2(true)}>
                         <Pause ms={500} />
-                        <Text xxl={true}>Algunos ejemplos de diseños que hemos hecho</Text>
+                        <Text xxl={true}>Algunos ejemplos de diseños realizados por Kaoos</Text>
                         <Pause ms={200} />
                     </WindupElement>
                 }
                 {
                     showMsg2 &&
                     <WindupElement isAnswer={true} mode={"rotate"}  onFinished={() => setShowMsg3(true)}>
-                        <Text>Cada diseño está adaptado para cualquier dispositivo</Text>
+                        <Text>Diseño responsive para todo tipo de dispositivos</Text>
                         <Pause ms={500} />
                     </WindupElement>
                 }
                 {
                     showMsg3 &&
                     <WindupElement isAnswer={true} mode={"rotate"}>
-                        <Text>Haz clic en cada elemento para ver el diseño completo</Text>
+                        <Text>Descubre cada elemento para ver el diseño completo</Text>
                         <Pause ms={500} />
                     </WindupElement>
                 }

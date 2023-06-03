@@ -5,7 +5,7 @@ export const chartInfo1 = {
     total_clicks: "407.599",
     total_impressions: "6.69M",
     color: "#F5CD79",
-    description: "2 años en desarrollo con más de 500 recetas originales. Diseño elegante, limpio y con gran personalidad para elevar marca.",
+    description: "Estrategia focalizada en crear contenido y enlazado interno natural. Más de 500 recetas y un blog de apoyo. Diseño elegante, limpio y con gran personalidad para elevar marca.",
     data: [
         { name: '01/2021', visitas: 4582 },
         { name: '01/2022', visitas: 24323 },
@@ -27,13 +27,13 @@ export const chartInfo1 = {
 }
 
 export const chartInfo2 = {
-    title: "Página web de contenido viral",
+    title: "Página web de servicios",
     subtitle: "Datos actualizados desde Marzo de 2021 hasta Marzo de 2023",
     total_views: "20.193.401",
     total_clicks: "3.795.415",
     total_impressions: "56M",
     color: "#FFC0CB",
-    description: "3 años en producción con varias migraciones tratadas. Gran cantidad de tráfico orgánico en poco tiempo posicionando líderes en los primeros 6 meses de trabajo.",
+    description: "Gran cantidad de tráfico orgánico en poco tiempo, posicionando líderes en los primeros 6 meses de trabajo. Proyecto de 3 años que ha pasado por varias migraciones.",
     data: [
         { name: '01/2021', visitas: 70415 },
         { name: '02/2021', visitas: 180530 },

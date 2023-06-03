@@ -92,12 +92,12 @@ export default function Info1() {
 
                     <div className={styles.columns}>
                         <div>
-                            <Text xxxl className={font.className}>¿Encabezado H2?</Text>
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae pharetra sapien. Suspendisse tellus elit, vehicula vel sapien sit amet, sollicitudin accumsan augue. </Text>
+                            <Text xxxl className={font.className}>Despega tu</Text>
+                            <Text>Podemos ordenar el kaoos de tu mente y crear una página web con un diseño único a tu gusto. Solo necestiamos saber cómo funciona tu negocio para ponernos a trabajar. Y si ya tienes una idea, nos adaptamos a tu estilo. </Text>
                         </div>
                         <div>
-                            <Text xxxl className={font.className}>¿Encabezado H2?</Text>
-                            <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae pharetra sapien. Suspendisse tellus elit, vehicula vel sapien sit amet, sollicitudin accumsan augue. </Text>
+                            <Text xxxl className={font.className}>página web</Text>
+                            <Text>Creamos una estrategia SEO adecuada al tipo de negocio, haciendo un análisis de mercado y competencia. Para páginas web antiguas, comenzamos con una auditoría SEO. A partir de ahí, comenzamos a implementar soluciones.</Text>
                         </div>
                     </div>
 
