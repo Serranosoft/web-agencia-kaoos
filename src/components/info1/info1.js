@@ -1,12 +1,9 @@
 import Container from "../content/container";
-import H1 from "../content/h1";
-import styles from "@/styles/home-blog/home-blog.module.scss";
+import styles from "@/styles/info1/info1.module.scss";
 import H2 from "../content/h2";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import * as basicScroll from 'basicscroll'
-import H3 from "../content/h3";
 import { DM_Serif_Text } from "next/font/google";
-import Link from "next/link";
 import Text from "../content/text";
 
 const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
@@ -65,7 +62,7 @@ export default function Info1() {
         <Container fullscreen className={styles.root}>
 
             <div className={styles.effectWrapper} style={{ backgroundColor: `rgb(var(--bgColor1), var(--bgColor2), var(--bgColor3))` }}>
-                <div ref={ref} style={{ transform: `scale3d(var(--test), var(--test), 1)` }} className={styles.blogIntro}>
+                <div ref={ref} style={{ transform: `scale3d(var(--test), var(--test), 1)` }} className={styles.content}>
 
                     <div className={styles.columns}>
                         <div>
