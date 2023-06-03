@@ -38,6 +38,15 @@ export default function Info1() {
             elem: ref.current,
             from: "top-top",
             to: "bottom-top",
+            inside: (instance, percentage, props) => {
+                document.querySelector("header").style.transform = "translateY(-100%)";
+            },
+            outside: (instance, percentage, props) => {
+                console.log(percentage);
+                if (percentage > 190 || percentage < -25) {
+                    document.querySelector("header").style.transform = "translateY(0)";
+                }
+            },
             props: {
                 "--bgColor1": {
                     from: 19,
