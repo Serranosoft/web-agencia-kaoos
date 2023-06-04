@@ -1,0 +1,12 @@
+.root {
+    opacity: "0.25";
+    width: 100%;
+    position: absolute;
+    top: 500px;
+    left: 0;
+    video {
+        opacity: 0.2;
+        vertical-align: baseline;
+        display: inline-block;
+    }
+}
