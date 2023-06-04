@@ -7,7 +7,7 @@ import SeoCharts from '@/components/charts/seo-charts'
 import WebDesigns from '@/components/web-designs/web-designs'
 import Floating from '@/components/contact/floating'
 import Info1 from '@/components/info1/info1'
-import SeoFeatures from '@/components/seo-features/SeoFeatures'
+import SeoFeatures from '@/components/seo-features/seoFeatures'
 
 
 
