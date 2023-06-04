@@ -10,7 +10,7 @@
     }
     & > svg {
         transform: rotate(180deg);
-        transition: all 0.5s;
-        transition-delay: 500ms;
+        transition: filter 1s, opacity 1s;
+        transition-delay: 3000ms;
     }
 }

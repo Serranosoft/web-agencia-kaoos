@@ -1,13 +1,10 @@
 import H1 from '@/components/content/h1'
 import styles from '@/styles/hero/hero.module.scss'
-import Muted from '@/components/content/muted'
 import Container from '@/components/content/container'
-import Button from '@/components/content/button'
-import { Pause } from 'windups'
 import Separator from '@/components/hero/separator'
 import Cards from '@/components/hero/cards'
-import ViewProjects from '@/components/hero/viewProjects'
 import SubHeading from '../content/subheading'
+import HorizontalCard from '@/components/hero/horizontalCard'
 
 export default function Hero() {
 
@@ -220,8 +217,8 @@ export default function Hero() {
                             <H1>Diseñamos y posicionamos tu web</H1>
                             <SubHeading>(sin magia ni milagros)</SubHeading>
                         </div>
-                        <Cards />                       
-                        <ViewProjects />
+                        <Cards />                   
+                        <HorizontalCard />
                         <Separator />
                     </div>
                 </div>
