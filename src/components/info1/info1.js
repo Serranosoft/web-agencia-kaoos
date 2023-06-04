@@ -5,7 +5,6 @@ import { useEffect, useRef } from "react";
 import * as basicScroll from 'basicscroll'
 import { DM_Serif_Text } from "next/font/google";
 import Text from "../content/text";
-import Link from "next/link";
 import BlogLink from "../blog/blogLink";
 
 const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
