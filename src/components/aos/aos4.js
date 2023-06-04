@@ -13,7 +13,7 @@ export default function Aos4() {
                     }
                 }
             })
-        }, { threshold: 0.25 })
+        }, { threshold: 0.5 })
 
         let elements = document.querySelectorAll(".aos-effect4-observer");
         elements.forEach((el) => observer.observe(el));

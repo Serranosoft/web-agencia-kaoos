@@ -58,8 +58,8 @@ export default function Info1() {
 
         const blogLinkInstance = basicScroll.create({
             elem: blogRef.current,
-            from: "top-bottom", // por encima del elemento sobrepasando la mitad del viewport
-            to: "bottom-middle", // por debajo del elemento sobrepasando la parte superior del viewport
+            from: "top-bottom",
+            to: "bottom-middle",
             props: {
                 "--ty1": {
                     from: "50px",
@@ -90,12 +90,12 @@ export default function Info1() {
             <div className={styles.effectWrapper} style={{ backgroundColor: `rgb(var(--bgColor1), var(--bgColor2), var(--bgColor3))` }}>
                 <div ref={contentRef} style={{ transform: `scale3d(var(--divScale), var(--divScale), 1)` }} className={styles.content}>
 
-                    <div className={styles.columns}>
-                        <div>
+                    <div className={`${styles.columns}`}>
+                        <div className="aos-effect3-observer aos-effect3-el">
                             <Text xxxl className={font.className}>Despega tu</Text>
                             <Text>Podemos ordenar el kaoos de tu mente y crear una página web con un diseño único a tu gusto. Solo necestiamos saber cómo funciona tu negocio para ponernos a trabajar. Y si ya tienes una idea, nos adaptamos a tu estilo. </Text>
                         </div>
-                        <div>
+                        <div className="aos-effect3-observer aos-effect3-el">
                             <Text xxxl className={font.className}>página web</Text>
                             <Text>Creamos una estrategia SEO adecuada al tipo de negocio, haciendo un análisis de mercado y competencia. Para páginas web antiguas, comenzamos con una auditoría SEO. A partir de ahí, comenzamos a implementar soluciones.</Text>
                         </div>

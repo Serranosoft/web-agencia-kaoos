@@ -23,7 +23,6 @@
             transform-style: preserve-3d;
             border-radius: 2rem;
             padding: 0 10rem;
-            // border: 10px solid red;
 
             .columns {
                 width: 100%;
@@ -38,6 +37,7 @@
                     flex-direction: column;
                     gap: 1rem;
                     text-align: center;
+                    transition: all 1s;
 
                     p:first-child {
                         font-weight: bold;

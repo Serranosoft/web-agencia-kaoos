@@ -212,10 +212,10 @@ export default function Hero() {
             </div>
             <Container large={true}>
                 <div className={styles.root}>
-                    <div>
-                        <div className={styles.heading}>
-                            <H1>Diseñamos y posicionamos tu web</H1>
-                            <SubHeading>(sin magia ni milagros)</SubHeading>
+                    <div className="aos-effect2-observer">
+                        <div className={`${styles.heading} aos-effect3-observer`}>
+                            <H1 className={"aos-effect3-el"}>Diseñamos y posicionamos tu web</H1>
+                            <SubHeading className={"aos-effect3-el"}>(sin magia ni milagros)</SubHeading>
                         </div>
                         <Cards />                   
                         <HorizontalCard />

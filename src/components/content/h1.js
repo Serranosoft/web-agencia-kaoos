@@ -9,7 +9,7 @@ export default function H1({children, className}) {
 
     return (
         <>
-            <h1 className={`${styles.root} ${className && className} ${font.className} aos-effect3-observer aos-effect3-el`}>{children}</h1>
+            <h1 className={`${styles.root} ${className && className} ${font.className}`}>{children}</h1>
         </>
     )
 }

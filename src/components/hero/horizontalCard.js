@@ -5,7 +5,7 @@ import Text from "../content/text";
 export default function HorizontalCard() {
 
     return (
-        <div className={`${styles.root} aos-effect2-observer`}>
+        <div className={`${styles.root}  aos-effect2-el`}>
             <div className={styles.content}>
                 <div>
                     <HiUserAdd size={45} />

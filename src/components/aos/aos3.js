@@ -7,13 +7,13 @@ export default function Aos3() {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     if (entry.target.querySelector(".aos-effect3-el") !== null) {
-                        entry.target.querySelector(".aos-effect3-el").classList.add("aos-effect3")
+                        entry.target.querySelectorAll(".aos-effect3-el").forEach(el => el.classList.add("aos-effect3"));
                     } else {
                         entry.target.classList.add("aos-effect3");
                     }
                 }
             })
-        }, { threshold: 0.25 })
+        }, { threshold: 0.5 })
 
         let elements = document.querySelectorAll(".aos-effect3-observer");
         elements.forEach((el) => observer.observe(el));
