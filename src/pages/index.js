@@ -52,6 +52,7 @@ export default function Home() {
 
             */}
             <section className={styles.main}>
+                <div className={styles.bg}></div>
                 <Hero />
                 <SeoCharts />
                 <SeoFeatures />
