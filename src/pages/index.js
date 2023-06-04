@@ -61,7 +61,7 @@ export default function Home() {
                     height: "200px",
                     width: "100%",
                     background: "rgb(19,0,255)",
-                    background: "linear-gradient(0deg, rgba(19,0,255,1) 0%, rgba(0,0,0,1) 100%)",
+                    background: "linear-gradient(0deg, rgba(19,0,255,0.3) 0%, rgba(0,0,0,1) 100%)",
                 }}>
                 </div>
                 <Info1 />

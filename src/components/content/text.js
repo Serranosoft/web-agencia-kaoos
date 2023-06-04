@@ -1,11 +1,12 @@
 import styles from '@/styles/components/content/text.module.scss'
 
-export default function Text({children, xl, xxl, xxxl, className}) {
+export default function Text({children, xl, xxl, xxxl, className, style}) {
 
 
     return (
         <>
-            <p 
+            <p
+            style={style}
             className={
                 `
                     ${styles.root} 
@@ -14,7 +15,8 @@ export default function Text({children, xl, xxl, xxxl, className}) {
                     ${xxxl === true ? styles.xxxl : ''}
                     ${className ? className : ''}
                     
-                `}>{children}</p>
+                `}
+            >{children}</p>
         </>
     )
 }

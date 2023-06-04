@@ -23,7 +23,7 @@ export default function Info1() {
             inside: () => {
                 document.querySelector("header").style.transform = "translateY(-100%)";
             },
-            outside: (percentage) => {
+            outside: (instance, percentage, props) => {
                 if (percentage > 380 || percentage < -100) {
                     document.querySelector("header").style.transform = "translateY(0)";
                 }
@@ -49,10 +49,14 @@ export default function Info1() {
                     from: 0,
                     to: 255
                 },
-                "--bgColor3": {
-                    from: 2255,
-                    to: 255
+                "--bgColor4": {
+                    from: 0.3,
+                    to: 1
                 },
+                "--textColor": {
+                    from: 255,
+                    to: 0,
+                }
             }
         })
 
@@ -87,17 +91,17 @@ export default function Info1() {
     return (
         <Container fullscreen className={styles.root}>
 
-            <div className={styles.effectWrapper} style={{ backgroundColor: `rgb(var(--bgColor1), var(--bgColor2), var(--bgColor3))` }}>
+            <div className={styles.effectWrapper} style={{ backgroundColor: `rgb(var(--bgColor1), var(--bgColor2), 255, var(--bgColor4))` }}>
                 <div ref={contentRef} style={{ transform: `scale3d(var(--divScale), var(--divScale), 1)` }} className={styles.content}>
 
                     <div className={`${styles.columns}`}>
                         <div className="aos-effect3-observer aos-effect3-el">
-                            <Text xxxl className={font.className}>Despega tu</Text>
-                            <Text>Podemos ordenar el kaoos de tu mente y crear una página web con un diseño único a tu gusto. Solo necestiamos saber cómo funciona tu negocio para ponernos a trabajar. Y si ya tienes una idea, nos adaptamos a tu estilo. </Text>
+                            <Text xxxl className={font.className} style={{ color: `rgb(var(--textColor),var(--textColor),var(--textColor))` }}>Despega tu</Text>
+                            <Text style={{ color: `rgb(var(--textColor),var(--textColor),var(--textColor))` }}>Podemos ordenar el kaoos de tu mente y crear una página web con un diseño único a tu gusto. Solo necestiamos saber cómo funciona tu negocio para ponernos a trabajar. Y si ya tienes una idea, nos adaptamos a tu estilo. </Text>
                         </div>
                         <div className="aos-effect3-observer aos-effect3-el">
-                            <Text xxxl className={font.className}>página web</Text>
-                            <Text>Creamos una estrategia SEO adecuada al tipo de negocio, haciendo un análisis de mercado y competencia. Para páginas web antiguas, comenzamos con una auditoría SEO. A partir de ahí, comenzamos a implementar soluciones.</Text>
+                            <Text xxxl className={font.className} style={{ color: `rgb(var(--textColor),var(--textColor),var(--textColor))` }}>página web</Text>
+                            <Text style={{ color: `rgb(var(--textColor),var(--textColor),var(--textColor))` }}>Creamos una estrategia SEO adecuada al tipo de negocio, haciendo un análisis de mercado y competencia. Para páginas web antiguas, comenzamos con una auditoría SEO. A partir de ahí, comenzamos a implementar soluciones.</Text>
                         </div>
                     </div>
 
