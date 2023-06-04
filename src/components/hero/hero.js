@@ -25,7 +25,7 @@ export default function Hero() {
                         </div>
                         <Cards />
                         <HorizontalCard />
-                        <Separator />
+                        {/* <Separator /> */}
                     </div>
                 </div>
             </Container>
