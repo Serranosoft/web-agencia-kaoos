@@ -34,7 +34,7 @@ export default function Separator() {
                 {showMsg1 &&
                     <WindupElement mode={"rotate"} onFinished={() => setShowMsg2(true)}>
                         <Pause ms={500} />
-                        <Text xxl={true}>Así es como hacemos crecer nuestros proyectos</Text>
+                        <Text xxl>Así es como hacemos crecer nuestros proyectos</Text>
                         <Pause ms={200} />
                     </WindupElement>
                 }
@@ -46,7 +46,7 @@ export default function Separator() {
                     </WindupElement>
                 }
             </div>
-            <svg className={"aos-effect3-el"} xmlns="http://www.w3.org/2000/svg" width={141} height={96}>
+            <svg className="aos-effect3-el" xmlns="http://www.w3.org/2000/svg" width={141} height={96}>
                 <g fill="none" fillRule="evenodd">
                     <path
                         fill="#D4D4D4"

@@ -1,6 +1,6 @@
 import Header from '@/components/header/header'
 import '../styles/globals.css'
-import '@/styles/aos/aos.module.scss'
+import '@/styles/aos/aos.scss'
 import Aos from '@/components/aos/aos'
 import { Nunito_Sans } from 'next/font/google'
 

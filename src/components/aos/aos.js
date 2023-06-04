@@ -3,7 +3,6 @@ import { useEffect } from "react";
 export default function Aos() {
 
     useEffect(() => {
-
         const aosEffect1Observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -11,12 +10,6 @@ export default function Aos() {
                         entry.target.querySelector(".aos-effect1-el").classList.add("aos-effect1")
                     } else {
                         entry.target.classList.add("aos-effect1");
-                    }
-                } else {
-                    if (entry.target.querySelector(".aos-effect1-el") !== null) {
-                        entry.target.querySelector(".aos-effect1-el").classList.remove("aos-effect1")
-                    } else {
-                        entry.target.classList.remove("aos-effect1");
                     }
                 }
             })
@@ -52,6 +45,7 @@ export default function Aos() {
                     if (entry.target.querySelector(".aos-effect3-el") !== null) {
                         entry.target.querySelectorAll(".aos-effect3-el").forEach((el) => el.classList.add("aos-effect3"))
                     } else {
+                        console.log(":D");
                         entry.target.classList.add("aos-effect3")
                     }
                 }
@@ -70,12 +64,6 @@ export default function Aos() {
                         entry.target.querySelectorAll(".aos-effect4-el").forEach((el) => el.classList.add("aos-effect4"))
                     } else {
                         entry.target.classList.add("aos-effect4")
-                    }
-                } else {
-                    if (entry.target.querySelector(".aos-effect4-el") !== null) {
-                        entry.target.querySelectorAll(".aos-effect4-el").forEach((el) => el.classList.remove("aos-effect4"))
-                    } else {
-                        entry.target.classList.remove("aos-effect4")
                     }
                 }
             })
