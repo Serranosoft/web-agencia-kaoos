@@ -60,36 +60,38 @@ export default function Info1() {
             }
         })
 
-        const blogLinkInstance = basicScroll.create({
-            elem: blogRef.current,
-            from: "top-bottom",
-            to: "bottom-middle",
-            props: {
-                "--ty1": {
-                    from: "50px",
-                    to: "0px",
-                },
-                "--ty2": {
-                    from: "-80px",
-                    to: "0px",
-                },
-                "--ty3": {
-                    from: "70px",
-                    to: "0px",
-                },
-                "--ty4": {
-                    from: "-30px",
-                    to: "0px",
-                }
-            }
-        })
+        // const blogLinkInstance = basicScroll.create({
+        //     elem: blogRef.current,
+        //     from: "top-bottom",
+        //     to: "bottom-middle",
+        //     props: {
+        //         "--ty1": {
+        //             from: "50px",
+        //             to: "0px",
+        //         },
+        //         "--ty2": {
+        //             from: "-80px",
+        //             to: "0px",
+        //         },
+        //         "--ty3": {
+        //             from: "70px",
+        //             to: "0px",
+        //         },
+        //         "--ty4": {
+        //             from: "-30px",
+        //             to: "0px",
+        //         }
+        //     }
+        // })
 
         instance.start()
-        blogLinkInstance.start();
+        // blogLinkInstance.start();
     }, [])
 
     return (
         <Container fullscreen className={styles.root}>
+
+            <div className={styles.gradientTop}></div>
 
             <div className={styles.effectWrapper} style={{ backgroundColor: `rgb(var(--bgColor1), var(--bgColor2), 255, var(--bgColor4))` }}>
                 <div ref={contentRef} style={{ transform: `scale3d(var(--divScale), var(--divScale), 1)` }} className={styles.content}>
@@ -112,7 +114,9 @@ export default function Info1() {
                 </div>
             </div>
 
-            <div className={styles.blogWrapper}>
+            {/* <div className={styles.gradientBottom}></div> */}
+
+            {/* <div className={styles.blogWrapper}>
                 <H2>¿Encabezado H2?</H2>
                 <div ref={blogRef} className={styles.list}>
                     <BlogLink href={`/blog/seo-para-pymes`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/seo-para-pymes-kaoos.jpg"} style={{transform: `translateY(var(--ty1)) translateX(var(--ty4))`}} />
@@ -120,7 +124,7 @@ export default function Info1() {
                     <BlogLink href={`/blog/consultor-seo-freelance`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/contratar-freelance-seo-consultor.jpg"} style={{transform: `translateY(var(--ty3)) translateX(var(--ty1))`}} />
                     <BlogLink href={`/blog/como-elaborar-un-presupuesto-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/presupuesto-seo-ejemplos.jpg"} style={{transform: `translateY(var(--ty4)) translateX(var(--ty2))`}} />
                 </div>
-            </div>
+            </div> */}
 
         </Container>
     )

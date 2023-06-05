@@ -2,7 +2,7 @@
 
 .root {
     .effectWrapper {
-        height: 170vh;
+        height: 220vh;
         width: 100%;
         position: relative;
         will-change: background;
@@ -49,6 +49,16 @@
                 left: 50%;
                 animation: vibrate 0.8s infinite linear;
             }
+        }
+    }
+
+    .gradientBottom, .gradientTop {
+        height: 200px;
+        width: 100%;
+        background: rgb(19,0,255);
+        background: linear-gradient(180deg, rgba(19,0,255,0.3) 0%, rgba(0,0,0,1) 100%);
+        &.gradientTop {
+            background: linear-gradient(0deg, rgba(19,0,255,0.3) 0%, rgba(0,0,0,1) 100%);
         }
     }
 
@@ -107,4 +117,30 @@
         }
     }
 
+}
+
+@media (max-width: 768px) {
+    .root {
+        .effectWrapper {
+            height: 100%;
+            background-color: rgba(19, 0, 255, 0.3) !important;
+            .content {
+                height: 100%;
+                padding: 2rem 1rem;
+                transform: scale3d(1,1,1);
+                .columns {
+                    flex-direction: column;
+                    gap: 5rem;
+                    p {
+                        color: white !important;
+
+                    }
+                }
+
+                .rocket {
+                    display: none;
+                }
+            }
+        }
+    }
 }

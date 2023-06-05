@@ -56,15 +56,9 @@ export default function Home() {
                 <SeoCharts />
                 <SeoFeatures />
                 {/* <WebDesigns /> */}
-                <div style={{
-                    height: "200px",
-                    width: "100%",
-                    background: "rgb(19,0,255)",
-                    background: "linear-gradient(0deg, rgba(19,0,255,0.3) 0%, rgba(0,0,0,1) 100%)",
-                }}>
-                </div>
                 <Rocket />
-                <Floating />
+                <div style={{minHeight: 600, width: "100%", background: "white"}}></div>
+                {/* <Floating /> */}
 
             </section>
 
