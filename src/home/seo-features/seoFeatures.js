@@ -26,7 +26,7 @@ export default function SeoFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl>Verified by experts</Text>
+                        <Text xl>1</Text>
                         <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
                     </div>
                     <div className={styles.box}>
@@ -39,7 +39,7 @@ export default function SeoFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl>Verified by experts</Text>
+                        <Text xl>2</Text>
                         <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
                     </div>
                     <div className={styles.box}>
@@ -52,7 +52,7 @@ export default function SeoFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl>Verified by experts</Text>
+                        <Text xl>3</Text>
                         <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
                     </div>
                 </div>

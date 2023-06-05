@@ -9,9 +9,9 @@ export default function HorizontalCard() {
             <div className={styles.content}>
                 <div>
                     <HiUserAdd size={45} />
-                    <Text xl={true}><strong>APP's y ASO</strong></Text>
+                    <Text xl={true}><strong>Marketing de contenidos</strong></Text>
                 </div>
-                <Text>Da el paso para tener tu aplicación móvil y deja que la posicionemos en el top de su categoría. <strong>Facilidad, accesibilidad y comodidad</strong>.</Text>
+                <Text>Complementa la página web con servicios adicionales como <strong>Email marketing</strong> o <strong>Redes Sociales</strong>. Conseguimos aumentar tu marca y captar más clientes que generan más ventas. Guiamos a posibles clientes en todo momento sin pierdan el foco.</Text>
             </div>
         </div>
     )
