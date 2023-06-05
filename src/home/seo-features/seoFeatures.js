@@ -3,6 +3,7 @@ import H2 from "@/components/content/h2";
 import Highlight from "@/components/content/highlight";
 import styles from "@/styles/components/feature/feature.module.scss";
 import Text from "@/components/content/text";
+import Button from "../button/button";
 
 export default function SeoFeatures() {
 
@@ -85,6 +86,7 @@ export default function SeoFeatures() {
                         <Text>North star goals</Text>
                     </div>
                 </div>
+                <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Button text</Button>
             </div>
         </Container>
     )
