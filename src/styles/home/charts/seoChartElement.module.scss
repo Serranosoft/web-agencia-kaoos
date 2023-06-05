@@ -46,7 +46,7 @@
 
         .data {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             align-items: center;
             gap: 0.7rem;
             margin-top: auto;
