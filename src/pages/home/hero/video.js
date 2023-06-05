@@ -1,4 +1,4 @@
-import styles from "@/styles/hero/video.module.scss"
+import styles from "@/styles/home/hero/video.module.scss"
 import { useEffect, useRef } from "react"
 
 export default function Video() {

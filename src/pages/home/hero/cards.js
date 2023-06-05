@@ -2,7 +2,7 @@ import Tilt from 'react-parallax-tilt';
 import { HiChartBar, HiLightningBolt, HiTrendingUp, HiUserAdd } from "react-icons/hi";
 import Text from '@/components/content/text';
 import Muted from '@/components/content/muted';
-import styles from '@/styles/hero/cards.module.scss'
+import styles from '@/styles/home/hero/cards.module.scss'
 import { useEffect, useRef, useState } from 'react'
 
 

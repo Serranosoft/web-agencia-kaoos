@@ -1,11 +1,11 @@
-import Container from "../content/container";
-import styles from "@/styles/info1/info1.module.scss";
-import H2 from "../content/h2";
+import Container from "@/components/content/container";
+import styles from "@/styles/home/rocket/rocket.module.scss";
+import H2 from "@/components/content/h2";
+import Text from "@/components/content/text";
+import BlogLink from "@/components/blog/blogLink";
 import { useEffect, useRef } from "react";
-import * as basicScroll from 'basicscroll'
 import { DM_Serif_Text } from "next/font/google";
-import Text from "../content/text";
-import BlogLink from "../blog/blogLink";
+import * as basicScroll from 'basicscroll'
 
 const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 

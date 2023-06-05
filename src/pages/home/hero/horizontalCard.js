@@ -1,6 +1,6 @@
-import styles from '@/styles/hero/horizontalCard.module.scss'
+import styles from '@/styles/home/hero/horizontalCard.module.scss'
 import { HiUserAdd } from "react-icons/hi";
-import Text from "../content/text";
+import Text from "@/components/content/text";
 
 export default function HorizontalCard() {
 

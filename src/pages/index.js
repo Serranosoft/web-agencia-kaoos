@@ -1,13 +1,12 @@
 import Head from 'next/head'
-import styles from '@/styles/home.module.scss'
+import styles from '@/styles/home/home.module.scss'
 import Header from '@/components/header/header'
-import Hero from '@/components/hero/hero'
+import Hero from '@/pages/home/hero/hero'
 import Aos from '@/components/aos/aos'
-import SeoCharts from '@/components/charts/seo-charts'
-import WebDesigns from '@/components/web-designs/web-designs'
+import SeoCharts from '@/pages/home/charts/seo-charts'
 import Floating from '@/components/contact/floating'
-import Info1 from '@/components/info1/info1'
-import SeoFeatures from '@/components/seo-features/seoFeatures'
+import Rocket from '@/pages/home/rocket/rocket'
+import SeoFeatures from '@/pages/home/seo-features/seoFeatures'
 
 
 
@@ -64,7 +63,7 @@ export default function Home() {
                     background: "linear-gradient(0deg, rgba(19,0,255,0.3) 0%, rgba(0,0,0,1) 100%)",
                 }}>
                 </div>
-                <Info1 />
+                <Rocket />
                 <Floating />
 
             </section>

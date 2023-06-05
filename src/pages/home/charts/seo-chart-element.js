@@ -1,6 +1,6 @@
 import { HiChartBar, HiCursorClick, HiFire } from 'react-icons/hi'
-import styles from '@/styles/components/charts/seoChartElement.module.scss'
-import Chart from '@/components/charts/chart-views'
+import styles from '@/styles/home/charts/seoChartElement.module.scss'
+import Chart from '@/pages/home/charts/chart-views'
 import Muted from '@/components/content/muted'
 import Text from '@/components/content/text'
 import { useEffect, useRef, useState } from 'react'
