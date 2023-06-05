@@ -16,7 +16,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            background-color: rgba(1,19,0,.3);
+            background-color: rgba(1, 19, 0, .3);
             overflow: hidden;
             will-change: transform;
             transform-style: preserve-3d;
@@ -48,6 +48,7 @@
                 position: absolute;
                 bottom: 0;
                 left: 50%;
+                animation: vibrate 0.8s infinite linear;
             }
         }
     }
@@ -61,11 +62,12 @@
         padding: 10rem 1rem;
         padding-bottom: 30rem;
         gap: 5rem;
+
         h2 {
             font-size: clamp(3.43rem, 2.84vw + 2.72rem, 5rem);
             font-weight: bold;
         }
-        
+
         .list {
             // border: 10px solid red;
             max-width: 1250px;
@@ -77,5 +79,33 @@
     }
 
 
+    @keyframes vibrate {
+
+        0%,
+        100% {
+            margin-left: 10px;
+        }
+
+        10%,
+        30%,
+        50%,
+        70% {
+            margin-left: 15px;
+        }
+
+        20%,
+        40%,
+        60% {
+            margin-left: 8px;
+        }
+
+        80% {
+            margin-left: 8px;
+        }
+
+        90% {
+            margin-left: 8px;
+        }
+    }
 
 }
