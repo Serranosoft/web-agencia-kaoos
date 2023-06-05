@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import styles from '@/styles/home/home.module.scss'
 import Header from '@/components/header/header'
-import Hero from '@/pages/home/hero/hero'
+import Hero from '@/home/hero/hero'
 import Aos from '@/components/aos/aos'
-import SeoCharts from '@/pages/home/charts/seo-charts'
+import SeoCharts from '@/home/charts/seo-charts'
 import Floating from '@/components/contact/floating'
-import Rocket from '@/pages/home/rocket/rocket'
-import SeoFeatures from '@/pages/home/seo-features/seoFeatures'
+import Rocket from '@/home/rocket/rocket'
+import SeoFeatures from '@/home/seo-features/seoFeatures'
 
 
 

@@ -1,8 +1,8 @@
-import Container from "../../../components/content/container";
-import H2 from "../../../components/content/h2";
-import Highlight from "../../../components/content/highlight";
+import Container from "@/components/content/container";
+import H2 from "@/components/content/h2";
+import Highlight from "@/components/content/highlight";
 import styles from "@/styles/components/feature/feature.module.scss";
-import Text from "../../../components/content/text";
+import Text from "@/components/content/text";
 
 export default function SeoFeatures() {
 

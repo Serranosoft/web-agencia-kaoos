@@ -1,10 +1,10 @@
 import H1 from '@/components/content/h1'
 import styles from '@/styles/home/hero/hero.module.scss'
 import Container from '@/components/content/container'
-import Separator from '@/pages/home/hero/separator'
-import Cards from '@/pages/home/hero/cards'
+import Separator from '@/home/hero/separator'
+import Cards from '@/home/hero/cards'
 import SubHeading from '@/components/content/subheading'
-import HorizontalCard from '@/pages/home/hero/horizontalCard'
+import HorizontalCard from '@/home/hero/horizontalCard'
 import Video from './video'
 
 export default function Hero() {
