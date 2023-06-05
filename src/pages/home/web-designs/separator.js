@@ -1,4 +1,4 @@
-import styles from '@/styles/web-design/separator.module.scss'
+import styles from '@/styles/home/web-design/separator.module.scss'
 import WindupElement from '@/components/misc/windupElement'
 import { useEffect, useState } from 'react';
 import Text from '@/components/content/text';

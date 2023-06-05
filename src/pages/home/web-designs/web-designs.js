@@ -2,7 +2,7 @@ import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'lightgallery/css/lg-thumbnail.css';
 
-import styles from '@/styles/web-design/web-design.module.scss'
+import styles from '@/styles/home/web-design/web-design.module.scss'
 import Container from '@/components/content/container';
 import Separator from './separator';
 import { useEffect, useRef, useState } from 'react';
