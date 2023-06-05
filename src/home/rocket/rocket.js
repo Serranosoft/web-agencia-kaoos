@@ -109,7 +109,7 @@ export default function Info1() {
 
                     <div className={styles.rocket} style={{ transform: `translateY(var(--rocketMove)) scale(var(--rocketScale)) translateX(-50%)` }}>
                         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                        <lottie-player src="/rocket.json" background="transparent" speed="1" style={{ width: 500, height: 500 }} autoplay></lottie-player>
+                        <lottie-player src="/rocket.json" background="transparent" speed="1" style={{ width: 500, height: 500 }} loop autoplay></lottie-player>
                     </div>
                 </div>
             </div>
