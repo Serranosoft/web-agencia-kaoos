@@ -10,7 +10,7 @@ export default function Header() {
     const route = useRouter();
 
     return (
-        <header className={`${styles.root} ${route.pathname.split('/')[1] === "blog" && styles.light}`}>
+        <header className={`${styles.root} ${route.pathname.split('/')[1] === "blog" && styles.light} header`}>
             <div>
                 <Link href="/">
                     <Logo />
