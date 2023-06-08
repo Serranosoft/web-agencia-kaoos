@@ -7,6 +7,7 @@ import SeoCharts from '@/home/charts/seo-charts'
 import Floating from '@/components/contact/floating'
 import Rocket from '@/home/rocket/rocket'
 import SeoFeatures from '@/home/seo-features/seoFeatures'
+import Comparison from '@/home/comparison/comparison'
 
 
 
@@ -21,7 +22,6 @@ export default function Home() {
                 {/* <script src="echarts.js"></script> */}
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
-
             </Head>
 
             {/* MUST SEE FOR LATER
@@ -58,6 +58,7 @@ export default function Home() {
                 <Hero />
                 <SeoCharts />
                 <SeoFeatures />
+                <Comparison />
                 {/* <WebDesigns /> */}
                 <Rocket />
                 <div style={{ minHeight: 600, width: "100%", background: "white" }}></div>

@@ -11,7 +11,6 @@ const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 export default function Info1() {
 
     useLayoutEffect(() => {
-
         const scrollTrigger = {
             trigger: ".gsap-content",
             start: "center top",
