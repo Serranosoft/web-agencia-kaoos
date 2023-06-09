@@ -1,9 +1,7 @@
 import Container from "@/components/content/container";
 import styles from "@/styles/home/rocket/rocket.module.scss";
-import H2 from "@/components/content/h2";
 import Text from "@/components/content/text";
-import BlogLink from "@/components/blog/blogLink";
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useLayoutEffect } from "react";
 import { DM_Serif_Text } from "next/font/google";
 
 const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
@@ -22,6 +20,7 @@ export default function Info1() {
         gsap.to(".gsap-wrapper", { scrollTrigger, duration: 0.5, backgroundColor: "rgba(255, 255, 255, 1)" });
         gsap.to(".gsap-text", { scrollTrigger, color: "#000000" });
         gsap.to(".gsap-rocket", { scrollTrigger, y: "-100vh", scale: 0.5 });
+        gsap.to(".body", { scrollTrigger, backgroundColor: "rgba(255, 255, 255, 1)" });
         gsap.to(".header", {
             scrollTrigger: {
                 trigger: ".gsap-header-trigger",

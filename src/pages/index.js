@@ -8,6 +8,7 @@ import Floating from '@/components/contact/floating'
 import Rocket from '@/home/rocket/rocket'
 import SeoFeatures from '@/home/seo-features/seoFeatures'
 import Comparison from '@/home/comparison/comparison'
+import Test from '@/home/test/test'
 
 
 
@@ -53,7 +54,7 @@ export default function Home() {
                 sendcloud webpage
 
             */}
-            <section className={styles.main}>
+            <section className={`${styles.main} body`}>
                 <div className={styles.bg}></div>
                 <Hero />
                 <SeoCharts />
@@ -63,6 +64,10 @@ export default function Home() {
                 <Rocket />
                 <div style={{ minHeight: 600, width: "100%", background: "white" }}></div>
                 {/* <Floating /> */}
+
+                {/* <Test /> */}
+                <div style={{ minHeight: 600, width: "100%", background: "white" }}></div>
+
 
             </section>
 
