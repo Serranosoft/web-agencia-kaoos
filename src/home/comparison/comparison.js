@@ -14,7 +14,6 @@ export default function Comparison() {
                     start: "top center",
                     end: "+=680",
                     scrub: true,
-                    markers: true,
                 },
                 defaults: { ease: "none" },
             });
