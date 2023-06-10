@@ -1,0 +1,148 @@
+@import "../../colors.scss";
+
+.root {
+    display: flex;
+
+    .banner {
+        display: flex;
+        align-items: stretch;
+
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        &>div:not(.image) {
+
+            width: 100%;
+            perspective: 700px;
+            -webkit-transform-style: flat;
+            /* why would I do that? well there is a very strange bug with safari, and it fixed it... */
+            transform-style: preserve-3d;
+
+            &>div {
+                padding: 50px;
+                background: #222;
+                transform-style: preserve-3d;
+
+                &::before {
+
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    left: 0;
+                    height: 50px;
+                    background-color: #BFBFBF;
+                    top: -50px;
+                    transform-origin: center bottom;
+                    transform: rotatex(90deg);
+                }
+
+                &::after {
+
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    left: 0;
+                    height: 50px;
+                    background-color: #BFBFBF;
+                    bottom: -50px;
+                    transform-origin: center top;
+                    transform: rotatex(-90deg);
+                }
+            }
+        }
+
+        &.divided {
+            &>div {
+                width: 50%;
+
+                &>div {
+                    padding: 100px 25px;
+                    transform: translatez(50px);
+
+                }
+            }
+        }
+
+    }
+
+    .banner:first-child {
+        &>div>div {
+            transform: translatez(50px);
+        }
+    }
+
+    .banner:nth-child(3) {
+        &>div>div {
+            transform: translatez(-50px);
+            &::before {
+                transform: rotatex(-90deg);
+            }
+            &::after {
+                transform: rotatex(90deg);
+            }
+        }
+    }
+
+    .banner:nth-child(5) {
+        &>div>div {
+            padding: 100px 25px;
+            transform: translatez(50px);
+        }
+    }
+
+
+    .halfBanner {
+        height: 35vh;
+        background: #E0E0E0;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: black;
+        }
+    }
+
+    .miniBanner {
+        height: 25vh;
+        background: #E0E0E0;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+    }
+
+    .image {
+        width: 50%;
+        background: url('/eye2.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: inset 25px 0px 20px 10px rgba(0, 0, 0, 0.41)
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .banner {
+        flex-direction: column
+    }
+
+    .banner:nth-child(5) {
+        & > div {
+            width: 100%;
+        }
+    }
+
+    .image {
+        width: 100%;
+        height: 300px;
+    }
+}
