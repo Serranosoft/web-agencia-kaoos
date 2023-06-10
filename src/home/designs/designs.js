@@ -28,45 +28,43 @@ export default function Designs() {
 
             <Separator />
 
-
-
             <div className={styles.demoWrapper}>
                 <section className={`${styles.demoGallery} designs-section`}>
                     <ul className={`${styles.wrapper} wrapper`}>
                         <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/section3.png" />
                         </li>
                         <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/section1.png" />
                         </li>
                         <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
-                        </li>
-                    </ul>
-                </section>
-                <section className={`${styles.demoGallery} designs-section`}>
-                    <ul className={`${styles.wrapper} wrapper`}>
-                        <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
-                        </li>
-                        <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
-                        </li>
-                        <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/section5.png" />
                         </li>
                     </ul>
                 </section>
                 <section className={`${styles.demoGallery} designs-section`}>
                     <ul className={`${styles.wrapper} wrapper`}>
                         <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
+                            <video src="https://api.kaoos.es/wp-content/uploads/2023/06/dragsa-2.mp4" autoPlay loop muted/>
                         </li>
                         <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/section6.png" />
                         </li>
                         <li>
-                            <img height="874px" src="https://source.unsplash.com/random/1240pxx874px?sig=<%= rand(0..206) %>" width="1240px" />
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/section2.png" />
+                        </li>
+                    </ul>
+                </section>
+                <section className={`${styles.demoGallery} designs-section`}>
+                    <ul className={`${styles.wrapper} wrapper`}>
+                        <li>
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/section9.png" />
+                        </li>
+                        <li>
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/section8.png" />
+                        </li>
+                        <li>
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/section7.png" />
                         </li>
                     </ul>
                 </section>

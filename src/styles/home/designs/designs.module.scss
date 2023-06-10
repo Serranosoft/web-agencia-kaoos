@@ -19,10 +19,15 @@
                     width: clamp(500px, 60vw, 800px);
                     padding-right: 1rem;
 
-                    img {
+                    img, video {
+                        max-width: 50rem;
+                        max-height: 30rem;
                         width: 100%;
-                        height: auto;
-                        background: #f0f0f0;
+                        height: 100%;
+                        background: #ffffff;
+                    }
+                    video {
+                        object-fit: cover;
                     }
                 }
             }
