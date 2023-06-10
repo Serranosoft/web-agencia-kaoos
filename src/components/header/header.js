@@ -12,9 +12,9 @@ export default function Header() {
     return (
         <header className={`${styles.root} ${route.pathname.split('/')[1] === "blog" && styles.light} header`}>
             <div>
-                <Link href="/">
+                <a href="/">
                     <Logo />
-                </Link>
+                </a>
                 {
                     route.pathname.split('/')[1] === "blog" && <Link href="/blog"><Text>Blog</Text></Link>
                 }

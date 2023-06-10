@@ -1,26 +1,29 @@
-import { useLayoutEffect } from "react"
+import { useLayoutEffect, useRef } from "react"
 import styles from "@/styles/home/designs/designs.module.scss";
-import H1 from "@/components/content/h1";
 import Separator from "./separator";
 import Container from "@/components/content/container";
 
 export default function Designs() {
 
-
     useLayoutEffect(() => {
-        gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
-        gsap.utils.toArray('.designs-section').forEach((section, index) => {
-            const w = section.querySelector('.wrapper');
-            const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
-            gsap.fromTo(w, { x }, {
-                x: xEnd,
-                scrollTrigger: {
-                    trigger: section,
-                    scrub: 0.5
-                }
+        const ctx = gsap.context(() => {
+            gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
+            gsap.utils.toArray('.designs-section').forEach((section, index) => {
+                const w = section.querySelector('.wrapper');
+                const [x, xEnd] = (index % 2) ? ['100%', (w.scrollWidth - section.offsetWidth) * -1] : [w.scrollWidth * -1, 0];
+                gsap.fromTo(w, { x }, {
+                    x: xEnd,
+                    scrollTrigger: {
+                        trigger: section,
+                        scrub: 0.5
+                    }
+                });
+                gsap.to(".body", {scrollTrigger: {trigger: section, scrub: 0.5}, backgroundColor: "rgba(0, 0, 0, 1)" });
             });
-            gsap.to(".body", {scrollTrigger: {trigger: section, scrub: 0.5}, backgroundColor: "rgba(0, 0, 0, 1)" });
-        });
+
+            return () => ctx.revert();
+            
+        })
     }, [])
 
     return (

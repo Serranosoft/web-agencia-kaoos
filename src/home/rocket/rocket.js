@@ -1,7 +1,7 @@
 import Container from "@/components/content/container";
 import styles from "@/styles/home/rocket/rocket.module.scss";
 import Text from "@/components/content/text";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { DM_Serif_Text } from "next/font/google";
 
 const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
@@ -9,26 +9,32 @@ const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 export default function Info1() {
 
     useLayoutEffect(() => {
-        const scrollTrigger = {
-            trigger: ".gsap-content",
-            start: "center top",
-            end: "+=500",
-            scrub: true,
-        }
 
-        gsap.to(".gsap-content", { scrollTrigger, scale: 0.85, });
-        gsap.to(".gsap-wrapper", { scrollTrigger, duration: 0.5, backgroundColor: "rgba(255, 255, 255, 1)" });
-        gsap.to(".gsap-text", { scrollTrigger, color: "#000000" });
-        gsap.to(".gsap-rocket", { scrollTrigger, y: "-100vh", scale: 0.5 });
-        gsap.to(".body", { scrollTrigger, backgroundColor: "rgba(255, 255, 255, 1)" });
-        gsap.to(".header", {
-            scrollTrigger: {
-                trigger: ".gsap-header-trigger",
+        const ctx = gsap.context(() => {
+            const scrollTrigger = {
+                trigger: ".gsap-content",
                 start: "center top",
+                end: "+=500",
                 scrub: true,
-            },
-            yPercent: -100
-        });
+            }
+    
+            gsap.to(".gsap-content", { scrollTrigger, scale: 0.85, });
+            gsap.to(".gsap-wrapper", { scrollTrigger, duration: 0.5, backgroundColor: "rgba(255, 255, 255, 1)" });
+            gsap.to(".gsap-text", { scrollTrigger, color: "#000000" });
+            gsap.to(".gsap-rocket", { scrollTrigger, y: "-100vh", scale: 0.5 });
+            gsap.to(".body", { scrollTrigger, backgroundColor: "rgba(255, 255, 255, 1)" });
+            gsap.to(".header", {
+                scrollTrigger: {
+                    trigger: ".gsap-header-trigger",
+                    start: "center top",
+                    scrub: true,
+                },
+                yPercent: -100
+            });
+
+            return () => ctx.revert();
+        })
+
     }, [])
 
     return (

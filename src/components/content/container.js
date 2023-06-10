@@ -1,10 +1,10 @@
 import styles from "@/styles/components/content/container.module.scss"
 
-export default function Container({children, large, className, fullscreen}) {
+export default function Container({children, large, className, ref, fullscreen}) {
 
     return (
         <>
-            <section className={`${styles.root} ${large ? styles.large : ''} ${className ? className : ''} ${fullscreen ? styles.fullscreen : ''}`}>{children}</section>
+            <section ref={ref} className={`${styles.root} ${large ? styles.large : ''} ${className ? className : ''} ${fullscreen ? styles.fullscreen : ''}`}>{children}</section>
         </>
     )
 }

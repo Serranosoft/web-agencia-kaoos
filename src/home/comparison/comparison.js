@@ -1,26 +1,29 @@
 import Container from "@/components/content/container";
 import Text from "@/components/content/text";
 import styles from "@/styles/home/comparison/comparison.module.scss";
-import { useEffect, useLayoutEffect } from "react";
+import { useLayoutEffect } from "react";
 export default function Comparison() {
 
-
     useLayoutEffect(() => {
-
-        gsap.utils.toArray(".comparisonSection").forEach(section => {
-            let tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: section,
-                    start: "top center",
-                    end: "+=680",
-                    scrub: true,
-                },
-                defaults: { ease: "none" },
+        const ctx = gsap.context(() => {
+            gsap.utils.toArray(".comparisonSection").forEach(section => {
+                let tl = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top center",
+                        end: "+=680",
+                        scrub: true,
+                    },
+                    defaults: { ease: "none" },
+                });
+                tl
+                .fromTo(section.querySelector(".afterImage"), { xPercent: -100, x: 0 }, { xPercent: 0, duration: 1 })
+                .fromTo(section.querySelector(".afterImage img"), { xPercent: 100, x: 0 }, { xPercent: 0, duration: 1 }, 0);
             });
-            tl
-            .fromTo(section.querySelector(".afterImage"), { xPercent: -100, x: 0 }, { xPercent: 0, duration: 1 })
-            .fromTo(section.querySelector(".afterImage img"), { xPercent: 100, x: 0 }, { xPercent: 0, duration: 1 }, 0);
-        });
+
+            return () => ctx.revert();
+            
+        })
     }, [])
 
     return (
