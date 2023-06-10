@@ -57,10 +57,13 @@ export default function Test() {
             perspectiveOrigin: "left 100vh",
             ease: "none"
         });
+
+        // gsap.to(".body", { scrollTrigger: {trigger: document.querySelector(".test-selector"), scrub: 0.5}, backgroundColor: "rgba(0, 0, 0, 1)" });
+
     }, [])
 
     return (
-        <Container fullscreen className={styles.root}>
+        <Container fullscreen className={`${styles.root} test-trigger`}>
             <div>
                 <section className={styles.banner}>
                     <div className={`${styles.banner3d1} banner3d-1`}>

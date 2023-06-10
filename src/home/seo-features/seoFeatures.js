@@ -26,7 +26,7 @@ export default function SeoFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl>1</Text>
+                        <Text xl className={styles.boxTitle}>1</Text>
                         <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
                     </div>
                     <div className={styles.box}>
@@ -39,7 +39,7 @@ export default function SeoFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl>2</Text>
+                        <Text xl className={styles.boxTitle}>2</Text>
                         <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
                     </div>
                     <div className={styles.box}>
@@ -52,7 +52,7 @@ export default function SeoFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl>3</Text>
+                        <Text xl className={styles.boxTitle}>3</Text>
                         <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ export default function SeoFeatures() {
                         <Text>North star goals</Text>
                     </div>
                 </div>
-                <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Button text</Button>
+                <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Ponerse en contacto</Button>
             </div>
         </Container>
     )

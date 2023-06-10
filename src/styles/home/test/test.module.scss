@@ -4,7 +4,6 @@
     display: flex;
     & > div {
         .banner {
-            // color: #E8E8E8;
             display: flex;
             align-items: stretch;
     
@@ -13,12 +12,11 @@
             width: 100%;
             max-width: 800px;
             margin: 0 auto;
-            // color: $blue;
             text-transform: uppercase;
             font-weight: 700;
             
             p {
-                color: black;
+                color: white;
             }
         }
     
@@ -52,7 +50,7 @@
     
         .banner3d1front {
             padding: 50px;
-            background: $purple;
+            background: $highlight;
             transform: translatez(50px);
             transform-style: preserve-3d;
         }
@@ -90,7 +88,7 @@
     
         .banner3d2front {
             padding: 50px;
-            background: $purple;
+            background: $highlight;
             transform: translatez(-50px);
             transform-style: preserve-3d;
         }
@@ -131,7 +129,7 @@
         .banner3d3front {
             padding: 100px 25px;
             text-align: center;
-            background: $purple;
+            background: $highlight;
             transform: translatez(50px);
             transform-style: preserve-3d;
         }

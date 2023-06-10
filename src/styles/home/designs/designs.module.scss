@@ -1,0 +1,31 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7.5rem;
+    background-color: #000000;
+
+    .demoWrapper {
+        .demoGallery:not(.last) {
+            padding-bottom: 1rem;
+
+            .wrapper {
+                display: flex;
+                padding-left: 1rem;
+                list-style: none;
+
+                li {
+                    flex-shrink: 0;
+                    width: clamp(500px, 60vw, 800px);
+                    padding-right: 1rem;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        background: #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+}

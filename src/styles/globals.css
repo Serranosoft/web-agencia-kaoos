@@ -12,6 +12,7 @@ body {
     background-color: black;
     letter-spacing: -0.55px;
     scroll-behavior: smooth;
+    overflow-x: clip;
 }
 
 body {

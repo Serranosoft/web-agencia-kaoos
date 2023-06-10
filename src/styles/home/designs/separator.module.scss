@@ -5,6 +5,8 @@
     text-align: center;
     margin: 5rem 0 2.5rem;
     height: 300px;
+    width: 100%;
+    max-width: 80rem;
     & > div {
         display: flex;
         flex-direction: column;
