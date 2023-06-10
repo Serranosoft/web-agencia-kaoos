@@ -14,6 +14,7 @@ export default function Comparison() {
                     start: "top center",
                     end: "+=680",
                     scrub: true,
+                    markers: true,
                 },
                 defaults: { ease: "none" },
             });
@@ -24,15 +25,20 @@ export default function Comparison() {
     }, [])
 
     return (
-        <Container fullscreen className={`${styles.root}  comparisonSection`}>
+        <Container fullscreen className={`${styles.root} comparisonSection`}>
             <div className={styles.wrapper}>
                 <Text xxxl>Templates created by the leading experts to help you deliver a powerful story</Text>
-                <div className={`${styles.comparison}`}>
-                    <div className={styles.before}>
-                        <img src="https://api.kaoos.es/wp-content/uploads/2023/06/1.jpg" />
-                    </div>
-                    <div className={`${styles.after} afterImage`}>
-                        <img src="https://api.kaoos.es/wp-content/uploads/2023/06/2.jpg" />
+                <div className={styles.perspectiveWrapper}>
+                    <div className={styles.perspective}>
+
+                        <div className={`${styles.comparison}`}>
+                            <div className={styles.before}>
+                                <img src="https://api.kaoos.es/wp-content/uploads/2023/06/before.jpg" />
+                            </div>
+                            <div className={`${styles.after} afterImage`}>
+                                <img src="https://api.kaoos.es/wp-content/uploads/2023/06/after.jpg" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
