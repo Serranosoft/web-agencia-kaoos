@@ -4,7 +4,7 @@ export default function Button({children, href}) {
 
 
     return (
-        <Link href={href} className={styles.root}>
+        <Link href={href} className={styles.root} target="_blank">
             {children}
         </Link>
     )
