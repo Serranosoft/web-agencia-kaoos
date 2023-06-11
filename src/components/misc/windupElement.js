@@ -1,12 +1,14 @@
 import { CharWrapper, WindupChildren } from "windups";
 import styles from "@/styles/components/misc/windup.module.scss"
+import { DM_Serif_Text } from 'next/font/google'
+const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 
 
 export default function WindupElement({ children, isAnswer, onFinished, mode }) {
     return (
         <WindupChildren onFinished={onFinished}>
             <div className={`${styles.windup} ${isAnswer && styles.windupAnswer}`}>
-                <CharWrapper element={mode === "jumpy" ? JumpyChar : RotateChar}>
+                <CharWrapper element={RotateChar}>
                     {children}
                 </CharWrapper>
             </div>
@@ -15,9 +17,5 @@ export default function WindupElement({ children, isAnswer, onFinished, mode }) 
 }
 
 const RotateChar = ({ children }) => {
-    return <span className={`${styles.root} ${styles.rotate}`}>{children}</span>
-}
-
-const JumpyChar = ({ children }) => {
-    return <span className={`${styles.root} ${styles.jumpy}`}>{children}</span>
+    return <span className={`${styles.root} ${styles.rotate} ${font.className}`}>{children}</span>
 }
