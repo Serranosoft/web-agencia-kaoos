@@ -10,6 +10,8 @@ import Test from '@/home/persuassion/persuassion'
 import Designs from '@/home/designs/designs'
 import Showcase from '@/home/blog/showcase'
 import SeoFeatures2 from '@/home/seo-features2/seoFeatures2'
+import Persuassion from '@/home/persuassion/persuassion'
+import DesignFeatures from '@/home/design-features/designFeatures'
 
 
 
@@ -56,6 +58,7 @@ export default function Home() {
             */}
             <section className={`${styles.main} body`}>
                 <div className={styles.bg}></div>
+                <Floating />
                 <Hero />
                 <SeoCharts />
                 <SeoFeatures />
@@ -63,9 +66,9 @@ export default function Home() {
                 <SeoFeatures2 />
                 <Rocket />
                 <Showcase />
-                <Floating />
                 <Designs />
-                <Test />
+                <DesignFeatures />
+                <Persuassion />
             </section>
 
         </>
