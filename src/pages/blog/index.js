@@ -1,12 +1,11 @@
 import { getAllPosts } from "@/pages/api/wordpress";
-import Anchor from "@/components/content/link";
 import styles from "@/styles/blog/blog.module.scss";
 import Container from "@/components/content/container";
 import Text from "@/components/content/text";
 import Button from "@/components/content/button";
 import { Kanit, Nunito_Sans } from 'next/font/google'
 import Head from 'next/head'
-import Header from "@/components/header/header";
+import Link from "next/link";
 
 
 const title = Kanit({ subsets: ['latin'], weight: "700" })
@@ -33,9 +32,9 @@ export default function Blog({ data }) {
                             {
                                 data.edges.map((blog) => {
                                     return (
-                                        <Anchor href={`/blog/${blog.node.slug}`}>
+                                        <Link href={`/blog/${blog.node.slug}`}>
                                             <img src={blog.node.featuredImage.node.sourceUrl} />
-                                        </Anchor>
+                                        </Link>
                                     )
                                 })
                             }

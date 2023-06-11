@@ -1,3 +1,4 @@
+@use "../components/content/link.module.scss" as link;
 @import "../colors";
 
 .root {
@@ -5,7 +6,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 5rem;
+    padding: 1rem clamp(1rem, 1rem + 3vw, 5rem);
     box-shadow: 1px 0 3px lightgray;
     z-index: 10;
     position: sticky;
@@ -14,19 +15,6 @@
     background: rgba(0, 0, 0, 0.61);
     backdrop-filter: blur(3px);
     transition: all 0.75s;
-    &>div {
-        display: flex;
-        a {
-            line-height: 0;
-            svg {
-                width: 12rem;
-                height: auto;
-                path {
-                    fill: #ffffff;
-                }
-            }
-        }
-    }
 
     &.light {
         background-color: #fff;
@@ -49,8 +37,84 @@
         }
     }
 
-    a {
-        font-size: inherit;
-        letter-spacing: inherit;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        a {
+            line-height: 0;
+
+            svg {
+                width: 12rem;
+                height: auto;
+
+                path {
+                    fill: #ffffff;
+                }
+            }
+        }
+    }
+
+
+    .menu {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .close {
+            display: none;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+
+        a {
+            @include link.root;
+            
+            &:hover {
+                background-size: 101% 100%;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .root {
+        .logo {
+            .burger {
+                display: block;
+            }
+
+            svg {
+                display: none;
+            }
+        }
+
+        .menu {
+            display: none;
+            &.active {
+                display: flex;
+            }
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            padding: 5rem 0;
+            flex-direction: column;
+            height: 100vh;
+            z-index: 11;
+            background-color: #000000;
+            .close {
+                display: block;
+            }
+        }
     }
 }

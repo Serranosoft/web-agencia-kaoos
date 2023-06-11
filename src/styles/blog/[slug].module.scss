@@ -1,12 +1,13 @@
 @use "../components/content/text.module" as text;
 @use "../components/content/h2.module" as h2;
 @use "../components/content/button.module" as btn;
+@use "../components/content/link.module.scss" as link;
 
 .root {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem 1rem;
+    padding: 5rem 1rem 8rem 1rem;
     background-color: #ffffff;
     color: #000000;
     
@@ -60,16 +61,19 @@
         align-items: center;
         width: 100%;
         max-width: 850px;
-
+        margin-top: 5rem;
         & > div {
             width: 100%;
             p,
             ul li,
             ol li,
             p a {
-                font-size: 1.3rem;
-                color: inherit;
+                font-size: 1.4rem;
+                color: #303030;
                 margin: 2.2rem 0;
+                strong {
+                    color: #000000;
+                }
             }
     
             ul,
@@ -91,17 +95,8 @@
             }
     
             p a {
-                background-image: linear-gradient(to right, #3c00ff 100%, #ffffff 0);
-                background-position: 0 110%;
-                background-repeat: repeat-x;
-                background-size: 100% 25%;
-                color: #000;
-                text-decoration: none;
-                transition: 0.2s background-size, 0.1s color;
-                border-radius: 1rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-    
+                @include link.root;
+                color: #000000;
                 &:hover {
                     background-size: 100% 100%;
                     color: #ffffff;
@@ -131,5 +126,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 5rem 0;
+        img {
+            border-radius: 0.35rem;
+        }
     }
 }
