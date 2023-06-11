@@ -80,6 +80,7 @@ export async function getAllPosts(category) {
               excerpt
               featuredImage {
                 node {
+                    altText
                   sourceUrl
                 }
               }

@@ -33,7 +33,7 @@ export default function Blog({ data }) {
                                 data.edges.map((blog) => {
                                     return (
                                         <Link href={`/blog/${blog.node.slug}`}>
-                                            <img src={blog.node.featuredImage.node.sourceUrl} />
+                                            <img alt={blog.node.featuredImage.node.altText} src={blog.node.featuredImage.node.sourceUrl} />
                                         </Link>
                                     )
                                 })
