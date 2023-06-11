@@ -1,14 +1,14 @@
 import Container from "@/components/content/container";
 import styles from "@/styles/home/rocket/rocket.module.scss";
 import Text from "@/components/content/text";
-import { useLayoutEffect, useRef } from "react";
+import { useEffect } from "react";
 import { DM_Serif_Text } from "next/font/google";
 
 const font = DM_Serif_Text({ subsets: ['latin'], weight: "400" })
 
 export default function Info1() {
 
-    useLayoutEffect(() => {
+    useEffect(() => {
 
         const ctx = gsap.context(() => {
             const scrollTrigger = {

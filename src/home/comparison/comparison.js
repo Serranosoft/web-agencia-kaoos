@@ -1,10 +1,10 @@
 import Container from "@/components/content/container";
 import Text from "@/components/content/text";
 import styles from "@/styles/home/comparison/comparison.module.scss";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 export default function Comparison() {
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.utils.toArray(".comparisonSection").forEach(section => {
                 let tl = gsap.timeline({

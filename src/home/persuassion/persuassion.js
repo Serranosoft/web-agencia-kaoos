@@ -1,11 +1,11 @@
 import Container from "@/components/content/container";
 import Text from "@/components/content/text";
 import styles from "@/styles/home/persuassion/persuassion.module.scss";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 
 export default function Persuassion() {
 
-    useLayoutEffect(() => {
+    useEffect(() => {
 
         const ctx = gsap.context(() => {
             gsap.set(".gsap-banner3d-1", { perspectiveOrigin: "center -100vh" });

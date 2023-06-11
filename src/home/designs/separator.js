@@ -1,6 +1,6 @@
 import styles from '@/styles/home/designs/separator.module.scss'
 import WindupElement from '@/components/misc/windupElement'
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Text from '@/components/content/text';
 import { Pause } from 'windups';
 
@@ -23,7 +23,7 @@ export default function Separator() {
         windupObserver.observe(windupObserverElement);
     }
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         showUpWindupMessage();
     }, [])
 
