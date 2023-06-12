@@ -3,6 +3,7 @@
 .root {
     display: flex;
     margin: 8rem 0;
+
     .banner {
         display: flex;
         align-items: stretch;
@@ -78,9 +79,11 @@
     .banner:nth-child(3) {
         &>div>div {
             transform: translatez(-50px);
+
             &::before {
                 transform: rotatex(-90deg);
             }
+
             &::after {
                 transform: rotatex(90deg);
             }
@@ -126,6 +129,13 @@
         box-shadow: inset 25px 0px 20px 10px rgba(0, 0, 0, 0.41)
     }
 
+    
+}
+.gradient {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, #225E92);
+
 }
 
 @media (max-width: 991px) {
@@ -135,7 +145,7 @@
     }
 
     .banner:nth-child(5) {
-        & > div {
+        &>div {
             width: 100%;
         }
     }

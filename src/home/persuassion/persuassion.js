@@ -45,40 +45,45 @@ export default function Persuassion() {
     }, [])
 
     return (
-        <Container fullscreen className={`${styles.root} test-trigger`}>
-            <section className={styles.banner}>
-                <div className="gsap-banner3d-1">
-                    <div>
-                        <Text xxl>Consigue una web profesional que marque la diferencia</Text>
+        <>
+            <Container fullscreen className={`${styles.root}`}>
+                <section className={styles.banner}>
+                    <div className="gsap-banner3d-1">
+                        <div>
+                            <Text xxl>Consigue una web profesional que marque la diferencia</Text>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section className={styles.miniBanner}></section>
+                <section className={styles.miniBanner}></section>
 
-            <section className={styles.banner}>
-                <div className="gsap-banner3d-2">
-                    <div>
-                        <Text xxl>Cautiva y convierte a tus clientes</Text>
+                <section className={styles.banner}>
+                    <div className="gsap-banner3d-2">
+                        <div>
+                            <Text xxl>Cautiva y convierte a tus clientes</Text>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section className={styles.halfBanner}><Text xxl>Desarrollo y diseño de primer nivel</Text></section>
+                <section className={styles.halfBanner}><Text xxl>Desarrollo y diseño de primer nivel</Text></section>
 
-            <section className={`${styles.banner} ${styles.divided}`}>
-                <div className="gsap-banner3d-3">
-                    <div>
-                        <Text xxl>Se trata de perspectiva</Text>
+                <section className={`${styles.banner} ${styles.divided}`}>
+                    <div className="gsap-banner3d-3">
+                        <div>
+                            <Text xxl>Se trata de perspectiva</Text>
+                        </div>
                     </div>
-                </div>
-                <div className={styles.image}></div>
-            </section>
+                    <div className={styles.image}></div>
+                </section>
 
-            <section className={styles.halfBanner}>
-                <Text xxxl>Hacemos las cosas<br></br> diferente</Text>
-            </section>
+                <section className={styles.halfBanner}>
+                    <Text xxxl>Hacemos las cosas<br></br> diferente</Text>
+                </section>
 
-        </Container>
+
+
+            </Container>
+            <div className={styles.gradient}></div>
+        </>
     )
 }

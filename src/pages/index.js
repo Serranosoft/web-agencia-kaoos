@@ -12,6 +12,7 @@ import Showcase from '@/home/blog/showcase'
 import SeoFeatures2 from '@/home/seo-features2/seoFeatures2'
 import Persuassion from '@/home/persuassion/persuassion'
 import DesignFeatures from '@/home/design-features/designFeatures'
+import Transition from '@/home/faq/transition'
 
 
 
@@ -69,6 +70,7 @@ export default function Home() {
                 <Designs />
                 <DesignFeatures />
                 <Persuassion />
+                {/* <Transition /> */}
             </section>
 
         </>
