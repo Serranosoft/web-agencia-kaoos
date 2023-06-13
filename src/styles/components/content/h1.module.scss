@@ -5,4 +5,8 @@
     letter-spacing: -0.8px;
     transition: all 0.55s;
     transition-delay: 150ms;
+    &.title {
+        font-size: clamp(3.43rem, 2.84vw + 2.72rem, 5rem);
+    }
+    
 }

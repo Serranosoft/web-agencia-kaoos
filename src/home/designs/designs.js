@@ -18,7 +18,6 @@ export default function Designs() {
                         scrub: 0.5
                     }
                 });
-                gsap.to(".body", {scrollTrigger: {trigger: section, scrub: 0.5}, backgroundColor: "rgba(0, 0, 0, 1)" });
             });
 
             return () => ctx.revert();

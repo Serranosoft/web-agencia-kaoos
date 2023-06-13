@@ -22,7 +22,7 @@ export default function Blog({ data }) {
                 <link rel="icon" href="/favicon.svg" />
                 <script src="echarts.js"></script>
             </Head>
-            <Container className={`${styles.root} ${text.className}`} fullscreen>
+            <Container fullscreen className={`${styles.root} ${text.className}`}>
                 <div>
                     <Text xxxl className={`${title.className} ${styles.title} `}>TRÁFICO CONSTANTE Y CUALIFICADO</Text>
                     <Text xxl className={`${title.className} ${styles.title} `}>DESCUBRE DE QUE TRATA EL SEO</Text>

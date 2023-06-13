@@ -16,7 +16,7 @@ export default function Header() {
     }, [])
 
     return (
-        <header className={`${styles.root} ${route.pathname.split('/')[1] === "blog" && styles.light} header`}>
+        <header className={`${styles.root} ${route.pathname.split('/')[1] === "blog" ? styles.light : ''} header`}>
             <div className={styles.logo}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -56,6 +56,7 @@ export default function Header() {
                 {
                     route.pathname.split('/')[1] !== "blog" && <Link href="/blog">Blog</Link>
                 }
+                <Link href="/disenos">Portfolio de diseños</Link>
             </div>
 
         </header>

@@ -22,7 +22,6 @@ export default function Info1() {
             gsap.to(".gsap-wrapper", { scrollTrigger, duration: 0.5, backgroundColor: "rgba(255, 255, 255, 1)" });
             gsap.to(".gsap-text", { scrollTrigger, color: "#000000" });
             gsap.to(".gsap-rocket", { scrollTrigger, y: "-100vh", scale: 0.5 });
-            gsap.to(".body", { scrollTrigger, backgroundColor: "rgba(255, 255, 255, 1)" });
             gsap.to(".header", {
                 scrollTrigger: {
                     trigger: ".gsap-header-trigger",

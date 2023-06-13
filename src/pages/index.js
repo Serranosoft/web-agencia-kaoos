@@ -58,7 +58,7 @@ export default function Home() {
                 sendcloud webpage
 
             */}
-            <section className={`${styles.main} body`}>
+            {/* <section className={`${styles.main} body`}> */}
                 <div className={styles.bg}></div>
                 <Floating />
                 <Hero />
@@ -73,7 +73,7 @@ export default function Home() {
                 <DesignGuide />
                 <Persuassion />
                 {/* <Transition /> */}
-            </section>
+            {/* </section> */}
 
         </>
     )

@@ -1,0 +1,12 @@
+.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #000000;
+
+    &.light {
+        background-color: #ffffff;
+    }
+}
