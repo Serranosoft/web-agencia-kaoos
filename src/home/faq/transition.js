@@ -6,8 +6,8 @@ export default function Transition() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            gsap.set('.main', { position: 'sticky', background: '#fff', width: '100%',  bottom: 0,/*  maxWidth: '1200px', *//*  height: '100%', */ /* top: 0, left: '50%', x: '-50%' */ })
-            gsap.set('.scrollDist', { width: '100%', height: '120%', top: 0, left: 0, })
+            gsap.set('.main', { position: 'sticky', background: '#fff', width: '100%', /*  bottom: 650, *//*  maxWidth: '1200px', */ height: '100%', top: 0, left: '50%', x: '-50%' })
+            gsap.set('.scrollDist', { width: '100%', height: '100%', top: 0, left: 0, })
 
             gsap.timeline({ scrollTrigger: { trigger: '.scrollDist', start: 'top top', end: 'bottom bottom', scrub: 1, markers: true, } })
                 .fromTo('.sky', { y: 0 }, { y: -200 }, 0)
@@ -52,12 +52,12 @@ export default function Transition() {
                     <image className="mountFg"  href="https://assets.codepen.io/721952/mountFg.png" width="1200" height="800" />
                     <image className="cloud1"  href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800" />
                     <image className="cloud3"  href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800" />
-                    <text fill="#fff" x="350" y="200">EXPLORE</text>
+                    <text fill="#fff" x="350" y="200">¿QUIERES SABER MAS?</text>
                     <polyline className="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
 
                     <g mask="url(#m)">
                         <rect fill="#fff" width="100%" height="100%" />
-                        <text x="350" y="200" fill="#162a43">FURTHER</text>
+                        <text x="350" y="200" fill="#162a43">PONTE EN CONTACTO</text>
                     </g>
 
                     <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" />

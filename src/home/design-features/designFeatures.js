@@ -15,7 +15,7 @@ export default function DesignFeatures() {
                 <Highlight>Diseño y desarrollo web</Highlight>
             </div>
             <div className={styles.content}>
-                <H2>Start closer to the finish line with templates made by industry experts</H2>
+                <H2 title>Start closer to the finish line with templates made by industry experts</H2>
                 <div className={styles.columns}>
                     <div className={styles.box}>
                         <div className={styles.icon}>
@@ -86,7 +86,6 @@ export default function DesignFeatures() {
                         <Text>North star goals</Text>
                     </div>
                 </div>
-                <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Ponerse en contacto</Button>
             </div>
         </Container>
     )

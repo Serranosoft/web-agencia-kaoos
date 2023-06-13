@@ -15,7 +15,7 @@ export default function SeoFeatures() {
                 <Highlight>Posicionamiento web</Highlight>
             </div>
             <div className={styles.content}>
-                <H2>Start closer to the finish line with templates made by industry experts</H2>
+                <H2 title>Start closer to the finish line with templates made by industry experts</H2>
                 <div className={styles.columns}>
                     <div className={styles.box}>
                         <div className={styles.icon}>

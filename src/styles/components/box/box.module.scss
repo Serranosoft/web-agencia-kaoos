@@ -1,0 +1,42 @@
+@property --color1 {
+    syntax: '<color>';
+    initial-value: rgba(255, 255, 255, 0.1);
+    inherits: false;
+}
+
+@property --color2 {
+    syntax: '<color>';
+    initial-value: rgba(255, 255, 255, 0.05);
+    inherits: false;
+}
+
+@mixin root {
+    --color1: rgba(255, 255, 255, 0.1);
+    --color2: rgba(255, 255, 255, 0.05);
+    position: relative;
+    background: linear-gradient(137deg, var(--color1) 0%, var(--color2) 100%);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 40px 0px, rgba(255, 255, 255, 0.1) 0px 1px 2px 0px inset;
+    transition: --color1 2s, --color2 1s, box-shadow 0.5s;
+
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-size: 128px;
+        background-repeat: repeat;
+        background-image: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png");
+        opacity: 0.06;
+        border-radius: inherit;
+    }
+
+    &:hover {
+        --color1: rgb(60, 0, 255);
+        --color2: rgb(183, 0, 255);
+        background: linear-gradient(315deg, var(--color1) 0%, var(--color2) 100%);
+        box-shadow: rgba(131, 30, 228, 0.2) 0px 20px 40px 0px, rgba(255, 255, 255, 0.1) -2px 2px 2px 0px inset;
+    }
+}

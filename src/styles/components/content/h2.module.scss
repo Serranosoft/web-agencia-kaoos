@@ -2,7 +2,11 @@
     font-size: clamp(2rem, 0.71vw + 1.8rem, 2.6rem);
     margin: 0;
     line-height: 1.0;
+    &.title {
+        font-size: clamp(3.43rem, 2.84vw + 2.72rem, 5rem);
+    }
 }
+
 
 @mixin styles {
     font-size: clamp(2rem, 0.71vw + 1.8rem, 2.5rem);

@@ -1,3 +1,4 @@
+@use "@/styles/components/box/box.module.scss" as box;
 @import "../../colors.scss";
 
 .root {
@@ -23,7 +24,7 @@
 
         h2 {
             margin-bottom: 1rem;
-            max-width: 850px;
+            max-width: 1000px;
         }
 
         .columns {
@@ -39,8 +40,7 @@
                 gap: 1.5rem;
                 padding: 3rem 2rem;
                 border-radius: 1.3rem;
-                background-color: $box;
-
+                @include box.root;      
                 &.list {
                     align-items: flex-start;
 
@@ -104,8 +104,9 @@
                 gap: 0.75rem;
                 padding: 0.8rem 1rem;
                 border-radius: 1rem;
-                background-color: $box;
                 font-weight: bold;
+                @include box.root;
+
             }
         }
 

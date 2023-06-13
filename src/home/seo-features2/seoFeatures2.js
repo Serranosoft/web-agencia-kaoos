@@ -11,7 +11,7 @@ export default function SeoFeatures2() {
     return (
         <Container large className={styles.root}>
             <div className={styles.content}>
-                <H2>Expertos en SEO</H2>
+                <H2 title>Expertos en SEO</H2>
                 <div className={styles.columns}>
                     <div className={`${styles.box} ${styles.list}`}>
                         <Text xxl className={styles.boxTitle}>Análisis Inicial</Text>
