@@ -53,7 +53,7 @@ export default function Header() {
                 </svg>
 
                 <Link href="/blog">Blog</Link>
-                <Link href="/disenos">Portfolio de diseños</Link>
+                <Link href="/bocetos">Diseños & bocetos</Link>
             </div>
 
         </header>

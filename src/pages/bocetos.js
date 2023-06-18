@@ -47,7 +47,7 @@ export default function Designs() {
     return (
         <>
             <Head>
-                <title>Portfolio de diseños de Kaoos</title>
+                <title>Portfolio de diseños y bocetos de Kaoos</title>
                 <meta name="description" content="Portfolio de diseños de Kaoos" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.svg" />
@@ -57,36 +57,27 @@ export default function Designs() {
             <Container fullscreen className={styles.root}>
                 <div className={styles.bg}></div>
                 <div className={styles.header}>
-                    <H1 title>Portfolio de diseños</H1>
-                    <Text xl>Descripción.</Text>
+                    <H1 title>Portfolio de diseños y bocetos</H1>
+                    <Text xl>Clica en cada elemento para ver el diseño completo.</Text>
                 </div>
                 <div className={styles.group}>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section3.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section5.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section1.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section4.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section2.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section8.png)" }}></div>
+                    <video className={`${styles.item} item`} src="https://api.kaoos.es/wp-content/uploads/2023/06/dragsa-2.mp4" autoPlay loop muted/>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section6.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section9.png)" }}></div>
                 </div>
 
                 <div className={styles.group}>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section3.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section1.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section4.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section2.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section8.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section7.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section3.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section2.png)" }}></div>
                 </div>
                 <div className={styles.cta}>
                     <Text xxl>¿Te gusta lo que ves?</Text>
                     <Text xl>En Kaoos nos encargamos del diseño de tu página web</Text>
                     <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Ponerse en contacto</Button>
-                </div>
-
-                <div className={styles.group}>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section3.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section1.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section4.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section2.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section8.png)" }}></div>
                 </div>
             </Container>
 

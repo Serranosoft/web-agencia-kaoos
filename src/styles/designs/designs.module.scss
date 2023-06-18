@@ -57,6 +57,9 @@
             display: inline-block;
             cursor: pointer;
         }
+        video {
+            object-fit: cover;
+        }
     }
 
 }
