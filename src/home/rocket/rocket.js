@@ -47,11 +47,14 @@ export default function Info1() {
                     <div className={`${styles.columns}`}>
                         <div className="aos-effect3-observer aos-effect3-el">
                             <Text xxxl className={`${font.className} gsap-text`}>Despega tu</Text>
-                            <Text className="gsap-text">Podemos ordenar el kaoos de tu mente y crear una página web con un diseño único a tu gusto. Solo necestiamos saber cómo funciona tu negocio para ponernos a trabajar. Y si ya tienes una idea, nos adaptamos a tu estilo. </Text>
+                            <Text className="gsap-text">Podemos ordenar el Kaoos de tu mente y <strong>crear una página web con un diseño único</strong> a tu gusto.  </Text>
+                            <Text className="gsap-text">Solo necestiamos saber cómo funciona tu negocio para ponernos a trabajar.</Text>
                         </div>
                         <div className="aos-effect3-observer aos-effect3-el">
                             <Text xxxl className={`${font.className} gsap-text`}>página web</Text>
-                            <Text className="gsap-text">Creamos una estrategia SEO adecuada al tipo de negocio, haciendo un análisis de mercado y competencia. Para páginas web antiguas, comenzamos con una auditoría SEO. A partir de ahí, comenzamos a implementar soluciones.</Text>
+                            <Text className="gsap-text">Creamos una estrategia SEO única según el tipo de negocio con un análisis de mercado y competencia. </Text>
+                            <Text className="gsap-text">Para páginas web ya creadas, <strong>comenzamos con una auditoría SEO</strong> y aplicando soluciones.</Text>
+
                         </div>
                     </div>
 

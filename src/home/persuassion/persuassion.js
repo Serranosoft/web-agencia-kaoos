@@ -50,22 +50,23 @@ export default function Persuassion() {
                 <section className={styles.banner}>
                     <div className="gsap-banner3d-1">
                         <div>
-                            <Text xxl>Consigue una web profesional que marque la diferencia</Text>
+                            <Text xxl>¿Por qué elegir Kaoos y no otra agencia?</Text>
                         </div>
                     </div>
                 </section>
 
                 <section className={styles.miniBanner}></section>
+                {/* PONME EL TEXTO CENTRADO Y EN TAMAÑO XL: Nacimos de crear nuestros propios proyectos SEO, experimentando y practicando en cada paso. Actualmente, nos dedicamos por y para esto. Trabajamos con contenido actualizado cada día y buscando constanmente las méjores técnicas y las estrategias más óptimas para cada negocio */}
 
                 <section className={styles.banner}>
                     <div className="gsap-banner3d-2">
                         <div>
-                            <Text xxl>Cautiva y convierte a tus clientes</Text>
+                            <Text xxl>Persuadir, cautivar y convertir</Text>
                         </div>
                     </div>
                 </section>
 
-                <section className={styles.halfBanner}><Text xxl>Desarrollo y diseño de primer nivel</Text></section>
+                <section className={styles.halfBanner}><Text xxl>Para impulsar una página web solo necesitamos encontrar la oportunidad</Text></section>
 
                 <section className={`${styles.banner} ${styles.divided}`}>
                     <div className="gsap-banner3d-3">

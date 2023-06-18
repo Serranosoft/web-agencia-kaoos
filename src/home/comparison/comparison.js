@@ -30,7 +30,7 @@ export default function Comparison() {
     return (
         <Container fullscreen className={`${styles.root} comparisonSection`}>
             <div className={styles.wrapper}>
-                <H2 title>Templates created by the leading experts to help you deliver a powerful story</H2>
+                <H2 title>Te ayudamos a impulsar tu negocio con resultados reales</H2>
                 <div className={`${styles.comparison}`}>
                     <div className={styles.before}>
                         <img src="https://api.kaoos.es/wp-content/uploads/2023/06/before.jpg" />

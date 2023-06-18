@@ -10,8 +10,8 @@ export default function DesignGuide() {
 
     return (
         <Container large className={styles.root}>
-            <H2 title>¿Que quieres construir?</H2>
-            <Text xl>Kaoos abre un mundo de posibilidades en la creación de negocios digitales. Incrementa hoy tu beneficio con una web dinámica y profesional</Text>
+            <H2 title>¿Qué negocio quieres posicionar?</H2>
+            <Text xl>Trabajamos con estrategias adaptadas para cada tipo de proyecto </Text>
             <div className={styles.columns}>
                 <div className={styles.item}>
                     <div className={styles.logos}>
@@ -91,8 +91,8 @@ export default function DesignGuide() {
                             />
                         </svg>
                     </div>
-                    <Text xl>Blogs</Text>
-                    <Muted>A detailed guide on how to create total numbers of item count for referenced items in Webflow collections</Muted>
+                    <Text xl>Pymes y Startups</Text>
+                    <Muted>Si estás construyendo una empresa, hacemos que tu proyecto tenga presencia digital para competir en el mercado</Muted>
                 </div>
                 <div className={styles.item}>
                     <div className={styles.logos}>
@@ -248,8 +248,8 @@ export default function DesignGuide() {
                             />
                         </svg>
                     </div>
-                    <Text xl>Diseños de portfolio</Text>
-                    <Muted>A detailed guide on how to create total numbers of item count for referenced items in Webflow collections</Muted>
+                    <Text xl>Noticias</Text>
+                    <Muted>Un portal de noticias, sin curación de contenido y sin una estrategia SEO, no conseguirá escalar en los resultados</Muted>
                 </div>
                 <div className={styles.item}>
                     <div className={styles.logos}>
@@ -400,8 +400,8 @@ export default function DesignGuide() {
                             <path fill="#7f54b3" d="M61.3 89.1l22.3 13.1-4.7-13.1-12.8-3.6z" />
                         </svg>
                     </div>
-                    <Text xl>Tiendas online</Text>
-                    <Muted>A detailed guide on how to create total numbers of item count for referenced items in Webflow collections</Muted>
+                    <Text xl>Ecommerce</Text>
+                    <Muted>Hacemos que tu tienda destaque entre las marcas y aumentamos la cantidad y calidad de tus clientes</Muted>
                 </div>
                 <div className={styles.item}>
                     <div className={styles.logos}>
@@ -430,7 +430,7 @@ export default function DesignGuide() {
                         </svg>
                     </div>
                     <Text xl>Páginas de producto y servicios</Text>
-                    <Muted>A detailed guide on how to create total numbers of item count for referenced items in Webflow collections</Muted>
+                    <Muted>Cualquier funcionalidad que necesites, nosotros la hacemos posible programando cada detalle</Muted>
                 </div>
                 <div className={styles.item}>
                     <div className={styles.logos}>
@@ -586,8 +586,8 @@ export default function DesignGuide() {
                             />
                         </svg>
                     </div>
-                    <Text xl>Portales de noticias</Text>
-                    <Muted>A detailed guide on how to create total numbers of item count for referenced items in Webflow collections</Muted>
+                    <Text xl>Negocios locales</Text>
+                    <Muted>Sé el mejor negocio de tu zona en presencia, nosotros lo hacemos por ti de manera digital</Muted>
                 </div>
                 <div className={styles.item}>
                     <div className={styles.logos}>
@@ -743,11 +743,11 @@ export default function DesignGuide() {
                             />
                         </svg>
                     </div>
-                    <Text xl>E</Text>
-                    <Muted>A detailed guide on how to create total numbers of item count for referenced items in Webflow collections</Muted>
+                    <Text xl>Empresas</Text>
+                    <Muted>Si tu empresa no tiene una gran presencia en internet, nosotros te impulsamos para alcanzar el éxito</Muted>
                 </div>
             </div>
-            <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Ponerse en contacto</Button>
+            <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Solicitar un presupuesto</Button>
 
         </Container>
     )

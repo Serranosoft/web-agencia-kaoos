@@ -24,7 +24,7 @@ export default function Showcase() {
 
     return (
         <Container fullscreen className={styles.root}>
-            <Text xxxl>¿Encabezado H2?</Text>
+            <Text xxxl>No te pierdas lo último en Marketing Digital</Text>
             <div className={styles.card}>
                 <div className={styles.cardOverlay}></div>
                 <div className={styles.cardInner}>

@@ -15,7 +15,9 @@ export default function DesignFeatures() {
                 <Highlight>Diseño y desarrollo web</Highlight>
             </div>
             <div className={styles.content}>
-                <H2 title>Start closer to the finish line with templates made by industry experts</H2>
+                <H2 title>El diseño de tu negocio define lo que realmente eres</H2>
+                <Text xxl>Y lo objetivos que puedes lograr</Text>
+                {/* Poner el texto anterior en gris y tachado igual que el hero */}
                 <div className={styles.columns}>
                     <div className={styles.box}>
                         <div className={styles.icon}>
@@ -26,8 +28,8 @@ export default function DesignFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl className={styles.boxTitle}>1</Text>
-                        <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
+                        <Text xl className={styles.boxTitle}>Planificación</Text>
+                        <Text>Hacemos una recopilación de ideas para el estilo que puede ir acorde al negocio</Text>
                     </div>
                     <div className={styles.box}>
                         <div className={styles.icon}>
@@ -39,8 +41,8 @@ export default function DesignFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl className={styles.boxTitle}>2</Text>
-                        <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
+                        <Text xl className={styles.boxTitle}>Branding</Text>
+                        <Text>Creamos una estrategia visual para crear una marca reconocida e irremplazable </Text>
                     </div>
                     <div className={styles.box}>
                         <div className={styles.icon}>
@@ -52,8 +54,8 @@ export default function DesignFeatures() {
                                 />
                             </svg>
                         </div>
-                        <Text xl className={styles.boxTitle}>3</Text>
-                        <Text>Templates created by the leading experts to help you deliver a powerful story</Text>
+                        <Text xl className={styles.boxTitle}>Diseño</Text>
+                        <Text>Diseñamos la web con el estilo de la marca y desarrollamos las funcionalidades necesarias</Text>
                     </div>
                 </div>
                 <div className={styles.tags}>
