@@ -24,7 +24,7 @@ export default function Info1() {
             gsap.to(".gsap-rocket", { scrollTrigger, y: "-100vh", scale: 0.5 });
             gsap.to(".header", {
                 scrollTrigger: {
-                    trigger: ".gsap-header-trigger",
+                    trigger: ".gsap-hide-header-trigger",
                     start: "center top",
                     scrub: true,
                 },
@@ -39,7 +39,7 @@ export default function Info1() {
     return (
         <Container fullscreen className={styles.root}>
 
-            <div className={`${styles.gradientTop} gsap-header-trigger`}></div>
+            <div className={`${styles.gradientTop} gsap-hide-header-trigger`}></div>
 
             <div className={`${styles.effectWrapper} gsap-wrapper`}>
                 <div className={`${styles.content} gsap-content`}>
@@ -61,6 +61,7 @@ export default function Info1() {
                     </div>
                 </div>
             </div>
+            
         </Container>
     )
 }

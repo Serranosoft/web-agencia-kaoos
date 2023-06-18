@@ -2,8 +2,25 @@ import Container from "@/components/content/container";
 import Text from "@/components/content/text";
 import styles from "@/styles/home/blog/showcase.module.scss";
 import BlogLink from "@/components/blog/blogLink";
+import { useEffect } from "react";
 
 export default function Showcase() {
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.to(".header", {
+                scrollTrigger: {
+                    trigger: ".gsap-show-header-trigger",
+                    start: "center top",
+                    scrub: true,
+                    markers: true,
+                },
+                yPercent: 0
+            });
+        });
+
+        return () => ctx.revert();
+    })
 
     return (
         <Container fullscreen className={styles.root}>
@@ -17,7 +34,7 @@ export default function Showcase() {
                     <BlogLink href={`/blog/como-elaborar-un-presupuesto-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/06/presupuesto-seo.jpg"} />
                 </div>
             </div>
-            <div className={`${styles.gradient} gsap-seo-cta`}></div>
+            <div className={`${styles.gradient} gsap-seo-cta gsap-show-header-trigger`}></div>
         </Container>
     )
 }
