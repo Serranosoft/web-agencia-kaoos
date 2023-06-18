@@ -50,6 +50,39 @@ export async function getPostBySlug(category, slug) {
   return data?.post
 }
 
+export async function getExperimentBySlug(category, slug) {
+    const data = await fetchAPI(
+      `
+      {
+        post(id: "/${category}/${slug}", idType: SLUG) {
+          title
+          slug
+          featuredImage {
+            node {
+              sourceUrl
+            }
+        }
+        acf {
+            impresiones
+            nombreProyecto
+        }
+          author {
+            node {
+                name
+                avatar {
+                    default
+                    url
+                }
+            }
+          }
+        }
+      }
+      `
+    )
+  
+    return data?.post
+  }
+
 export async function getAllSlugs() {
   const data = await fetchAPI(`
     {
