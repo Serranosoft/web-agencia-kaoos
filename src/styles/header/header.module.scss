@@ -22,18 +22,15 @@
         backdrop-filter: blur(1px);
 
         &>div {
-            width: 100%;
-            display: flex;
-            align-items: flex-end;
-
             a svg path {
-                fill: black;
+                fill: #000000;
 
             }
         }
-
-        p {
-            color: #000;
+        .menu {
+            a {
+                color: #000;
+            }
         }
     }
 
