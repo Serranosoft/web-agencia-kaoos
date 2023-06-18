@@ -71,13 +71,18 @@ export default function Designs() {
                 <div className={styles.group}>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section8.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section7.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section3.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section2.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section11.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section4-2.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section12.png)" }}></div>
                 </div>
                 <div className={styles.cta}>
                     <Text xxl>¿Te gusta lo que ves?</Text>
                     <Text xl>En Kaoos nos encargamos del diseño de tu página web</Text>
                     <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Ponerse en contacto</Button>
+                </div>
+                <div className={styles.group}>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section2.png)" }}></div>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section3.png)" }}></div>
                 </div>
             </Container>
 
