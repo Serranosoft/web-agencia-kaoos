@@ -29,6 +29,7 @@
                 padding: 50px;
                 background: #222;
                 transform-style: preserve-3d;
+                height: 100%;
                 
                 &::before {
                     
@@ -142,9 +143,9 @@
 
 @media (max-width: 991px) {
 
-    .banner {
-        flex-direction: column
-    }
+    // .banner {
+    //     flex-direction: column
+    // }
 
     .banner:nth-child(5) {
         &>div {

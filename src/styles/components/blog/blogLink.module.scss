@@ -3,12 +3,12 @@
 .root {
     display: inline-block;
     vertical-align: middle;
-    // -webkit-transform: perspective(1px) translateZ(0);
-    // transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     border-radius: 1.75rem;
     line-height: 0;
+    max-width: 20rem;
+    margin: 0 auto;
 
     &:before {
         pointer-events: none;
@@ -41,7 +41,5 @@
         width: 100%;
         height: auto;
         border-radius: inherit;
-
-
     }
 }
