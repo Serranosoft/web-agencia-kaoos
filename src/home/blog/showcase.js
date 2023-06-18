@@ -11,11 +11,10 @@ export default function Showcase() {
             <div className={styles.card}>
                 <div className={styles.cardOverlay}></div>
                 <div className={styles.cardInner}>
-                    <BlogLink href={`/blog/seo-para-pymes`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/seo-para-pymes-kaoos.jpg"} style={{ transform: `translateY(var(--ty1)) translateX(var(--ty4))` }} />
-                    <BlogLink href={`/blog/apuntes-de-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/apuntes-de-seo-kaoos.jpg"} style={{ transform: `translateY(var(--ty2)) translateX(var(--ty3))` }} />
-                    <BlogLink href={`/blog/consultor-seo-freelance`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/contratar-freelance-seo-consultor.jpg"} style={{ transform: `translateY(var(--ty3)) translateX(var(--ty1))` }} />
-                    <BlogLink href={`/blog/como-elaborar-un-presupuesto-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/05/presupuesto-seo-ejemplos.jpg"} style={{ transform: `translateY(var(--ty4)) translateX(var(--ty2))` }} />
-
+                    <BlogLink href={`/blog/seo-para-pymes`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/seo-para-pymes-kaoos.jpg"} />
+                    <BlogLink href={`/blog/apuntes-de-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/04/apuntes-de-seo-kaoos.jpg"} />
+                    <BlogLink href={`/blog/consultor-seo-freelance`} img={"https://api.kaoos.es/wp-content/uploads/2023/06/consultor-freelance-seo.jpg"} />
+                    <BlogLink href={`/blog/como-elaborar-un-presupuesto-seo`} img={"https://api.kaoos.es/wp-content/uploads/2023/06/presupuesto-seo.jpg"} />
                 </div>
             </div>
             <div className={`${styles.gradient} gsap-seo-cta`}></div>

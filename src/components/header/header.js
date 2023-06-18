@@ -1,16 +1,14 @@
 import styles from '@/styles/header/header.module.scss'
 import Logo from '@/components/logo/logo'
-import Text from '../content/text'
 import { useRouter } from 'next/router'
-import Button from '../content/button';
 import Link from 'next/link';
-import { useEffect, useLayoutEffect } from 'react';
+import { useEffect } from 'react';
 
 export default function Header() {
 
     const route = useRouter();
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         document.getElementById("mobile-menu").addEventListener("click", () => document.getElementById("menu").classList.add(styles.active))
         document.getElementById("close-menu").addEventListener("click", () => document.getElementById("menu").classList.remove(styles.active))
     }, [])

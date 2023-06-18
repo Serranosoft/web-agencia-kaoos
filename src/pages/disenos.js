@@ -1,8 +1,7 @@
-import { useEffect, useLayoutEffect } from "react"
+import { useEffect } from "react"
 import styles from "@/styles/designs/designs.module.scss";
 import Container from "@/components/content/container";
 import Head from "next/head";
-import H2 from "@/components/content/h2";
 import H1 from "@/components/content/h1";
 import Text from "@/components/content/text";
 import Button from "@/home/button/button";
