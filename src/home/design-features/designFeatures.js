@@ -4,6 +4,7 @@ import Highlight from "@/components/content/highlight";
 import styles from "@/styles/components/feature/feature.module.scss";
 import Text from "@/components/content/text";
 import Button from "../button/button";
+import SubHeading from "@/components/content/subheading";
 
 export default function DesignFeatures() {
 
@@ -15,8 +16,10 @@ export default function DesignFeatures() {
                 <Highlight>Diseño y desarrollo web</Highlight>
             </div>
             <div className={styles.content}>
-                <H2 title>El diseño de tu negocio define lo que realmente eres</H2>
-                <Text xxl>Y lo objetivos que puedes lograr</Text>
+                <div className={styles.contentHeading}>
+                    <H2 title>El diseño de tu negocio define lo que realmente eres</H2>
+                    <SubHeading>Y los objetivos que puedes lograr</SubHeading>
+                </div>
                 {/* Poner el texto anterior en gris y tachado igual que el hero */}
                 <div className={styles.columns}>
                     <div className={styles.box}>

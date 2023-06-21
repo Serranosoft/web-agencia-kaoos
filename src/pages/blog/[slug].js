@@ -26,7 +26,7 @@ export default function slug({ data }) {
                     <div className={styles.titleWrapper}>
                         <Breadcrumbs />
                         <H1 className={`${title.className} ${styles.title}`}>{data.title}</H1><span className={styles.title}> — Kaoos</span>
-                        <div>
+                        <div className={styles.author}>
                             <img src="/favicon.svg" />
                             <Link target="_blank" href="/">{data.author.node.name}</Link>
                         </div>

@@ -1,4 +1,5 @@
-@use "../components/content/link.module.scss" as link;
+@use "@/styles/components/content/mixins.module.scss" as mixin;
+
 @import "../colors";
 
 .root {
@@ -74,7 +75,7 @@
         }
 
         a {
-            @include link.root;
+            @include mixin.link;
             
             &:hover {
                 background-size: 101% 100%;

@@ -9,9 +9,9 @@ export default function Breadcrumbs() {
     return (
         <div className={styles.root}>
             <span><Link href="/">Página principal</Link></span>
-            <span>{">"}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-1l4dv01"><path d="M15 10l-9 5V5l9 5z"></path></svg>
             <span><Link href={`/${router.pathname.split('/')[1]}`}>{router.pathname.split('/')[1]}</Link></span>
-            <span>{">"}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-1l4dv01"><path d="M15 10l-9 5V5l9 5z"></path></svg>
             <span><Link href={`${router.query.slug}`}>{router.query.slug.split("-").join(" ")}</Link></span>
         </div>
     )

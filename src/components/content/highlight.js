@@ -6,7 +6,7 @@ export default function Highlight({children, large}) {
 
     return (
         <>
-            <Text className={styles.root}>{children}</Text>
+            <Text xl className={styles.root}>{children}</Text>
         </>
     )
 }

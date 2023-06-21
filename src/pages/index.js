@@ -12,7 +12,6 @@ import Showcase from '@/home/blog/showcase'
 import SeoFeatures2 from '@/home/seo-features2/seoFeatures2'
 import Persuassion from '@/home/persuassion/persuassion'
 import DesignFeatures from '@/home/design-features/designFeatures'
-import Transition from '@/home/faq/transition'
 import DesignGuide from '@/home/design-guide/design-guide'
 
 
@@ -72,7 +71,6 @@ export default function Home() {
                 <DesignFeatures />
                 <DesignGuide />
                 <Persuassion />
-                {/* <Transition /> */}
             {/* </section> */}
 
         </>

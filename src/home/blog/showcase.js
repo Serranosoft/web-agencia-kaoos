@@ -13,7 +13,6 @@ export default function Showcase() {
                     trigger: ".gsap-show-header-trigger",
                     start: "center top",
                     scrub: true,
-                    markers: true,
                 },
                 yPercent: 0
             });

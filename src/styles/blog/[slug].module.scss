@@ -1,7 +1,4 @@
-@use "../components/content/text.module" as text;
-@use "../components/content/h2.module" as h2;
-@use "../components/content/button.module" as btn;
-@use "../components/content/link.module.scss" as link;
+@use "@/styles/components/content/mixins.module.scss" as mixin;
 
 .root {
     display: flex;
@@ -14,6 +11,7 @@
     .header {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         max-width: 1150px;
         gap: 2.5rem;
@@ -27,22 +25,28 @@
             }
             span.title,
             h1.title {
-                @include text.xxxl-text-styles;
+                // @include text.xxxl-text-styles;
+                font-size: clamp(3.5rem, 2vw + 3rem, 4rem);
                 display: inline;
-                line-height: 1.2;
+                line-height: unset;
+                // line-height: 1.2;
             }
 
             &>div {
-                font-size: 1.3rem;
                 display: flex;
                 align-items: center;
-                gap: 0.5rem;
                 margin-top: 0.75rem;
+                font-size: 1.3rem;
+            }
+            
+            .author {
+                gap: 1rem;
                 img {
                     width: 100%;
                     max-width: 2rem;
                     height: auto;
                 }
+
             }
         }
 
@@ -60,7 +64,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 850px;
+        max-width: 810px;
         margin-top: 5rem;
         & > div {
             width: 100%;
@@ -68,12 +72,11 @@
             ul li,
             ol li,
             p a {
-                font-size: 1.4rem;
-                color: #303030;
-                margin: 2.2rem 0;
-                strong {
-                    color: #000000;
-                }
+                font-size: clamp(1.20rem, 0.15vw + 1.1rem, 1.27rem);
+                line-height: 2rem;
+                color: #000000;
+                margin: 2.1rem 0;
+                
             }
     
             ul,
@@ -85,17 +88,17 @@
             }
     
             h2 {
-                @include h2.styles;
+                font-size: clamp(1.76rem, 0.64vw + 1.6rem, 2.11rem);
                 margin: 2.5rem 0;
             }
     
             h3 {
-                @include text.xl-text-styles;
+                font-size: clamp(1.41rem, 0.32vw + 1.33rem, 1.58rem);
                 margin: 2.5rem 0;
             }
     
             p a {
-                @include link.root;
+                @include mixin.link;
                 color: #000000;
                 &:hover {
                     background-size: 100% 100%;
@@ -115,7 +118,7 @@
         justify-content: center;
         margin: 3rem 0;
         .wp-block-button {
-            @include btn.styles;
+            @include mixin.button;
             a {
                 color: #ffffff;
             }
@@ -127,8 +130,8 @@
         flex-direction: column;
         align-items: center;
         margin: 5rem 0;
-        img {
-            border-radius: 0.35rem;
-        }
+        // img {
+        //     border-radius: 0.35rem;
+        // }
     }
 }

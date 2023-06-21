@@ -28,8 +28,6 @@ export default function Designs() {
     return (
         <Container fullscreen className={styles.root}>
 
-            <Separator />
-
             <div className={styles.demoWrapper}>
                 <section className={`${styles.demoGallery} designs-section`}>
                     <ul className={`${styles.wrapper} wrapper`}>

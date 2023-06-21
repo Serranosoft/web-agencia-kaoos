@@ -3,6 +3,6 @@ import Text from "./text"
 export default function SubHeading({children, className}) {
 
     return (
-        <Text className={`${styles.root} ${className && className}`}>{children}</Text>
+        <Text xxl className={`${styles.root} ${className && className}`}>{children}</Text>
     )
 }

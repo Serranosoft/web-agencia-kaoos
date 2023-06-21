@@ -10,8 +10,10 @@ export default function DesignGuide() {
 
     return (
         <Container large className={styles.root}>
-            <H2 title>¿Qué negocio quieres posicionar?</H2>
-            <Text xl>Trabajamos con estrategias adaptadas para cada tipo de proyecto </Text>
+            <div className={styles.contentHeading}>
+                <H2 title>¿Qué negocio quieres posicionar?</H2>
+                <Text xxl>Trabajamos con estrategias adaptadas para cada tipo de proyecto</Text>
+            </div>
             <div className={styles.columns}>
                 <div className={styles.item}>
                     <div className={styles.logos}>
