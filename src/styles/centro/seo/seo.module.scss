@@ -1,0 +1,43 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 3px solid red;
+    background-color: #ffffff;
+    color: #000000;
+    p {
+        color: inherit;
+    }
+    &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8rem 1rem;
+        max-width: 1200px;
+
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 3rem;
+            // border: 3px solid blue;
+            
+            div {
+                flex: 1 1 450px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+                text-align: start;
+
+            }
+            img {
+                flex: 1 1 400px;
+                width: 100%;
+                height: auto;
+                max-width: 35rem;
+            }
+        }
+    }
+}

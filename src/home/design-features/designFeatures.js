@@ -18,7 +18,7 @@ export default function DesignFeatures() {
             <div className={styles.content}>
                 <div className={styles.contentHeading}>
                     <H2 title>El diseño de tu negocio define lo que realmente eres</H2>
-                    <SubHeading>Y los objetivos que puedes lograr</SubHeading>
+                    <SubHeading line>Y los objetivos que puedes lograr</SubHeading>
                 </div>
                 {/* Poner el texto anterior en gris y tachado igual que el hero */}
                 <div className={styles.columns}>

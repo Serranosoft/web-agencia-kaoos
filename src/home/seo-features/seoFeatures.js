@@ -4,6 +4,7 @@ import Highlight from "@/components/content/highlight";
 import styles from "@/styles/components/feature/feature.module.scss";
 import Text from "@/components/content/text";
 import Button from "../button/button";
+import SubHeading from "@/components/content/subheading";
 
 export default function SeoFeatures() {
 
@@ -15,9 +16,10 @@ export default function SeoFeatures() {
                 <Highlight>Posicionamiento web</Highlight>
             </div>
             <div className={styles.content}>
-                <H2 title>Nuestra estrategia de trabajo SEO</H2>
-                <Text xl>Sin humos y directo a lo que de verdad funciona</Text>
-                {/* Poner el texto anterior en gris y tachado igual que el hero */}
+                <div className={styles.contentHeading}>
+                    <H2 title>Nuestra estrategia de trabajo SEO</H2>
+                    <SubHeading>Sin humos y directo a lo que de verdad funciona</SubHeading>
+                </div>
                 <div className={styles.columns}>
                     <div className={styles.box}>
                         <div className={styles.icon}>

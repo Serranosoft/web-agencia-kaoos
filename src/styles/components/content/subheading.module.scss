@@ -1,7 +1,9 @@
 @import "../../colors.scss";
 
 .root {
-    text-decoration-line: line-through;
     color: $subheading;
     font-weight: bold;
+    &.line {
+        text-decoration-line: line-through;
+    }
 }

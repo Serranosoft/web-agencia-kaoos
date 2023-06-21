@@ -7,7 +7,7 @@ import { Kanit } from 'next/font/google'
 import Breadcrumbs from "@/components/breadcrumbs/breadcrumbs";
 import Bar from "./bar";
 
-const title = Kanit({ subsets: ['latin'], weight: "700" })
+const title = Kanit({ subsets: ['latin'], weight: ["700", "900"] })
 
 export default function slug({ data }) {
     return (
@@ -25,7 +25,7 @@ export default function slug({ data }) {
                 <div className={styles.header}>
                     <div className={styles.titleWrapper}>
                         <Breadcrumbs />
-                        <H1 className={`${title.className} ${styles.title}`}>{data.title}</H1><span className={styles.title}> — Kaoos</span>
+                        <H1 className={styles.title} kanit>{data.title}</H1><span className={styles.title}> — Kaoos</span>
                         <div className={styles.author}>
                             <img src="/favicon.svg" />
                             <Link target="_blank" href="/">{data.author.node.name}</Link>

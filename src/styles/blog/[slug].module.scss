@@ -25,11 +25,10 @@
             }
             span.title,
             h1.title {
-                // @include text.xxxl-text-styles;
                 font-size: clamp(3.5rem, 2vw + 3rem, 4rem);
                 display: inline;
                 line-height: unset;
-                // line-height: 1.2;
+                font-weight: 700;
             }
 
             &>div {

@@ -4,6 +4,7 @@ import Muted from "@/components/content/muted";
 import Text from "@/components/content/text";
 import styles from "@/styles/home/design-guide/design-guide.module.scss";
 import Button from "../button/button";
+import SubHeading from "@/components/content/subheading";
 
 export default function DesignGuide() {
 
@@ -12,7 +13,7 @@ export default function DesignGuide() {
         <Container large className={styles.root}>
             <div className={styles.contentHeading}>
                 <H2 title>¿Qué negocio quieres posicionar?</H2>
-                <Text xxl>Trabajamos con estrategias adaptadas para cada tipo de proyecto</Text>
+                <SubHeading>Trabajamos con estrategias adaptadas para cada tipo de proyecto</SubHeading>
             </div>
             <div className={styles.columns}>
                 <div className={styles.item}>
