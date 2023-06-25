@@ -10,7 +10,7 @@ export default function H1({children, className, title, kanit}) {
 
     return (
         <>
-            <h1 className={`${styles.root} ${title && styles.title} ${font.className} ${className && className} ${kanit ? kanitFont.className : ''}`}>{children}</h1>
+            <h1 className={`${styles.root} ${title && styles.title} ${className && className} ${kanit ? kanitFont.className : font.className}`}>{children}</h1>
         </>
     )
 }

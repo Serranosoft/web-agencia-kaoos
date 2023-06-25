@@ -1,18 +1,22 @@
+@use "@/styles/components/content/mixins.module.scss" as mixin;
+
 .root {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    border: 3px solid red;
     background-color: #ffffff;
     color: #000000;
+
     p {
         color: inherit;
     }
+
     &>div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 3rem;
         padding: 8rem 1rem;
         max-width: 1200px;
 
@@ -20,9 +24,9 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            gap: 3rem;
-            // border: 3px solid blue;
-            
+            gap: 5rem;
+            margin-bottom: 3rem;
+
             div {
                 flex: 1 1 450px;
                 display: flex;
@@ -32,11 +36,123 @@
                 text-align: start;
 
             }
+
             img {
                 flex: 1 1 400px;
                 width: 100%;
                 height: auto;
-                max-width: 35rem;
+                max-width: 30rem;
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .box {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 2rem;
+                // border: 3px solid red;
+                border-radius: 1rem;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+                &>a {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding-top: 2rem;
+                    text-align: center;
+                    border-radius: 1rem;
+                    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+                    padding: 2rem 2rem 0 2rem;
+                    background-image: url("https://api.kaoos.es/wp-content/uploads/2023/06/seo-bg-1.png");
+
+                    p {
+                        font-weight: bold;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        max-width: 20rem;
+
+                    }
+                }
+
+                .index {
+                    display: flex;
+                    gap: 4rem;
+                    padding: 2rem 1rem;
+
+                    .summary {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        flex: 1;
+
+                        p:first-child {
+                            font-weight: bold;
+                        }
+                    }
+
+                    .indexItems {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        flex: 1;
+
+                        &>p {
+                            font-weight: bold;
+                        }
+
+                        ul {
+                            list-style: none;
+
+                            li {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.5rem;
+
+                                &:not(:first-child) {
+                                    margin: 0.75rem 0;
+                                }
+
+                                a {
+                                    @include mixin.link;
+                                    background-size: 100% 15%;
+                                    color: #000000;
+                                    &:hover {
+                                        background-size: 100% 100%;
+                                        color: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .box:first-child {
+                .index {
+                    .summary p:first-child {
+                        color: #8BCAEB;
+                    }
+
+                    .indexItems {
+                        & > p {
+                            color: #8BCAEB;
+                        }
+                        ul li a {
+                            background-image: linear-gradient(to right, #8BCAEB 100%, #ffffff 0);
+                        }
+                    }
+                }
+            }
+
+            svg {
+                fill: #8BCAEB;
             }
         }
     }

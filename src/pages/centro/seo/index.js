@@ -20,33 +20,31 @@ export default function Seo() {
                         <Text xl>Ya sea que sea nuevo en SEO o quiera aprender estrategias avanzadas, este es su centro de conocimiento de SEO.</Text>
                         <Button href="/centro/seo" highlight>Empezar ahora</Button>
                     </div>
-                    <img src="https://api.kaoos.es/wp-content/uploads/2023/06/seo-marketing-hub-hero.svg" alt="seo marketing hub" />
+                    <img src="https://api.kaoos.es/wp-content/uploads/2023/06/seo-hub.png" alt="marketing-seo" />
                 </div>
 
                 <div className={styles.content}>
                     <div className={styles.box}>
                         <Link href="/centro/seo">
-                            <div>
-                                <Text xl>SEO Fundamentals</Text>
-                                <img src="https://api.kaoos.es/wp-content/uploads/2023/06/seo-fundamentals.svg" alt="seo-fundamentals" />
-                            </div>
+                            <Text xxl kanit>Iniciación en SEO</Text>
+                            <img src="https://api.kaoos.es/wp-content/uploads/2023/06/seo-fundamentals.png" alt="seo-fundamentals" />
                         </Link>
                         <div className={styles.index}>
                             <div className={styles.summary}>
-                                <Text xxl>¿Qué aprenderás?</Text>
+                                <Text xl>¿Qué aprenderás?</Text>
                                 <Text>Aprenda los conceptos básicos de SEO en un solo lugar, incluido el rastreo, la indexación, las señales de clasificación del motor de búsqueda, la elección de palabras clave, la actualización del contenido, el texto de anclaje y más.</Text>
                             </div>
                             <div className={styles.indexItems}>
-                                <Text xxl>8 Recursos</Text>
+                                <Text xl>8 Recursos</Text>
                                 <ul>
-                                    <li>¿Qué es SEO?</li>
-                                    <li>Posicionamiento en buscadores</li>
-                                    <li>SEO frente a SEM</li>
-                                    <li>Factores de clasificación del motor de búsqueda</li>
-                                    <li>Mejores prácticas de SEO</li>
-                                    <li>Métricas SEO</li>
-                                    <li>Diseño web amigable con SEO</li>
-                                    <li>¿Qué son las SERP?</li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg><Link href="/centro/seo"><Text>¿Qué es SEO?</Text></Link></li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg><Link href="/centro/seo"><Text>Posicionamiento en buscadores</Text></Link></li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg><Link href="/centro/seo"><Text>SEO frente a SEM</Text></Link></li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg><Link href="/centro/seo"><Text>Factores de posicionamiento</Text></Link></li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg><Link href="/centro/seo"><Text>Mejores prácticas de SEO</Text></Link></li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg><Link href="/centro/seo"><Text>Métricas SEO</Text></Link></li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg><Link href="/centro/seo"><Text>Diseño web amigable con SEO</Text></Link></li>
+                                    <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg><Link href="/centro/seo"><Text>¿Qué son las SERP?</Text></Link></li>
                                 </ul>
                             </div>
                         </div>

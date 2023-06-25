@@ -6,15 +6,13 @@ import { useEffect } from 'react';
 
 export default function Header() {
 
-    const route = useRouter();
-
     useEffect(() => {
         document.getElementById("mobile-menu").addEventListener("click", () => document.getElementById("menu").classList.add(styles.active))
         document.getElementById("close-menu").addEventListener("click", () => document.getElementById("menu").classList.remove(styles.active))
     }, [])
 
     return (
-        <header className={`${styles.root} ${route.pathname.split('/')[1] === "blog" ? styles.light : ''} header`}>
+        <header className={`${styles.root} header`}>
             <div className={styles.logo}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
