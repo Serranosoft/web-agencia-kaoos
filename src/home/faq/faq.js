@@ -18,15 +18,15 @@ export default function Faq() {
 
 
     return (
-        <Container className={styles.root}>
-            <Text xxxl>Preguntas respondidas frecuentemente</Text>
+        <Container id="preguntas-frecuentes" className={styles.root}>
+            <Text xxxl>Preguntas frecuentes</Text>
             <div className={`${styles.questionWrapper} question`}>
                 <div className={styles.question}>
-                    <Text xxl>¿Tenéis planes de pago o presupuestos públicos?</Text>
+                    <Text xxl>¿Cuáles son vuestros precios?</Text>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" class="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg>
                 </div>
                 <div className={`${styles.answer} answer`}>
-                    <Text>Test.</Text>
+                    <Text></Text>
                 </div>
             </div>
             <div className={`${styles.questionWrapper} question`}>

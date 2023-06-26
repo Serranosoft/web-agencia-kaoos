@@ -46,6 +46,9 @@
                     flex-wrap: wrap;
                     gap: 0.5rem;
                 }
+                button:first-child {
+                    color: #000000;
+                }
             }
             .list {
                 flex: 1;

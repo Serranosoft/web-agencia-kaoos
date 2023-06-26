@@ -1,5 +1,3 @@
-@use "@/styles/components/content/mixins.module.scss" as mixin;
-
 @import "../colors";
 
 .root {
@@ -75,13 +73,22 @@
         }
 
         a {
-            @include mixin.link;
-            
+            font-size: clamp(1.20rem, 0.15vw + 1.1rem, 1.27rem);
+            font-weight: bold;
+            color: #a8a8a8;
+            transition: color 0.1s;         
             &:hover {
-                background-size: 101% 100%;
                 color: #ffffff;
             }
         }
+
+        button {
+            display: none;
+        }
+    }
+
+    button {
+        font-size: inherit;
     }
 }
 
@@ -111,7 +118,7 @@
             height: 100vh;
             z-index: 11;
             background-color: #000000;
-            .close {
+            .close, button {
                 display: block;
             }
         }

@@ -10,7 +10,7 @@ body {
   color: #E7EAE8;
   background-color: #000000;
   letter-spacing: -0.45px;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   overflow-x: clip;
   text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

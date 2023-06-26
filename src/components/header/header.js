@@ -3,6 +3,7 @@ import Logo from '@/components/logo/logo'
 import { useRouter } from 'next/router'
 import Link from 'next/link';
 import { useEffect } from 'react';
+import Button from '../content/button';
 
 export default function Header() {
 
@@ -50,9 +51,13 @@ export default function Header() {
                     />
                 </svg>
 
-                <Link href="/blog">Blog</Link>
                 <Link href="/desarrollo-web">Diseños & bocetos</Link>
+                <Link href="/blog">Blog</Link>
+                <Link href="/#preguntas-frecuentes">Preguntas frecuentes</Link>
+                <Button href="/">Presupuesto</Button>
             </div>
+
+            <Button href="/">Presupuesto</Button>
 
         </header>
     )

@@ -3,11 +3,10 @@
 .button {
     position: relative;
     padding: 0.85rem 1.85rem;
-    border-radius: 1.2rem;
     font-weight: bold;
-    // letter-spacing: -1.5px;
-    background: linear-gradient(315deg, rgb(48, 48, 48) 0%, rgb(0, 0, 0) 100%);
-    border: none;
+    background-color: transparent;
+    border: 1px solid #cfcfcf;
+    border-radius: 0.8rem;
     outline: none;
     color: white;
     font-size: clamp(1.15rem, 0.30vw + 1.30rem, 1.4rem);
@@ -17,9 +16,11 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     transition-duration: 0.3s;
     transition-property: transform;
-
-
+    
+    
     &.highlight {
+        border: none;
+        border-radius: 1.2rem;
         background: linear-gradient(315deg, rgb(153, 0, 255) 0%, rgb(0, 136, 255) 100%);
     }
 
