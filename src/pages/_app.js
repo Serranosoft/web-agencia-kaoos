@@ -15,7 +15,6 @@ export default function App({ Component, pageProps }) {
     
     return (
         <>
-            <Aos />
             <section className={arimo.className}>
                 <Header />
                 <main className={`${ route.pathname.split('/')[1] === "blog" && styles.light} ${styles.root}`}>

@@ -5,8 +5,6 @@ import Aos4 from "./aos4";
 
 export default function Aos() {
 
-
-
     return (
         <>
             <Aos1 />

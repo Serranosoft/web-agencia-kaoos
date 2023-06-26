@@ -7,6 +7,7 @@ import Text from "@/components/content/text";
 import Bento from "@/designs/bento";
 import SubHeading from "@/components/content/subheading";
 import Stack from "@/designs/stack";
+import Aos from "@/components/aos/aos";
 
 export default function Designs() {
 
@@ -50,6 +51,7 @@ export default function Designs() {
 
     return (
         <>
+            <Aos />
             <Head>
                 <title>Portfolio de diseños y bocetos de Kaoos</title>
                 <meta name="description" content="Portfolio de diseños de Kaoos" />

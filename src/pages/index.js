@@ -14,6 +14,7 @@ import Persuassion from '@/home/persuassion/persuassion'
 import DesignFeatures from '@/home/design-features/designFeatures'
 import DesignGuide from '@/home/design-guide/design-guide'
 import Faq from '@/home/faq/faq'
+import Aos from '@/components/aos/aos'
 
 
 
@@ -59,6 +60,7 @@ export default function Home() {
 
             */}
             <div className={styles.bg}></div>
+            <Aos />
             <Floating />
             <Hero />
             <SeoCharts />
