@@ -80,11 +80,7 @@ export default function Persuassion() {
                 <section className={styles.halfBanner}>
                     <Text xxxl>Hacemos las cosas<br></br> diferente</Text>
                 </section>
-
-
-
             </Container>
-            <div className={styles.gradient}></div>
         </>
     )
 }

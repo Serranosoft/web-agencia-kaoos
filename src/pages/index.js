@@ -13,6 +13,7 @@ import SeoFeatures2 from '@/home/seo-features2/seoFeatures2'
 import Persuassion from '@/home/persuassion/persuassion'
 import DesignFeatures from '@/home/design-features/designFeatures'
 import DesignGuide from '@/home/design-guide/design-guide'
+import Faq from '@/home/faq/faq'
 
 
 
@@ -57,21 +58,21 @@ export default function Home() {
                 sendcloud webpage
 
             */}
-            {/* <section className={`${styles.main} body`}> */}
-                <div className={styles.bg}></div>
-                <Floating />
-                <Hero />
-                <SeoCharts />
-                <SeoFeatures />
-                <Comparison />
-                <SeoFeatures2 />
-                <Rocket />
-                <Showcase />
-                <Designs />
-                <DesignFeatures />
-                <DesignGuide />
-                <Persuassion />
-            {/* </section> */}
+            <div className={styles.bg}></div>
+            <Floating />
+            <Hero />
+            <SeoCharts />
+            <SeoFeatures />
+            <Comparison />
+            <SeoFeatures2 />
+            <Rocket />
+            <Showcase />
+            <Designs />
+            <DesignFeatures />
+            <DesignGuide />
+            <Persuassion />
+            {/* <Faq /> */}
+
 
         </>
     )
