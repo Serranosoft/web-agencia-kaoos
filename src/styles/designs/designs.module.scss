@@ -26,28 +26,15 @@
         text-align: center;
     }
 
-    .cta {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        text-align: center;
-        margin: 5rem 0;
-        p:first-child {
-            font-weight: bold;
-        }
-        a {
-            margin-top: 1rem;
-        }
-    }
-
     .group {
         text-align: center;
         white-space: nowrap;
         overflow: hidden;
         z-index: 1;
+        margin: 3rem;
+
         .item {
-            width: 15vw;
+            width: 20vw;
             height: 45vh;
             background-position: center;
             background-size: 75vh;
@@ -57,9 +44,29 @@
             display: inline-block;
             cursor: pointer;
         }
+
         video {
             object-fit: cover;
         }
     }
 
+}
+
+@media (max-width: 980px) {
+    .root {
+        .group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+
+            .item {
+                width: 70vw;
+
+                img {
+                    background-position: 100% 100%;
+                }
+            }
+        }
+    }
 }

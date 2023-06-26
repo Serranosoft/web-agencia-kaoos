@@ -4,7 +4,8 @@ import Container from "@/components/content/container";
 import Head from "next/head";
 import H1 from "@/components/content/h1";
 import Text from "@/components/content/text";
-import Button from "@/home/button/button";
+import Bento from "@/designs/bento";
+import SubHeading from "@/components/content/subheading";
 
 export default function Designs() {
 
@@ -17,8 +18,10 @@ export default function Designs() {
                     if (i === ind) return
                     it.clicked = false
                 })
+
+                console.log(window.matchMedia("(max-width: 980px)"));
                 gsap.to(items, {
-                    width: item.clicked ? '15vw' : '12vw',
+                    width: item.clicked ? window.matchMedia("(max-width: 980px)").matches ? '95vw' : '20vw' : window.matchMedia("(max-width: 980px)").matches ? '70vw' : '18vw',
                     borderRadius: "3vw",
                     duration: 2,
                     ease: 'elastic(1, .6)'
@@ -26,7 +29,7 @@ export default function Designs() {
 
                 item.clicked = !item.clicked
                 gsap.to(item, {
-                    width: item.clicked ? '42vw' : '15vw',
+                    width: item.clicked ? window.matchMedia("(max-width: 980px)").matches ? '95vw' : '40vw' : window.matchMedia("(max-width: 980px)").matches ? '70vw' : '15vw',
                     borderRadius: item.clicked ? "0rem" : "3vw",
                     duration: 2.5,
                     ease: 'elastic(1, .3)'
@@ -57,30 +60,28 @@ export default function Designs() {
             <Container fullscreen className={styles.root}>
                 <div className={styles.bg}></div>
                 <div className={styles.header}>
-                    <H1 title>Portfolio de diseños y bocetos</H1>
-                    <Text xl>Clica en cada elemento para ver el diseño completo.</Text>
+                    <H1 title kanit>Portfolio de diseños y bocetos</H1>
+                    <SubHeading>Clica en cada elemento para ver el diseño completo.</SubHeading>
                 </div>
                 <div className={styles.group}>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section5.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section1.png)" }}></div>
-                    <video className={`${styles.item} item`} src="https://api.kaoos.es/wp-content/uploads/2023/06/dragsa-2.mp4" autoPlay loop muted/>
+                    <video className={`${styles.item} item`} src="https://api.kaoos.es/wp-content/uploads/2023/06/dragsa-2.mp4" autoPlay loop muted />
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section6.png)" }}></div>
-                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section9.png)" }}></div>
                 </div>
 
+                <Bento />
+
                 <div className={styles.group}>
+                    <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section9.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section8.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section7.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section11.png)" }}></div>
+                </div>
+
+                <div className={styles.group}>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section4-2.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section12.png)" }}></div>
-                </div>
-                <div className={styles.cta}>
-                    <Text xxl>¿Te gusta lo que ves?</Text>
-                    <Text xl>En Kaoos nos encargamos del diseño de tu página web</Text>
-                    <Button href={"https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn"}>Ponerse en contacto</Button>
-                </div>
-                <div className={styles.group}>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section2.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section3.png)" }}></div>
                 </div>

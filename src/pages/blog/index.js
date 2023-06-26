@@ -8,7 +8,6 @@ import Head from 'next/head'
 import Link from "next/link";
 
 
-const title = Kanit({ subsets: ['latin'], weight: "700" })
 const text = Nunito_Sans({ subsets: ['latin'], weight: "400" })
 
 export default function Blog({ data }) {
@@ -24,8 +23,8 @@ export default function Blog({ data }) {
             </Head>
             <Container fullscreen className={`${styles.root} ${text.className}`}>
                 <div>
-                    <Text xxxl className={`${title.className} ${styles.title} `}>TRÁFICO CONSTANTE Y CUALIFICADO</Text>
-                    <Text xxl className={`${title.className} ${styles.title} `}>DESCUBRE DE QUE TRATA EL SEO</Text>
+                    <Text xxxl kanit className={`${styles.title} `}>TRÁFICO CONSTANTE Y CUALIFICADO</Text>
+                    <Text xxl kanit className={`${styles.title} `}>DESCUBRE DE QUE TRATA EL SEO</Text>
 
                     <div className={styles.content}>
                         <div className={styles.list}>
