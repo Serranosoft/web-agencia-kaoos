@@ -6,6 +6,7 @@ import H1 from "@/components/content/h1";
 import Text from "@/components/content/text";
 import Bento from "@/designs/bento";
 import SubHeading from "@/components/content/subheading";
+import Stack from "@/designs/stack";
 
 export default function Designs() {
 
@@ -78,6 +79,8 @@ export default function Designs() {
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section7.png)" }}></div>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section11.png)" }}></div>
                 </div>
+
+                <Stack />
 
                 <div className={styles.group}>
                     <div className={`${styles.item} item`} style={{ backgroundImage: "url(https://api.kaoos.es/wp-content/uploads/2023/06/section4-2.png)" }}></div>
