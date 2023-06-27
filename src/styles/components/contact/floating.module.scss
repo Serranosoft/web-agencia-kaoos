@@ -5,7 +5,7 @@
     display: flex;
     flex-wrap: wrap-reverse;
     flex-direction: row-reverse;
-    
+    z-index: 999;
     &>div {
         position: absolute;
         width: 10rem;
