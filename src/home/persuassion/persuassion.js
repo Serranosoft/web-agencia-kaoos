@@ -50,7 +50,7 @@ export default function Persuassion() {
                 <section className={styles.banner}>
                     <div className="gsap-banner3d-1">
                         <div>
-                            <Text xxl>¿Por qué elegir Kaoos y no otra agencia?</Text>
+                            <Text xxl kanit>¿Por qué elegir Kaoos y no otra agencia?</Text>
                         </div>
                     </div>
                 </section>
@@ -61,24 +61,24 @@ export default function Persuassion() {
                 <section className={styles.banner}>
                     <div className="gsap-banner3d-2">
                         <div>
-                            <Text xxl>Persuadir, cautivar y convertir</Text>
+                            <Text xxl kanit>Persuadir, cautivar y convertir</Text>
                         </div>
                     </div>
                 </section>
 
-                <section className={styles.halfBanner}><Text xxl>Para impulsar una página web solo necesitamos encontrar la oportunidad</Text></section>
+                <section className={styles.halfBanner}><Text xxl kanit>PARA IMPULSAR UNA PÁGINA WEB SOLO<br></br> NECESITAMOS ENCONTRAR LA OPORTUNIDAD</Text></section>
 
                 <section className={`${styles.banner} ${styles.divided}`}>
                     <div className="gsap-banner3d-3">
                         <div>
-                            <Text xxl>Se trata de perspectiva</Text>
+                            <Text xxl kanit>Se trata de perspectiva</Text>
                         </div>
                     </div>
                     <div className={styles.image}></div>
                 </section>
 
                 <section className={styles.halfBanner}>
-                    <Text xxxl>Hacemos las cosas<br></br> diferente</Text>
+                    <Text xxxl kanit>HACEMOS LAS COSAS<br></br> DIFERENTE</Text>
                 </section>
             </Container>
         </>

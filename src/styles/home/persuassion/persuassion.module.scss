@@ -100,20 +100,21 @@
 
 
     .halfBanner {
-        height: 35vh;
+        height: 30vh;
         background: #E0E0E0;
         color: #000;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        
         p {
             color: black;
+            // padding: 0 2rem;
         }
     }
 
     .miniBanner {
-        height: 25vh;
+        height: 15vh;
         background: #E0E0E0;
     }
 
