@@ -1,19 +1,21 @@
 @import "../colors";
 
 .root {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem clamp(1rem, 1rem + 3vw, 5rem);
-    box-shadow: 1px 0 3px lightgray;
-    z-index: 10;
     position: sticky;
     top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem clamp(1rem, 1rem + 3vw, 5rem);
+    z-index: 10;
     background-color: #000;
     background: rgba(0, 0, 0, 0.61);
+    box-shadow: 1px 0 3px lightgray;
     backdrop-filter: blur(3px);
     transition: all 0.75s;
+    z-index: 1000;
 
     &.light {
         background-color: #fff;
@@ -64,13 +66,22 @@
         gap: 1.5rem;
         align-items: center;
         position: relative;
-        .close {
+        svg.close {
             display: none;
             position: absolute;
             top: 25px;
             left: 25px;
             cursor: pointer;
         }
+
+        svg:not(.close) {
+            display: none;
+            max-width: 10rem;
+            margin: 2rem 0;
+            path {
+                fill: #ffffff;
+            }
+        } 
 
         a {
             font-size: clamp(1.20rem, 0.15vw + 1.1rem, 1.27rem);
@@ -116,9 +127,9 @@
             padding: 5rem 0;
             flex-direction: column;
             height: 100vh;
-            z-index: 11;
             background-color: #000000;
-            .close, button {
+            z-index: 1000;
+            svg.close, button, svg:not(.close) {
                 display: block;
             }
         }

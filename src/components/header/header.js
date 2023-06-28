@@ -51,10 +51,11 @@ export default function Header() {
                     />
                 </svg>
 
+                <Logo />
                 <Link href="/desarrollo-web">Diseños & bocetos</Link>
                 <Link href="/blog">Blog</Link>
                 <Link href="/#preguntas-frecuentes">Preguntas frecuentes</Link>
-                <Button href="/">Presupuesto</Button>
+                <Button href="https://lxb7f5dwsyt.typeform.com/to/e3ayzUDn">Presupuesto</Button>
             </div>
 
             <Button href="/">Presupuesto</Button>
