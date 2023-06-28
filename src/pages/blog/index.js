@@ -3,9 +3,9 @@ import styles from "@/styles/blog/blog.module.scss";
 import Container from "@/components/content/container";
 import Text from "@/components/content/text";
 import Button from "@/components/content/button";
-import { Kanit, Nunito_Sans } from 'next/font/google'
+import { Nunito_Sans } from 'next/font/google'
 import Head from 'next/head'
-import Link from "next/link";
+import BlogLink from "@/components/blog/blogLink";
 
 
 const text = Nunito_Sans({ subsets: ['latin'], weight: "400" })
@@ -30,9 +30,7 @@ export default function Blog({ data }) {
                             {
                                 data.edges.map((blog) => {
                                     return (
-                                        <Link href={`/blog/${blog.node.slug}`}>
-                                            <img alt={blog.node.featuredImage.node.altText} src={blog.node.featuredImage.node.sourceUrl} />
-                                        </Link>
+                                        <BlogLink key={blog.node.id} href={`/blog/${blog.node.slug}`} img={blog.node.featuredImage.node.sourceUrl} alt={blog.node.featuredImage.node.altText} />
                                     )
                                 })
                             }
