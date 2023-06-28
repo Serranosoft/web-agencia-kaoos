@@ -1,7 +1,7 @@
 .root {
     font-size: clamp(1.76rem, 0.64vw + 1.6rem, 2.11rem);
     margin: 0;
-    line-height: 5rem;
+    line-height: 1.05;
     &.title {
         font-size: clamp(3.43rem, 2.84vw + 2.72rem, 5rem);
     }

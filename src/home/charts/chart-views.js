@@ -25,7 +25,7 @@ export default function Chart({ color, data }) {
 
     return (
         <div className={styles.root}>
-            <ResponsiveContainer width="99.9%" height={400}>
+            <ResponsiveContainer width="99.9%" height={350}>
                 <AreaChart
                     data={data}
                     margin={{

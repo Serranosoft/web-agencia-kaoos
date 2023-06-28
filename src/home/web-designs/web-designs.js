@@ -48,7 +48,6 @@ export default function WebDesigns() {
     return (
         <Container style={styles.root}>
             <div>
-                <Separator showMsg1={showMsg1} />
                 <div ref={gallery}>
                     <LightGallery
                         onInit={onInit}

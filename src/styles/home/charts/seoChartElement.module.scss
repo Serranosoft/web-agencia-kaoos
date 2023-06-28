@@ -4,6 +4,7 @@
     position: relative;
     display: grid;
     grid-template-columns: .6fr 1fr;
+    align-items: center;
     gap: 2rem;
     padding: 2.5rem;
     border-radius: 1.2rem;
@@ -42,13 +43,13 @@
     .dataWrapper {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
 
         .data {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             align-items: center;
-            gap: 0.7rem;
+            gap: 1rem;
             margin-top: auto;
             &>div {
                 display: flex;
@@ -66,6 +67,9 @@
                 &:hover {
                     transform: translateY(-10px)
                 }
+                // &:last-child {
+                //     grid-column: span 2;
+                // }
             }
         }
     }
