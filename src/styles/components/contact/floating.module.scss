@@ -2,8 +2,6 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 10rem;
-    width: 15rem;
     display: flex;
     flex-wrap: wrap-reverse;
     flex-direction: row-reverse;
@@ -134,5 +132,13 @@
     to {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .root {
+        transform: scale(0.8);
+        right: 12px;
+        bottom: 12px;
     }
 }
