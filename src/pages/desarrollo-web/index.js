@@ -54,9 +54,8 @@ export default function Designs() {
             <Aos />
             <Head>
                 <title>Portfolio de diseños y bocetos de Kaoos</title>
-                <meta name="description" content="Portfolio de diseños de Kaoos" />
+                <meta name="description" content="Galería de diseños desarrollados por la agencia web Kaoos" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.svg" />
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
             </Head>
