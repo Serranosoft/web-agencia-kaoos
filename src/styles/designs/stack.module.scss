@@ -18,6 +18,8 @@
     .stack {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 2rem;
         svg {
             width: 100%;
