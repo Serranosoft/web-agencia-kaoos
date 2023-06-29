@@ -3,11 +3,11 @@
 .root {
     display: flex;
     margin: 8rem 0;
-    
+
     .banner {
         display: flex;
         align-items: stretch;
-        
+
         display: flex;
         justify-content: center;
         width: 100%;
@@ -15,22 +15,22 @@
         margin: 0 auto;
         text-transform: uppercase;
         font-weight: 700;
-        
+
         &>div:not(.image) {
-            
+
             width: 100%;
             perspective: 700px;
             -webkit-transform-style: flat;
             transform-style: preserve-3d;
-            
+
             &>div {
                 padding: 50px;
                 background: #222;
                 transform-style: preserve-3d;
                 height: 100%;
-                
+
                 &::before {
-                    
+
                     position: absolute;
                     content: "";
                     width: 100%;
@@ -106,10 +106,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         p {
             color: black;
-            // padding: 0 2rem;
         }
     }
 
@@ -121,6 +120,7 @@
     p {
         color: white;
         text-align: center;
+        padding: 0 0.5rem;
     }
 
     .image {
@@ -131,8 +131,9 @@
         box-shadow: inset 25px 0px 20px 10px rgba(0, 0, 0, 0.41)
     }
 
-    
+
 }
+
 .gradient {
     height: 600px;
     width: 100%;
@@ -142,13 +143,22 @@
 
 @media (max-width: 991px) {
 
-    // .banner {
-    //     flex-direction: column
-    // }
-
     .banner:nth-child(5) {
         &>div {
             width: 100%;
+        }
+    }
+
+    .root {
+        .banner {
+            &.divided {
+                div {
+                    width: 100%;
+                    background-size: cover;
+                    background-position: 30%;
+                }
+            }
+
         }
     }
 
