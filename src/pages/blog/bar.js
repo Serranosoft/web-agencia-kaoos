@@ -17,8 +17,8 @@ export default function Bar() {
                 </div>
             </div>
             <div className={styles.actions}>
-                <Button to="/">Ver Diseños</Button>
-                <Button highlight to="/">Ver Proyectos</Button>
+                <Button to="/desarrollo-web" target="_blank">Ver Diseños</Button>
+                <Button highlight to="/" target="_blank">Ver Proyectos</Button>
             </div>
         </div>
     )

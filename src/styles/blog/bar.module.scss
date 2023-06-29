@@ -45,6 +45,9 @@
         a {
             font-size: inherit;
             letter-spacing: inherit;
+            &:first-child {
+                color: #000000;
+            }
         }
     }
 }
