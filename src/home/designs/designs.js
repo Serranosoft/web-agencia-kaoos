@@ -1,6 +1,5 @@
-import { useEffect, useRef } from "react"
+import { useEffect } from "react"
 import styles from "@/styles/home/designs/designs.module.scss";
-import Separator from "./separator";
 import Container from "@/components/content/container";
 
 export default function Designs() {

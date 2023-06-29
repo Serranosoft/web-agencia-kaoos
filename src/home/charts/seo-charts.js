@@ -1,8 +1,7 @@
 import Container from "@/components/content/container";
 import styles from '@/styles/home/charts/seoCharts.module.scss'
 import SeoChartElement from "@/home/charts/seo-chart-element";
-import { chartInfo1, chartInfo2, chartInfo3 } from "@/data/seocharts-data";
-import Separator from "../hero/separator";
+import { chartInfo1, chartInfo2 } from "@/data/seocharts-data";
 
 export default function SeoCharts() {
 
