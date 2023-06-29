@@ -15,7 +15,7 @@ export default function Blog({ data }) {
     return (
         <>
             <Head>
-                <title>Desarrollo de marketing digital y SEO en Kaoos</title>
+                <title>Posicionamiento SEO y Marketing Digital en Kaoos</title>
                 <meta name="description" content="Contenido y guías sobre marketing digital y posicionamiento SEO" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <script src="echarts.js"></script>
@@ -39,8 +39,8 @@ export default function Blog({ data }) {
                             <Text xl>¿Abrumado con demasiada información?</Text>
                             <Text>Comienza a posicionar tu web y obtener tráfico real desde ya con nuestra ayuda.<br></br> Kaoos es una agencia especializada en diseño web y posicionamiento.</Text>
                             <div className={styles.actions}>
-                                <Button>Ver Diseños</Button>
-                                <Button highlight={true}>Ver Proyectos</Button>
+                                <Button to="/desarrollo-web" target="_blank">Ver Diseños</Button>
+                                <Button highlight={true} target="_blank" to="/">Ver Proyectos</Button>
                             </div>
                         </div>
                     </div>
