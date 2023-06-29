@@ -51,7 +51,9 @@ export default function Header() {
                     />
                 </svg>
 
-                <Logo />
+                <a href="/">
+                    <Logo />
+                </a>
                 <Link href="/desarrollo-web">Diseños & bocetos</Link>
                 <Link href="/blog">Blog</Link>
                 <Link href="/#preguntas-frecuentes">Preguntas frecuentes</Link>

@@ -76,6 +76,8 @@
 
         svg:not(.close) {
             display: none;
+            width: 100%;
+            height: auto;
             max-width: 10rem;
             margin: 2rem 0;
             path {
@@ -123,7 +125,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 70%;
+            width: 75%;
             padding: 5rem 0;
             flex-direction: column;
             height: 100vh;
