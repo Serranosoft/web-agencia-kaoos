@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     margin: 8rem 0;
+    padding: 0 1rem;
     & > p {
         text-align: center;
     }
@@ -13,6 +14,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
         margin-top: 3rem;
 
         .border {
@@ -21,8 +24,8 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            height: 369px;
-            width: 290px;
+            height: 359px;
+            width: 280px;
             background: transparent;
             border-radius: 10px;
             transition: border 1s;
@@ -61,8 +64,8 @@
                     font-weight: bold;
                     &:last-child {
                         padding: 0.35rem 0.75rem;
-                        background-color: rgba(0,0,0,0.75);
                         border-radius: 0.5rem;
+                        background-color: rgba(0,0,0,0.75);
                     }
                 }
             }
@@ -86,3 +89,4 @@
         }
     }
 }
+
