@@ -15,12 +15,13 @@ import DesignFeatures from '@/home/design-features/designFeatures'
 import DesignGuide from '@/home/design-guide/design-guide'
 import Faq from '@/home/faq/faq'
 import Aos from '@/components/aos/aos'
+import WhoWeAre from '@/home/who/who'
 
 export default function Home() {
     return (
         <>
             <Head>
-                <title>Kaoos — Agencia Web & Posicionamiento SEO</title>
+                <title>Agencia de Diseño Web & Posicionamiento SEO — Kaoos</title>
                 <meta name="description" content="Kaoos es una agencia española de diseño, desarrollo y mejora de posicionamiento para páginas webs." />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js" strategy='beforeInteractive' />
@@ -70,6 +71,7 @@ export default function Home() {
             <DesignFeatures />
             <DesignGuide />
             <Persuassion />
+            <WhoWeAre />
             <Faq />
 
 

@@ -22,7 +22,7 @@ export default function Faq() {
             <Text xxxl>Preguntas frecuentes</Text>
             <div className={`${styles.questionWrapper} question`}>
                 <div className={styles.question}>
-                    <Text xxl>¿Cuáles son vuestros precios?</Text>
+                    <Text xl>¿Cuáles son vuestros precios?</Text>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" className="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg>
                 </div>
                 <div className={`${styles.answer} answer`}>
@@ -31,7 +31,7 @@ export default function Faq() {
             </div>
             <div className={`${styles.questionWrapper} question`}>
                 <div className={styles.question}>
-                    <Text xxl>¿Dónde puedo ver ejemplos de vuestro trabajo?</Text>
+                    <Text xl>¿Dónde puedo ver ejemplos de vuestro trabajo?</Text>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" className="css-15d17o1"><path d="M15 10l-9 5V5l9 5z"></path></svg>
                 </div>
                 <div className={`${styles.answer} answer`}>
