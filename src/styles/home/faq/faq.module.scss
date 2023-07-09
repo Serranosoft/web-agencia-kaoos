@@ -37,6 +37,7 @@
             align-items: center;
             &>p {
                 font-weight: bold;
+                cursor: text;
             }
             
             svg {
@@ -57,6 +58,9 @@
             transition: max-height 0.3s, margin 0.3s;
             p, a {
                 text-align: start;
+            }
+            p {
+                cursor: text;
             }
 
             a {
